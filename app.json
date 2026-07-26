@@ -5,7 +5,8 @@
   "entryPagePath": "pages/index/index",
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "homeButton": true
   },
   "style": "v2",
   "renderer": "skyline",

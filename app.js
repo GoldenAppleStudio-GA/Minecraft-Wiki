@@ -1,31 +1,16 @@
 // app.js
+const modules = require("./resource/javascript/modules")
+const modrinth_data = require("./resource/data/modrinth.json")
 App({
   globalData:{
-    modrinth_api_test_url:"https://staging-api.modrinth.com",
-    modrinth_api_url:"https://api.modrinth.com",
-    has_modrinth_connect:false
+    has_modrinth_connect:false,
   },
   onShow(){
-    this.modrinth_url_test()
+  modules.modrinth_url_test(modrinth_data,(state)=>(
+    this.globalData.has_modrinth_connect = state
+  ));
+  
   },
-  modrinth_url_test(){
-    wx.request({
-      url: this.globalData.modrinth_api_test_url, 
-      data: {},
-      method:"GET",
-      header: {
-      'content-type': 'application/json'
-      },
-      success: (res) =>{
-      console.log(res.data)
-      if (res.data.charCodeAt === 200){
-        this.globalData.has_modrinth_connect = true;
-      };
-      },
-      fail: (err) =>{
-        console.error(err);
-      }
-      })
-  }
+
 
 })
