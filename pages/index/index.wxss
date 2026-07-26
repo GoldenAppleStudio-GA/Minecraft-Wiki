@@ -1,10 +1,39 @@
 /**index.wxss**/
-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.page_head {
+  position: fixed;
+  height: 11vh;
+  width:750rpx;
+  background-color: #F8F8F8;
+  box-shadow: 0 0 20px 2px #0000004d;
+  z-index: 5;
 }
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
+
+.page_main {
+  z-index: 1;
+  width: 750rpx;
+  height: 100vh;
+
+}
+
+.page_bottom {
+  top: 91vh;
+  width: 750rpx;
+  height: 9vh;
+  background-color: #F8F8F8;
+  position: fixed;
+  box-shadow: 0 0 20px 2px #0000004d;
+  z-index: 5;
+  border-top-left-radius: 40rpx ;
+  border-top-right-radius: 40rpx ;
+}
+
+.top_item {
+position: fixed;
+left: 30rpx;
+top: 3vh;
+}
+
+.top_icon {
+  width: 7vh;
+  height: 7vh;
 }

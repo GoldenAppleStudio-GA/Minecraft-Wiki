@@ -1,22 +1,18 @@
 //resource/javascript/modules.js
-function modrinth_url_test(modrinth_data,callback){
+function modrinth_url_test(callback){
   wx.request({
-    url: modrinth_data.modrinth_api_test_url, 
+    url: "https://staging-api.modrinth.com", 
     data: {},
     method:"GET",
     header: {
     'content-type': 'application/json'
     },
     success: (res) =>{
-    console.log(res.data)
-    if (res.statusCode === 200){
+    console.info("modrinth服务器连接成功",res.statusCode,res.data)
       callback(true)
-    }else{
-      callback(false)
-    };
   },
     fail: (err) =>{
-      console.error(err);
+      console.error("modrinth服务器连接失败",err);
       callback(false)
     }
     });
