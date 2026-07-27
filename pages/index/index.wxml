@@ -1,13 +1,15 @@
+<!-- index.wxml -->
 <view id="page_index" class="page">
   <view class="page_head">
     <view class="top_item">
-    <image src="/resource/images/goldenapple_cion.png" class="top_icon">
-    </image>
-    <view>
-    </view>
+    <image src="/resource/images/minecraft_icon.png" class="top_icon"></image>
+    <view class="top_text_block">
+      <view class="top_main_text">Minecraft百科</view>
+      <view class="top_second_text">Minecraft Wiki</view>
+    </view> 
   </view>
   </view>
-  <scroll-view class="page_main">
+  <scroll-view class="page_index_main" wx:if="{{view_page == 1}}" scroll-y="true" enable-flex="true">
   </scroll-view>
   <view class="page_bottom">
   </view>

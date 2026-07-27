@@ -8,7 +8,7 @@ function modrinth_url_test(callback){
     'content-type': 'application/json'
     },
     success: (res) =>{
-    console.info("modrinth服务器连接成功",res.statusCode,res.data)
+    console.info("modrinth服务器连接成功,statusCode:",res.statusCode,",data:",res.data)
       callback(true)
   },
     fail: (err) =>{

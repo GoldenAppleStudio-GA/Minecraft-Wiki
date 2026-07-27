@@ -1,17 +1,21 @@
 /**index.wxss**/
 .page_head {
-  position: fixed;
+  display: flex;
   height: 11vh;
   width:750rpx;
   background-color: #F8F8F8;
   box-shadow: 0 0 20px 2px #0000004d;
   z-index: 5;
+  align-items: center;
 }
 
-.page_main {
+.page_index_main {
   z-index: 1;
   width: 750rpx;
   height: 100vh;
+  display: flex;
+  background-color: #DCEEF8;
+  
 
 }
 
@@ -25,15 +29,35 @@
   z-index: 5;
   border-top-left-radius: 40rpx ;
   border-top-right-radius: 40rpx ;
+  opacity: 0.85;
 }
 
 .top_item {
-position: fixed;
-left: 30rpx;
-top: 3vh;
+  display: flex;
+  margin-left: 30rpx;
+  align-items:center;
+  flex-direction: row;
 }
 
 .top_icon {
-  width: 7vh;
-  height: 7vh;
+  border-radius: 25%;
+  width: 6vh;
+  height: 6vh;
+}
+
+.top_text_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  font-family: "Source Han Sans SC",system-ui;
+}
+
+.top_main_text {
+  font-size: x-large;
+}
+
+.top_second_text {
+  font-size: xx-small;
+  color: #7f7f7f;
 }
