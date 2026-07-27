@@ -12,4 +12,8 @@ App({
     this.globalData.has_modrinth_connect = state
   });
   },
+  onError(msg){
+    console.error(msg)
+    wx.getLogManager().warn(msg)
+  }
 })

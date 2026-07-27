@@ -13,7 +13,8 @@
     },
     "useCompilerPlugins": false,
     "minifyWXML": true,
-    "compileWorklet": true
+    "compileWorklet": true,
+    "condition": false
   },
   "compileType": "miniprogram",
   "simulatorPluginLibVersion": {},
