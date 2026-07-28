@@ -2,15 +2,23 @@
 <view id="page_index" class="page">
   <view class="page_head">
     <view class="top_item">
-    <image src="/resource/images/minecraft_icon.png" class="top_icon"></image>
-    <view class="top_text_block">
-      <view class="top_main_text">Minecraft百科</view>
-      <view class="top_second_text">Minecraft Wiki</view>
-    </view> 
+      <image src="/resource/images/minecraft_icon.png" class="top_icon"></image>
+      <view class="top_text_block">
+        <view class="top_main_text">Minecraft百科</view>
+        <view class="top_second_text">Minecraft Wiki</view>
+      </view>
+    </view>
   </view>
-  </view>
-  <scroll-view class="page_index_main" wx:if="{{view_page == 1}}" scroll-y="true" enable-flex="true">
+  <scroll-view class="page_index_main" wx:if="{{appear_page == 'index'}}" scroll-y="true" enable-flex="true">
   </scroll-view>
-  <view class="page_bottom">
-  </view>
+  <!-- <view class="page_bottom">
+    <image src="{{appear_page == 'index' ? '/resource/images/index_page_icon_click_0067C0.png' : '/resource/images/index_page_icon_4B5563.png'}}" catch:tap="change_page_to_index" class="bottom_icon">
+    </image>
+    <image>
+    </image>
+    <image>
+    </image>
+    <image>
+    </image>
+  </view> -->
 </view>

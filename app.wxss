@@ -1,10 +1,15 @@
 /**app.wxss**/
-  /* 背景白色background-color: #F4F4F8; */
-  /* 背景淡蓝色background-color: #DCEEF8; */
-  /* 图标未选中黑色#4B5563 */
-  /* 图标选中蓝色(微软蓝)#0067C0 */
+/* 背景白色 #F4F4F8; */
+/* 背景淡蓝色 #DCEEF8; */
+/* 图标未选中黑色 #4B5563 */
+/* 图标选中蓝色(微软蓝) #0067C0 */
+/* 标题栏黑 #262423 */
+/* 背景灰 #3F3F3F */
+/* 导航栏黑 #171615 */
+/* 项目边框灰#6B6562 */
 page {
   height: 100vh;
-  display:block;
-  font-family: "Source Han Sans SC",system-ui;
-} 
+  display: block;
+  font-family: "Source Han Sans SC", system-ui;
+  background-color: #3F3F3F;
+}

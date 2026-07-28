@@ -1,25 +1,18 @@
-// index.js
+// utils/button/button.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    app: getApp(),
-    appear_page:"index",
-  },
-  change_page_to_index() {
 
   },
-  // change_page_to_function() {
 
-  // },
-  change_page_to_news() {
-
-  },
-  change_page_to_search() {
-
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+
   },
 
   /**

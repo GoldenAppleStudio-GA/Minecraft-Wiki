@@ -1,0 +1,5 @@
+<!--utils/navigation-bar/navigation-bar.wxml-->
+<view class="navigation">
+  <view>
+  </view>
+</view>

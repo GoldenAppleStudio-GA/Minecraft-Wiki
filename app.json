@@ -1,15 +1,19 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "utils/button/button",
+    "utils/navigation-bar/navigation-bar"
   ],
   "entryPagePath": "pages/index/index",
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationStyle": "custom",
     "homeButton": true
   },
   "style": "v2",
   "renderer": "webview",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "resizable": false,
+  "usingComponents": {}
 }
