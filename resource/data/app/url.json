@@ -1,0 +1,52 @@
+{
+  "url": [
+    {
+      "name": "modrinth-api",
+      "url": "https://api.modrinth.com"
+    },
+    {
+      "name": "mojang-api",
+      "url": "https://api.mojang.com"
+    },
+    {
+      "name": "modrinth-cdn",
+      "url": "https://cdn.modrinth.com"
+    },
+    {
+      "name": "modrinth-docs",
+      "url": "https://docs.modrinth.com"
+    },
+    {
+      "name": "goldenapple",
+      "url": "https://goldenapple.ip-ddns.com"
+    },
+    {
+      "name": "modrinth",
+      "url": "https://modrinth.com"
+    },
+    {
+      "name": "mv1030rc54086.vicp.fun",
+      "url": "https://mv1030rc54086.vicp.fun"
+    },
+    {
+      "name": "mojang-session",
+      "url": "https://sessionserver.mojang.com"
+    },
+    {
+      "name": "modrinth-test-api",
+      "url": "https://staging-api.modrinth.com"
+    },
+    {
+      "name": "mcmod",
+      "url": "https://www.mcmod.cn"
+    },
+    {
+      "name": "minecraft",
+      "url": "https://www.minecraft.net"
+    },
+    {
+      "name": "minecraft-wiki",
+      "url": "https://zh.minecraft.wiki"
+    }
+  ]
+}

@@ -14,7 +14,9 @@
     "useCompilerPlugins": false,
     "minifyWXML": true,
     "compileWorklet": true,
-    "condition": false
+    "condition": true,
+    "swc": true,
+    "disableSWC": false
   },
   "compileType": "miniprogram",
   "simulatorPluginLibVersion": {},

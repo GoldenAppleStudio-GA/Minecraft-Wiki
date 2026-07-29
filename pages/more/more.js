@@ -1,11 +1,11 @@
-// utils/button/button.js
+// pages/more/more.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    app: getApp()
   },
 
   /**

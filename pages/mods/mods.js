@@ -1,11 +1,11 @@
-// utils/navigation-bar/navigation-bar.js
+// pages/mods/mods.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    app: getApp()
   },
 
   /**

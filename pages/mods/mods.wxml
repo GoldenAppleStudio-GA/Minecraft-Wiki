@@ -1,0 +1,12 @@
+<!--pages/mods/mods.wxml-->
+<view id="mods_page" class="page">
+  <view class="page_head">
+    <view class="page_head_item">
+      <image src="/resource/images/minecraft_icon.png" class="page_head_icon"></image>
+      <view class="page_head_text_block">
+        <view class="page_head_main_text">Minecraft百科</view>
+        <view class="page_head_second_text">Minecraft Wiki</view>
+      </view>
+    </view>
+  </view>
+</view>

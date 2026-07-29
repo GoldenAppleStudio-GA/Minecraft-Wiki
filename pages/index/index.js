@@ -1,26 +1,16 @@
 // index.js
 Page({
+  /**
+   * 页面的初始数据
+   */
+
   data: {
-    app: getApp(),
-    appear_page:"index",
-  },
-  change_page_to_index() {
-
-  },
-  // change_page_to_function() {
-
-  // },
-  change_page_to_news() {
-
-  },
-  change_page_to_search() {
-
+    app: getApp()
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-  },
+  onLoad(options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

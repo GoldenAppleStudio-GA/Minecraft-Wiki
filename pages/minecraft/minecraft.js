@@ -1,11 +1,11 @@
-// utils/navigation-bar/navigation-bar.js
-Component({
+// pages/minecraft/minecraft.js
+Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    app: getApp()
   },
 
   /**

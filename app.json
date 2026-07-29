@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "utils/button/button",
-    "utils/navigation-bar/navigation-bar"
+    "pages/minecraft/minecraft",
+    "pages/mods/mods",
+    "pages/more/more"
   ],
   "entryPagePath": "pages/index/index",
   "window": {
@@ -15,5 +16,36 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "resizable": false,
-  "usingComponents": {}
+  "usingComponents": {},
+  "tabBar": {
+    "backgroundColor": "#171615",
+    "color": "#ffffff",
+    "selectedColor": "#1AAD19",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/resource/images/index_page_icon_FFFFFF_px.png",
+        "selectedIconPath": "/resource/images/index_page_icon_FFFFFF_px.png"
+      },
+      {
+        "pagePath": "pages/minecraft/minecraft",
+        "text": "游戏内容",
+        "iconPath": "/resource/images/minecraft_icon_FFFFFF_px.png",
+        "selectedIconPath": "/resource/images/minecraft_icon_FFFFFF_px.png"
+      },
+      {
+        "pagePath": "pages/mods/mods",
+        "text": "模组",
+        "iconPath": "/resource/images/mods_icon_FFFFFF_px.png",
+        "selectedIconPath": "/resource/images/mods_icon_FFFFFF_px.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多",
+        "iconPath": "/resource/images/more_icon_FFFFFF_px.png",
+        "selectedIconPath": "/resource/images/more_icon_FFFFFF_px.png"
+      }
+    ]
+  }
 }
