@@ -1,37 +1,4 @@
 /**index.wxss**/
-
-.page_index_main {
-  z-index: 1;
-  width: 750rpx;
-  height: 200vh;
-  display: flex;
-  /* background-color: #DCEEF8; */
-
-
-}
-
-.page_bottom {
-  top: 92vh;
-  width: 750rpx;
-  height: 8vh;
-  /* background-color: #F8F8F8; */
-  background-color: #171615;
-  position: fixed;
-  box-shadow: 0 0 1.5px 2px #0000004d;
-  /* border-top-left-radius: 40rpx;
-  border-top-right-radius: 40rpx; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  /* margin: 0px 10rpx 0px 10rpx; */
-}
-
-.bottom_icon {
-  height: 85%;
-  width: 20%;
-  /* height: 6vh;
-  width: 100rpx; */
-  /* margin-top: 1vh;
-  margin-left: 137.5rpx; */
+#index_page {
+  
 }

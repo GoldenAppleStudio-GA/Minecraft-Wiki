@@ -15,6 +15,33 @@
 //     logger.error("error",info)
 //   };
 // };
+// function file_system_read(filePath,callback) {
+//   wx.getFileSystemManager().access({
+//     path: filePath,
+//     success:(res)=>{
+//       // 文件存在
+//       wx.getFileSystemManager().readFile({
+//         filePath:filePath,
+          
+           
+//             cuccess:(res)=>{
+//               callback(JSON.parse(res.arrayBuffer))
+//               console.info("读文件:",filePath,"成功\n",res)
+//             },
+//             fail:(res)=>{
+//               console.error("读文件:",filePath,"失败\n",res)
+//             }
+          
+        
+//       })
+//     },
+//     fail:(res)=>{
+//       // 文件不存在或其他错误
+//       console.log("aaa")
+//       console.error("读文件:",filePath,"失败\n",res)
+//     }
+//   })
+// }
 function login() {
   wx.login({
     success: (res) => {
@@ -37,19 +64,17 @@ function modrinth_url_test(callback) {
       'content-type': 'application/json'
     },
     success: (res) => {
-      const info = "modrinthAPI链接成功\n" + JSON.stringify(res)
-      console.info(info);
+      console.info("modrinthAPI连接成功\n",res);
       callback(true)
     },
     fail: (err) => {
-      const err_info = "modrinthAPI链接失败\n" + JSON.stringify(err)
-      console.error("error", err_info);
+      console.error("modrinthAPI连接失败\n",err);
       callback(false)
     }
   });
 };
 module.exports = {
   modrinth_url_test,
-  login
+  login,
   // realtime_console
 };

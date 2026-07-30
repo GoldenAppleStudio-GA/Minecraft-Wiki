@@ -7,7 +7,9 @@ Page({
   data: {
     app: getApp()
   },
-
+  item_click(event) {
+    console.info("page_minecraft:项目(id:",event.currentTarget.dataset.itemid,")被点击\n", event)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

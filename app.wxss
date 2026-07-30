@@ -11,6 +11,7 @@
 /* 导航栏黑 #171615 */
 /* 项目边框灰#6B6562 */
 /* 文字选中绿#1AAD19 */
+/* 页面项目灰#262423 */
 
 /* 色板-结束 */
 
@@ -31,13 +32,25 @@ page {
   background-color: #3F3F3F;
 }
 
+.page_main_view {
+  z-index: 0;
+  width: 750rpx;
+  height: 100vh;
+  display: flex;
+}
 
 
 
+.hidden_block {
+  z-index: 0;
+  width: 750rpx;
+  height: 11vh;
+}
 
 /* 页标头-开始 */
 
 .page_head {
+  z-index: 100;
   position: fixed;
   display: flex;
   height: 11vh;
@@ -70,6 +83,7 @@ page {
 }
 
 .page_head_main_text {
+  font-weight: 500;
   color: #ffffff;
   font-size: x-large;
 }

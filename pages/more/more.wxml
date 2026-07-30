@@ -9,4 +9,7 @@
       </view>
     </view>
   </view>
+  <view class="hidden_block"></view>
+  <scroll-view class="page_main_view">
+  </scroll-view>
 </view>
