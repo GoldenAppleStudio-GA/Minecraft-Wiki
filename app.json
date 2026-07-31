@@ -3,7 +3,12 @@
     "pages/index/index",
     "pages/minecraft/minecraft",
     "pages/mods/mods",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/minecraft_pages/trading/trading",
+    "pages/minecraft_pages/version/version",
+    "pages/minecraft_pages/brewing/brewing",
+    "pages/minecraft_pages/enchantment/enchantment",
+    "pages/minecraft_pages/mob/mob"
   ],
   "entryPagePath": "pages/index/index",
   "window": {

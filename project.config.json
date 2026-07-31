@@ -16,7 +16,8 @@
     "compileWorklet": true,
     "condition": true,
     "swc": true,
-    "disableSWC": false
+    "disableSWC": false,
+    "ignoreUploadUnusedFiles": false
   },
   "compileType": "miniprogram",
   "simulatorPluginLibVersion": {},

@@ -22,8 +22,8 @@
 //       // 文件存在
 //       wx.getFileSystemManager().readFile({
 //         filePath:filePath,
-          
-           
+
+
 //             cuccess:(res)=>{
 //               callback(JSON.parse(res.arrayBuffer))
 //               console.info("读文件:",filePath,"成功\n",res)
@@ -31,8 +31,8 @@
 //             fail:(res)=>{
 //               console.error("读文件:",filePath,"失败\n",res)
 //             }
-          
-        
+
+
 //       })
 //     },
 //     fail:(res)=>{
@@ -64,11 +64,11 @@ function modrinth_url_test(callback) {
       'content-type': 'application/json'
     },
     success: (res) => {
-      console.info("modrinthAPI连接成功\n",res);
+      console.info("modrinthAPI连接成功", res.statusCode, "\n", res);
       callback(true)
     },
     fail: (err) => {
-      console.error("modrinthAPI连接失败\n",err);
+      console.error("modrinthAPI连接失败\n", err);
       callback(false)
     }
   });

@@ -1,0 +1,4 @@
+/* pages/minecraft_pages/trading/trading.wxss */
+.page_main_view {
+  align-items: start;
+}

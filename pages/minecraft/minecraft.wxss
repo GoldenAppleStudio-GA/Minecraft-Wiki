@@ -1,33 +1,21 @@
 /* pages/minecraft/minecraft.wxss */
-#minecraft_page {
-
-}
 
 .page_main_view {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* 12.8+150 */
+  /* 13.6+170 */
   height: 190vh;
 }
 
-.page_item {
-  display: inline-flex;
-  margin-top: 0.8vh;
-  width: 720rpx;
-  height: 10vh;
-  justify-content: space-between;
-  background-color: #262423;
-}
-
-/* .page_item_click {
+.page_item_click {
   display: inline-flex;
   margin-top: 0.8vh;
   width: 720rpx;
   height: 10vh;
   justify-content: space-between;
   background-color: #464646;
-} */
+}
 
 .item_name {
   margin-left: 30rpx;

@@ -1,13 +1,24 @@
 // app.js
 App({
   globalData: {
-    all_data:{
-      app_data:{
-        url:{}
+    all_data: {
+      init_data: {
+        app_data: {
+          url: {}
+        },
+        minecraft_data: {
+          main: {},
+          minecraft_net_images: {},
+
+        }
       },
-      minecraft_data:{
-        main:{}
-      }
+      runtime_data: {}
+    },
+    page_head_info: {
+      start: Number,
+      height: Number,
+      start_nopx: Number,
+      height_nopx: Number
     },
     system_info: {},
     has_modrinth_connect: false,
@@ -18,19 +29,30 @@ App({
     modrinth_api_test_url: "https://staging-api.modrinth.com",
     modrinth_api_url: "https://api.modrinth.com"
   },
+  reload_runtime_data() {
+    this.globalData.all_data.runtime_data = JSON.parse(
+      JSON.stringify(this.globalData.all_data.init_data)
+    );
+  },
+  load_data() {
+    this.globalData.all_data.init_data = {
+      app_data: {
+        url: require("resource/data/app/url").url()
+      },
+      minecraft_data: {
+        main: require("resource/data/minecraft/main").main(),
+        minecraft_net_images: require("resource/data/minecraft/minecraft_net_images").minecraft_net_images()
 
+      }
+
+    };
+    this.reload_runtime_data();
+  },
   onLaunch(res) {
     this.globalData.modules = require("resource/javascript/modules");
     this.globalData.login_code = this.globalData.modules.login();
     this.globalData.device_info = wx.getDeviceInfo();
-    this.globalData.all_data = {
-      app_data: {
-        url:JSON.parse(wx.getFileSystemManager().readFileSync("resource/data/app/url.json","utf-8"))
-      },
-      minecraft_data: {
-        main:JSON.parse(wx.getFileSystemManager().readFileSync("resource/data/minecraft/main.json","utf-8"))
-      }
-    };
+    this.load_data();
     if (this.globalData.device_info.platform === "devtools") {
       wx.setEnableDebug({
         enableDebug: true
@@ -47,8 +69,14 @@ App({
     this.globalData.modules.modrinth_url_test((state) => {
       this.globalData.has_modrinth_connect = state;
     });
+    this.globalData.page_head_info = {
+      start_nopx: wx.getMenuButtonBoundingClientRect().top,
+      height_nopx: wx.getMenuButtonBoundingClientRect().height,
+      start: wx.getMenuButtonBoundingClientRect().top + "px",
+      height: wx.getMenuButtonBoundingClientRect().height + "px"
+    }
     console.info("APP初始化完成");
-    console.info("globalData:\n",this.globalData)
+    console.info("globalData:\n", this.globalData)
   },
   onShow() {
     console.info("APP渲染完成");

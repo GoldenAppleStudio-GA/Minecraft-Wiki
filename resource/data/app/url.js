@@ -1,6 +1,5 @@
-{
-  "url": [
-    {
+function url() {
+ const url = [{
       "id": 0,
       "name": "modrinth-api",
       "url": "https://api.modrinth.com"
@@ -60,5 +59,10 @@
       "name": "minecraft-wiki",
       "url": "https://zh.minecraft.wiki"
     }
-  ]
+  ];
+  return url
+}
+
+module.exports = {
+  url
 }

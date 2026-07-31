@@ -1,32 +1,32 @@
-// index.js
+// pages/minecraft_pages/mob/mob.js
 Page({
+
   /**
    * 页面的初始数据
    */
-
   data: {
-    app: getApp()
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.info("page_index:页面加载完成\n", options);
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    console.info("page_index:页面初次渲染完成\n");
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    console.log(this.data.app.globalData.page_head_info.height)
-    console.info("page_index:页面渲染\n");
+
   },
 
   /**
