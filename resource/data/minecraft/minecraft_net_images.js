@@ -2,7 +2,7 @@
 // 此文使用了来自中文Minecraft Wiki中苦力怕条目的内容，以CC BY-NC-SA 3.0协议授权。
 function minecraft_net_images() {
   const net_images = {
-    items : [{
+    items: [{
         "id": 0,
         "tag": "minecraft_trading_GUI",
         "name": "Trading_GUI_Simplified",
@@ -155,9 +155,28 @@ function minecraft_net_images() {
         "name": "Wandering_Trader_JE1_BE2",
         "nick_name": "流浪商人",
         "url": "https://zh.minecraft.wiki/images/Wandering_Trader_JE1_BE2.png?b92a8&format=original"
+      },
+      {
+        "id": 22,
+        "tag": "minecraft_version",
+        "name": "Java_Edition_26.2_Simplified",
+        "nick_name": "Java版",
+        "url": "https://zh.minecraft.wiki/images/Java_Edition_26.2_Simplified.png?6b56a&format=original"
+      },
+      {
+        "id": 23,
+        "tag": "minecraft_trading",
+        "name": "CaveGame",
+        "nick_name": "",
+        "url": "https://zh.minecraft.wiki/images/CaveGame.png?0b056&format=original"
       }
+
     ],
-    net_images_size : {
+    net_images_size: {
+      minecraft_version_: {
+        width: 852,
+        height: 480
+      },
       minecraft_trading_GUI: {
         width: 550,
         height: 330
@@ -168,13 +187,13 @@ function minecraft_net_images() {
       }
     }
   };
-  //   {
-  //     "id": 0,
-  //     "tag": "minecraft_trading",
-  //     "name": "",
-  //     "nick_name": "",
-  //     "url": ""
-  //   }
+  //{
+  //  "id": 0,
+  //  "tag": "minecraft_version",
+  //  "name": "",
+  //  "nick_name": "",
+  //  "url": ""
+  //}
   return net_images;
 };
 

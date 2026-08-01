@@ -8,7 +8,8 @@
     "pages/minecraft_pages/version/version",
     "pages/minecraft_pages/brewing/brewing",
     "pages/minecraft_pages/enchantment/enchantment",
-    "pages/minecraft_pages/mob/mob"
+    "pages/minecraft_pages/mob/mob",
+    "pages/minecraft_pages/function_page/menu/menu"
   ],
   "entryPagePath": "pages/index/index",
   "window": {

@@ -29,7 +29,7 @@ Page({
       });
     }, 70);
     wx.navigateTo({
-      url: this.data.app.globalData.all_data.runtime_data.minecraft_data.main[event.currentTarget.dataset.itemid].page_path + "?from=pages/minecraft/minecraft"
+      url: "/pages/minecraft_pages/function_page/menu/menu?page_id=" + event.currentTarget.dataset.itemid
     })
   },
   /**
