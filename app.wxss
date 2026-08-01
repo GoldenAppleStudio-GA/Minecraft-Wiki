@@ -19,23 +19,27 @@
 
 
 page {
-  height: 100vh;
-  display: block;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Source Han Sans SC", system-ui;
   background-color: #3F3F3F;
 }
 
 .page {
-  height: 100vh;
-  display: block;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Source Han Sans SC", system-ui;
   background-color: #3F3F3F;
 }
 
 .page_main_view {
+  height: max-content;
   z-index: 0;
   width: 750rpx;
-  height: 100vh;
   display: flex;
 }
 
@@ -50,7 +54,8 @@ page {
   border-style: solid;
   /* 上边，左边#5A5B5C */
   /* 下边，右边#464747 */
-  border-color: #5A5B5C #464747 #5A5B5C #464747;
+  /* 上，右，下，左 */
+  border-color: #5A5B5C #464747 #464747 #5A5B5C;
   border-width: 5px;
   display: inline-flex;
   margin-top: 0.8vh;
@@ -69,9 +74,9 @@ page {
   position: fixed;
   display: flex;
   width: 750rpx;
-  background-color: #262423;
-  box-shadow: 0 0 2px 2px #0000004d;
+  background-color: #292929;
   align-items: center;
+  border-bottom: 1.5px solid #000000;
 }
 
 .page_head_item {
@@ -98,12 +103,29 @@ page {
 
 /* 返回栏-开始 */
 .page_back_item {
-  height: 3vh;
   width: 750rpx;
+  background-color: #292929;
+  box-shadow: 0 0 2px 2px #00000070;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .page_back_item_icon {
-
+  margin-left: 25rpx;
 }
 
 /* 返回栏-结束 */
+
+.bottom_text {
+  color: #7f7f7f;
+  font-size: smaller;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.CCBY-NC-SA3 {
+  margin: 1vh;
+  padding: 0.5em;
+  color: #ffffff;
+}

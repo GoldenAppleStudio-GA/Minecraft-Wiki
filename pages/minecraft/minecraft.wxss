@@ -1,5 +1,4 @@
 /* pages/minecraft/minecraft.wxss */
-
 .page_main_view {
   display: flex;
   flex-direction: column;
@@ -46,10 +45,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.bottom_text {
-  color: #7f7f7f;
-  font-size: smaller;
-  margin-top: 2vh;
 }

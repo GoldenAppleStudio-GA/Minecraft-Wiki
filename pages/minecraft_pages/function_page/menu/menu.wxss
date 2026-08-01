@@ -1,0 +1,68 @@
+/* pages/minecraft_pages/function_page/menu/menu.wxss */
+
+.page_main_view {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 13.6+170 */
+}
+
+.menu {
+  z-index: 2;
+  margin-top: -4px;
+  padding: 1vh;
+  padding-left: 20rpx;
+  width: 720rpx;
+  background-color: #232324;
+  border: 4px solid #313233;
+  height: max-content;
+  box-sizing: border-box;
+}
+
+.link_text {
+  font-size: larger;
+  color: #576B95;
+  /* text-decoration-line: underline;
+  text-decoration-color: #0645AD; */
+}
+
+.level_line {
+  display: block;
+  height: max-content;
+}
+
+.data_text {
+  color: #BFBFBF;
+  font-size: larger;
+
+}
+
+
+#version {
+  height: max-content;
+}
+
+.number_text {
+  margin-right: 20rpx;
+  color: #7f7f7f;
+  font-size: x-small;
+  margin-right: 0.5em;
+}
+
+.menu_tittle {
+  z-index: 4;
+  margin-top: 1vh;
+  color: #d1d1d1;
+  font-size: large;
+  font-weight: 600;
+  border-style: solid;
+  border-color: #5A5B5C #464747 #464747 #5A5B5C;
+  border-width: 4px;
+  display: inline-flex;
+  width: 720rpx;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  background-color: #313233;
+  box-sizing: border-box;
+}
