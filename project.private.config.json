@@ -15,11 +15,18 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/minecraft_pages/function_page/menu/menu",
+          "pathName": "pages/minecraft_pages/function_page/menu/menu",
+          "query": "page_id=3",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
           "name": "pages/minecraft_pages/trading/trading",
           "pathName": "pages/minecraft_pages/trading/trading",
           "query": "",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
