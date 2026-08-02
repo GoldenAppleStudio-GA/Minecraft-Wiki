@@ -1,31 +1,32 @@
-// index.js
+// packages/packageC/pages/id_14/id_14.js
 Page({
+
   /**
    * 页面的初始数据
    */
-
   data: {
-    app: getApp()
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.info("page_index:页面加载完成\n", options);
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    console.info("page_index:页面初次渲染完成");
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    console.info("page_index:页面渲染");
+
   },
 
   /**

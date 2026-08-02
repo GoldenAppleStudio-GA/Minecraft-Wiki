@@ -63,6 +63,17 @@ page {
   height: 10vh;
   justify-content: space-between;
   background-color: #313233;
+  box-sizing: border-box;
+}
+
+.page_item_click {
+  display: inline-flex;
+  margin-top: 0.8vh;
+  width: 710rpx;
+  height: 10vh;
+  justify-content: space-between;
+  background-color: #464646;
+  box-sizing: border-box;
 }
 
 /* 页标头-开始 */
