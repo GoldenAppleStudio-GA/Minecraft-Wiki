@@ -1,6 +1,6 @@
 {
   "libVersion": "3.17.0",
-  "projectname": "goldenapple-wiki",
+  "projectname": "minecraft-wiki",
   "setting": {
     "urlCheck": true,
     "coverView": true,
@@ -17,7 +17,7 @@
         {
           "name": "pages/minecraft_pages/function_page/menu/menu",
           "pathName": "pages/minecraft_pages/function_page/menu/menu",
-          "query": "page_id=3",
+          "query": "page_id=16",
           "scene": null,
           "launchMode": "default"
         },

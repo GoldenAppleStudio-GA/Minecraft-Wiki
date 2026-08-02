@@ -4,11 +4,6 @@
     "pages/minecraft/minecraft",
     "pages/mods/mods",
     "pages/more/more",
-    "pages/minecraft_pages/trading/trading",
-    "pages/minecraft_pages/version/version",
-    "pages/minecraft_pages/brewing/brewing",
-    "pages/minecraft_pages/enchantment/enchantment",
-    "pages/minecraft_pages/mob/mob",
     "pages/minecraft_pages/function_page/menu/menu"
   ],
   "entryPagePath": "pages/index/index",
@@ -53,5 +48,57 @@
         "selectedIconPath": "/resource/images/more_icon_FFFFFF_px.png"
       }
     ]
+  },
+  "subPackages": [
+    {
+      "root": "packages/packageA",
+      "name": "packageA",
+      "entry": "entry.js",
+      "pages": [
+        "pages/id_0/id_0",
+        "pages/id_1/id_1",
+        "pages/id_2/id_2",
+        "pages/id_3/id_3",
+        "pages/id_4/id_4",
+        "pages/id_5/id_5",
+        "pages/id_6/id_6"
+      ]
+    },
+    {
+      "root": "packages/packageB",
+      "name": "packageB",
+      "entry": "entry.js",
+      "pages": [
+        "pages/id_7/id_7",
+        "pages/id_8/id_8",
+        "pages/id_9/id_9",
+        "pages/id_10/id_10",
+        "pages/id_11/id_11",
+        "pages/id_12/id_12"
+      ]
+    },
+    {
+      "root": "packages/packageC",
+      "entry": "entry.js",
+      "name": "packageC",
+      "pages": [
+        "pages/id_13/id_13",
+        "pages/id_14/id_14",
+        "pages/id_15/id_15",
+        "pages/id_16/id_16",
+        "pages/id_17/id_17",
+        "pages/id_18/id_18"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "packageA",
+        "packageB",
+        "packageC"
+      ]
+    }
   }
 }
