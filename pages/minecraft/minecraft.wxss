@@ -7,14 +7,7 @@
   height: 190vh;
 }
 
-.page_item_click {
-  display: inline-flex;
-  margin-top: 0.8vh;
-  width: 720rpx;
-  height: 10vh;
-  justify-content: space-between;
-  background-color: #464646;
-}
+
 
 .item_name {
   margin-left: 30rpx;

@@ -1,6 +1,9 @@
 // app.js
 App({
   globalData: {
+    app_base_info: {
+      enableDebug: Boolean
+    },
     all_data: {
       init_data: {
         app_data: {
@@ -8,8 +11,7 @@ App({
         },
         minecraft_data: {
           main: {},
-          minecraft_net_images: {},
-          item_version: {}
+          minecraft_net_images: {}
         }
       },
       runtime_data: {}
@@ -50,11 +52,18 @@ App({
     this.reload_runtime_data();
   },
   onLaunch(res) {
+    this.globalData.app_base_info = wx.getAppBaseInfo();
+    wx.onMemoryWarning((res) => {
+      console.warn("内存不足告警:\n", res)
+    })
+    wx.setKeepScreenOn({
+      keepScreenOn: true
+    })
     this.globalData.modules = require("resource/javascript/modules");
     this.globalData.login_code = this.globalData.modules.login();
     this.globalData.device_info = wx.getDeviceInfo();
     this.load_data();
-    if (this.globalData.device_info.platform === "devtools") {
+    if (this.globalData.device_info.platform === "devtools" || this.globalData.app_base_info.enableDebug === true) {
       wx.setEnableDebug({
         enableDebug: true
       });
@@ -76,52 +85,14 @@ App({
       start: wx.getMenuButtonBoundingClientRect().top + "px",
       height: wx.getMenuButtonBoundingClientRect().height + "px"
     }
-    console.info("APP初始化完成");
-    console.info("globalData:\n", this.globalData)
+    console.info("APP初始化完成:\n", res);
+    console.info("APP_globalData:\n", this.globalData);
+    console.info("微信APP基础信息:\n", this.globalData.app_base_info);
   },
   onShow() {
     console.info("APP渲染完成");
   },
   onError(msg) {
-    console.error("error\n", msg);
+    console.error("错误:\n", msg);
   }
 })
-
-// {
-//   "subPackages": [
-//     {
-//       "root": "packages/packageA",
-//       "name": "packageA",
-//       "entry": "page/page.js",
-//       "pages": [
-//         "page/page"
-//       ]
-//     },
-//     {
-//       "root": "packages/packageB",
-//       "name": "packageB",
-//       "entry": "page/page.js",
-//       "pages": [
-//         "page/page"
-//       ]
-//     },
-//     {
-//       "root": "packages/packageC",
-//       "entry": "page/page.js",
-//       "name": "packageC",
-//       "pages": [
-//         "page/page"
-//       ]
-//     }
-//   ],
-//   "preloadRule": {
-//     "pages/index/index": {
-//       "network": "all",
-//       "packages": [
-//         "packageA",
-//         "packageB",
-//         "packageC"
-//       ]
-//     }
-//   }
-// }
