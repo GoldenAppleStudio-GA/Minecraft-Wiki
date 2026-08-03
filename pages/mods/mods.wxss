@@ -1,1 +1,157 @@
 /* pages/mods/mods.wxss */
+
+.page_item {
+  border-width: 3px;
+  height: 2.5em;
+  font-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message_item {
+  position: fixed;
+  border-width: 2px;
+}
+
+.message_error {
+  color: #FF8080;
+}
+
+.message_warn {
+  color: #F5BD00;
+}
+
+.message_info {
+  color: #ffffff;
+}
+
+.mods_search_settings {
+  height: 9em;
+  /* background-color: #313233; */
+  width: 710rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border-color: #5A5B5C #464747 #464747 #5A5B5C !important;
+  border-width: 5px !important; */
+  /* background-color: #FF8080; */
+
+}
+
+.page_main_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search_input_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search_icon {
+  height: 2em;
+  width: 2em;
+  padding-right: 15rpx;
+  padding-left: 15rpx;
+  border-left: solid 3px #5A5B5C ;
+}
+.search_config_block {
+  height: 4.5em;
+  /* background-color: #F5BD00; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_block {
+  color: #ffffff;
+  padding-left: 10rpx;
+  height: 100%;
+  width:  700rpx;
+}
+
+.config_modsloader {
+  padding-left: 10rpx;
+  color: #ffffff;
+  box-sizing: border-box;
+  border-color: #5A5B5C #464747 #464747 #5A5B5C;
+  border-width: 3px;
+  border-style: solid;
+  background-color: #313233;
+  height: 2.5em;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.config_gameversion {
+  padding-left: 10rpx;
+  color: #ffffff;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #5A5B5C #464747 #464747 #5A5B5C;
+  border-width: 3px;
+  background-color: #313233;
+  height: 2.5em;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.downpull_icon {
+  height: 1em;
+  width: 1em;
+  margin-right: 5%;
+}
+
+.modsloader_input {
+  height: 100%;
+}
+.menu_tittle {
+  color: #d1d1d1;
+  font-size: large;
+  display: inline-flex;
+  width: 750rpx;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  box-sizing: border-box;
+  border-bottom: solid 1px #5A5B5C;
+} 
+
+.input_name {
+  color: #ffffff;
+  height: 1em;
+  width: max-content;
+  margin-left: 15rpx;
+}
+
+.input_item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 48%;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.search_name_input {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
