@@ -5,28 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    app: getApp()
+    app: getApp(),
+    message: {
+      has_message: false,
+      type: "",
+      data: ""
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      app: getApp()
+    });
+    console.info("page_mods:页面加载完成\n", options);
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    this.setData({
+      app: getApp()
+    });
+    console.info("page_mods:页面初次渲染完成");
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      app: getApp()
+    });
+    console.info("page_mods:页面渲染");
   },
 
   /**

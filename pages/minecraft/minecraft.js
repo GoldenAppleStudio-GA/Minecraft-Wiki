@@ -36,6 +36,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.setData({
+      app: getApp()
+    });
     console.info("page_minecraft:页面加载完成\n", options);
   },
 
@@ -43,6 +46,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    this.setData({
+      app: getApp()
+    });
     console.info("page_minecraft:页面初次渲染完成\n");
   },
 
@@ -50,6 +56,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
+    this.setData({
+      app: getApp()
+    });
     console.info("page_minecraft:页面渲染\n");
     this.data.app.reload_runtime_data();
     this.setData({
