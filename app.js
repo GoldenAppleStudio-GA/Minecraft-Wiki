@@ -43,7 +43,8 @@ App({
       },
       minecraft_data: {
         main: require("resource/data/minecraft/main").main(),
-        minecraft_net_images: require("resource/data/minecraft/minecraft_net_images").minecraft_net_images()
+        minecraft_net_images: require("resource/data/minecraft/minecraft_net_images").minecraft_net_images(),
+        item_version: require("resource/data/minecraft/item_version").item_version()
 
       }
 

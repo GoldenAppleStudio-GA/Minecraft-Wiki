@@ -7,6 +7,9 @@
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+  <!-- <view class="message_item" class="{{message.type}}" class="page_item" wx:if="{{}}" style="top: calc(var(--start) + var(--height) * 1.2);">
+    {{message.data}}
+  </view> -->
   <view class="page_main_view">
     <form>
       <view class="mod_search_config_main">
