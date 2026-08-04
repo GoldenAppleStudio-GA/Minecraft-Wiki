@@ -1,6 +1,6 @@
 /* pages/mods/mods.wxss */
 
-.page_item {
+/* .page_item {
   border-width: 3px;
   height: 2.5em;
   font-size: 100%;
@@ -29,14 +29,10 @@
 
 .mods_search_settings {
   height: 9em;
-  /* background-color: #313233; */
   width: 710rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* border-color: #5A5B5C #464747 #464747 #5A5B5C !important;
-  border-width: 5px !important; */
-  /* background-color: #FF8080; */
 
 }
 
@@ -62,7 +58,6 @@
 }
 .search_config_block {
   height: 4.5em;
-  /* background-color: #F5BD00; */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -154,4 +149,171 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
+} */
+
+
+.page_main_view {
+  width: 750rpx;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mod_search_config_main {
+  border: solid 1px #2D2F35;
+  margin-top: 1vh;
+  background-color: #27292E;
+  width: 710rpx;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.mod_search_tittle_main {
+  font-size: medium;
+  width: 95%;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.mod_search_config_first_line {
+  width: 95%;
+  height: 3rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.mod_search_config_name_input_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 60%;
+}
+
+.mod_search_config_name_input {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 3%;
+  background-color: #34363C;
+}
+
+.mod_search_config_name_input_click {
+  color: #ffffff;
+  width: 100%;
+  border: solid 1px #1BD96A;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 3%;
+}
+
+.mod_search_config_name_input_tittle {
+  color: #929EAB;
+  font-size: small;
+}
+
+.mod_search_config_since_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 35%;
+}
+
+.mod_search_config_since_tittle {
+  font-size: small;
+  color: #929EAB;
+}
+
+.mod_search_config_since_name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 3%;
+  color: #ffffff;
+}
+
+.mod_search_config_second_line {
+  width: 95%;
+  height: 3rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mod_search_config_version_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 60%;
+}
+
+.mod_search_config_version_tittle {
+  color: #929EAB;
+  font-size: small;
+}
+
+.mod_search_config_version_input {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 3%;
+  background-color: #34363C;
+}
+
+.mod_search_config_version_input_click {
+  color: #ffffff;
+  width: 100%;
+  border: solid 1px #1BD96A;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 3%;
+}
+
+
+.mod_search_config_type_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 35%;
+}
+
+.mod_search_config_type_tittle {
+  font-size: small;
+  color: #929EAB;
+}
+
+.mod_search_config_type_name {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 3%;
+  background-color: #34363C;
+}
+
+
+
+.mod_search_config_third_line {
+  width: 95%;
+  height: 3rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 }
