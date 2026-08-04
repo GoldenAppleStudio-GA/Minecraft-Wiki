@@ -21,7 +21,7 @@
   "tabBar": {
     "backgroundColor": "#171615",
     "color": "#ffffff",
-    "selectedColor": "#1AAD19",
+    "selectedColor": "#1BD96A",
     "list": [
       {
         "pagePath": "pages/index/index",

@@ -24,7 +24,7 @@ page {
   flex-direction: column;
   align-items: center;
   font-family: "Source Han Sans SC", system-ui;
-  background-color: #3F3F3F;
+  background-color: #16181C;
 }
 
 .page {
@@ -33,7 +33,7 @@ page {
   flex-direction: column;
   align-items: center;
   font-family: "Source Han Sans SC", system-ui;
-  background-color: #3F3F3F;
+  background-color: #16181C;
 }
 
 .page_main_view {
@@ -87,7 +87,6 @@ page {
   width: 750rpx;
   background-color: #292929;
   align-items: center;
-  box-shadow: 1px 1px 1.5px #000000;
 }
 
 .page_head_item {
