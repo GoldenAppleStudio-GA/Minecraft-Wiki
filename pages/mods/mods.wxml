@@ -7,18 +7,21 @@
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+  <!-- <view class="message_item" class="{{message.type}}" class="page_item" wx:if="{{}}" style="top: calc(var(--start) + var(--height) * 1.2);">
+    {{message.data}}
+  </view> -->
   <view class="page_main_view">
-    <form>
+    <form bindsubmit="mod_search_config_push" bindreset="mod_search_config_reset">
       <view class="mod_search_config_main">
         <view class="mod_search_tittle_main">
-          搜索 Mod
+          搜索资源
         </view>
         <view class="mod_search_config_first_line">
           <view class="mod_search_config_name_input_block">
             <view class="mod_search_config_name_input_tittle">
               名称
             </view>
-            <input class="mod_search_config_name_input" maxlength="64" />
+            <input class="mod_search_config_name_input" maxlength="64" name="mod_name" />
           </view>
           <view class="mod_search_config_since_block">
             <view class="mod_search_config_since_tittle">
@@ -34,65 +37,49 @@
             <view class="mod_search_config_version_tittle">
               游戏版本
             </view>
-            <input class="mod_search_config_version_input" maxlength="32" placeholder="全部(也可自行输入)" />
+            <input class="mod_search_config_version_input" maxlength="16" placeholder="全部(也可自行输入)" name="mod_game_version" type="digit" />
           </view>
           <view class="mod_search_config_type_block">
             <view class="mod_search_config_type_tittle">
-              类型
+              资源类型
             </view>
-            <view class="mod_search_config_type_name">
-            </view>
+            <picker class="mod_search_config_type_name" mode="selector" range="{{mod_types_view}}" name="mod_type" bindchange="mod_search_config_type_name">
+              <view style="height: 100%;width: 100%;background-color: #34363C;">{{mod_types_view[mod_search_config.mod_type]}}</view>
+            </picker>
           </view>
         </view>
         <view class="mod_search_config_third_line">
-          <button size="mini" type="primary" style="width: 30%;height: 70%;">
+          <button size="mini" type="primary" style="width: 30%;height: 70%;" form-type="submit" disabled="{{disabled_search_button}}">
             搜索
           </button>
-          <button size="mini" type="default" style="width: 30%;height: 70%;">
+          <button size="mini" type="default" style="width: 30%;height: 70%;" form-type="reset">
             重置条件
           </button>
         </view>
       </view>
     </form>
+    <view class="search_resource_list" wx:for="{{search_resource_list}}" wx:key="*this" data-index="{{index}}" catch:tap="search_resource_item_click">
+      <image src="{{item.icon_url}}" class="resource_image"></image>
+      <view class="resource_data_block">
+        <view class="resource_data_right_block">
+          <view class="resource_data_name">
+            {{item.title}}
+          </view>
+          <view class="resource_data_text_block">
+            {{item.description}}
+          </view>
+        </view>
+        <view class="resource_data_left_block">
+          <view class="resource_data_download_block">
+            <image src="/resource/images/download_icon.png" class="download_icon"></image>
+            {{item.downloads}}
+          </view>
+          <view class="resource_data_follows_block">
+            <image src="/resource/images/follow_icon.png" class="download_icon"></image>
+            {{item.follows}}
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>
-
-
-
-
-
-
-
-
-
-
-<!-- <view class="mod_search_tittle" style="height: {{app.globalData.page_head_info.height_nopx + 'px'}};">模组</view> -->
-<!-- <view class="message_item" class="{{message.type}}" class="page_item" wx:if="{{}}" style="top: calc(var(--start) + var(--height) * 1.2);">
-      {{message.data}}
-    </view> -->
-
-<!-- <view class="mods_search_settings">
-          <view class="search_name_input">
-            <view class="input_name">名称</view>
-            <view class="page_item">
-              <input type="text" class="input_block" maxlength="128" />
-              <image src="/resource/images/search_icon_FFFFFF_px.png" class="search_icon"></image>
-            </view>
-          </view>
-          <view class="search_config_block">
-            <view class="input_item">
-              <view class="input_name">模组加载器</view>
-              <view class="config_modsloader">
-                <input type="text" class="modsloader_input" placeholder="Fabric/Quilt/Forge/NeoForge/OptiFine" maxlength="128" />
-                <image src="/resource/images/pulldown_icon_FFFFFF_px.png" class="downpull_icon" mode="scaleToFill"></image>
-              </view>
-            </view>
-            <view class="input_item">
-              <view class="input_name">游戏版本</view>
-              <view class="config_gameversion">
-                <input type="text" class="modsloader_input" placeholder="-- . -- . --" maxlength="128" />
-                <image src="/resource/images/pulldown_icon_FFFFFF_px.png" class="downpull_icon" mode="scaleToFill"></image>
-              </view>
-            </view>
-          </view>
-        </view> -->

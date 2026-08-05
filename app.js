@@ -43,7 +43,8 @@ App({
       },
       minecraft_data: {
         main: require("resource/data/minecraft/main").main(),
-        minecraft_net_images: require("resource/data/minecraft/minecraft_net_images").minecraft_net_images()
+        minecraft_net_images: require("resource/data/minecraft/minecraft_net_images").minecraft_net_images(),
+        item_version: require("resource/data/minecraft/item_version").item_version()
 
       }
 
@@ -67,7 +68,11 @@ App({
         enableDebug: true
       });
       this.globalData.debug_mode = true;
-      console.warn("调试已开启");
+      console.warn("调试已启用");
+      wx.showToast({
+        title: '调试已启用',
+        icon: 'none'
+      })
     } else {
       wx.setEnableDebug({
         enableDebug: false

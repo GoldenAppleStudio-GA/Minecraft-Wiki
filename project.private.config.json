@@ -18,8 +18,8 @@
           "name": "pages/mods/mods",
           "pathName": "pages/mods/mods",
           "query": "",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
