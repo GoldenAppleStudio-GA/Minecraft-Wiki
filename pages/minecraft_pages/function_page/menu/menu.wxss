@@ -22,6 +22,12 @@
 .link_text {
   font-size: larger;
   color: #576B95;
+  /* white-space: nowrap; */
+  /* 强制不换行 */
+  overflow: hidden;
+  /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  /* 显示省略号 */
   /* text-decoration-line: underline;
   text-decoration-color: #0645AD; */
 }
@@ -34,7 +40,12 @@
 .data_text {
   color: #BFBFBF;
   font-size: larger;
-
+  white-space: nowrap;
+  /* 强制不换行 */
+  overflow: hidden;
+  /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  /* 显示省略号 */
 }
 
 

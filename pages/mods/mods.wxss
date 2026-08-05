@@ -171,6 +171,7 @@
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
+  margin-bottom: 2vh;
 }
 
 .mod_search_tittle_main {
@@ -188,6 +189,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .mod_search_config_name_input_block {
   display: flex;
   flex-direction: column;
@@ -299,6 +301,8 @@
 }
 
 .mod_search_config_type_name {
+  display: flex;
+  align-items: center;
   color: #ffffff;
   width: 100%;
   height: 100%;
@@ -316,4 +320,109 @@
   display: inline-flex;
   flex-direction: row;
   align-items: center;
+}
+
+.search_resource_list {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #2D2F35;
+  background-color: #27292E;
+  height: 10vh;
+  width: 710rpx;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+}
+
+.resource_image {
+  border: solid 1px #2D2F35;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 8px;
+  margin-left: 15rpx;
+}
+
+.resource_data_block {
+  height: 80%;
+  width: 76%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15rpx;
+}
+
+.resource_data_right_block {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.resource_data_download_block {
+  margin-top: 0.3rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: small;
+  color: #B0BAC5;
+}
+
+.download_icon {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.resource_data_follows_block {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: small;
+  color: #B0BAC5;
+}
+
+.resource_data_left_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+
+.resource_data_name {
+  white-space: nowrap;
+  /* 强制不换行 */
+  overflow: hidden;
+  /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  /* 显示省略号 */
+  width: 100%;
+  font-weight: 500;
+  font-size: larger;
+  color: #ffffff;
+}
+
+.resource_data_text_block {
+  display: -webkit-box;
+  word-break: break-word;
+  /* 在单词内换行 */
+  word-wrap: break-word;
+  /* 长单词换行 */
+  height: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 限制行数 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: small;
+  color: #96A2B0;
+  width: 100%;
+  height: 60%;
 }

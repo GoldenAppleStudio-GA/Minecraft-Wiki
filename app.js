@@ -68,7 +68,11 @@ App({
         enableDebug: true
       });
       this.globalData.debug_mode = true;
-      console.warn("调试已开启");
+      console.warn("调试已启用");
+      wx.showToast({
+        title: '调试已启用',
+        icon: 'none'
+      })
     } else {
       wx.setEnableDebug({
         enableDebug: false

@@ -37,7 +37,7 @@
       },
       {
         "pagePath": "pages/mods/mods",
-        "text": "模组",
+        "text": "附属资源",
         "iconPath": "/resource/images/mods_icon_FFFFFF_px.png",
         "selectedIconPath": "/resource/images/mods_icon_FFFFFF_px.png"
       },
