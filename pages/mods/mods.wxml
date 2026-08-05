@@ -83,3 +83,43 @@
     </view>
   </view>
 </view>
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="mod_search_tittle" style="height: {{app.globalData.page_head_info.height_nopx + 'px'}};">模组</view> -->
+<!-- <view class="message_item" class="{{message.type}}" class="page_item" wx:if="{{}}" style="top: calc(var(--start) + var(--height) * 1.2);">
+      {{message.data}}
+    </view> -->
+
+<!-- <view class="mods_search_settings">
+          <view class="search_name_input">
+            <view class="input_name">名称</view>
+            <view class="page_item">
+              <input type="text" class="input_block" maxlength="128" />
+              <image src="/resource/images/search_icon_FFFFFF_px.png" class="search_icon"></image>
+            </view>
+          </view>
+          <view class="search_config_block">
+            <view class="input_item">
+              <view class="input_name">模组加载器</view>
+              <view class="config_modsloader">
+                <input type="text" class="modsloader_input" placeholder="Fabric/Quilt/Forge/NeoForge/OptiFine" maxlength="128" />
+                <image src="/resource/images/pulldown_icon_FFFFFF_px.png" class="downpull_icon" mode="scaleToFill"></image>
+              </view>
+            </view>
+            <view class="input_item">
+              <view class="input_name">游戏版本</view>
+              <view class="config_gameversion">
+                <input type="text" class="modsloader_input" placeholder="-- . -- . --" maxlength="128" />
+                <image src="/resource/images/pulldown_icon_FFFFFF_px.png" class="downpull_icon" mode="scaleToFill"></image>
+              </view>
+            </view>
+          </view>
+        </view> -->
