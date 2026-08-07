@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:packages/packageA/pages/id_5/id_5.js
 // packages/packageA/pages/id_0/id_0.js
-========
-// packages/packageA/pages/id_3/id_3.js
->>>>>>>> origin/release:packages/packageA/pages/id_3/id_3.js
 Page({
 
   /**

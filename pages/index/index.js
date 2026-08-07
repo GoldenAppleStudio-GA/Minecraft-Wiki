@@ -235,14 +235,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-<<<<<<< HEAD
     this.search_request();
     this.setData({
       app: getApp()
-=======
-    this.setData({
-      app:getApp()
->>>>>>> origin/release
     });
     console.info("page_index:页面加载完成\n", options);
   },
@@ -252,11 +247,7 @@ Page({
    */
   onReady() {
     this.setData({
-<<<<<<< HEAD
       app: getApp()
-=======
-      app:getApp()
->>>>>>> origin/release
     });
     console.info("page_index:页面初次渲染完成");
   },
@@ -266,11 +257,7 @@ Page({
    */
   onShow() {
     this.setData({
-<<<<<<< HEAD
       app: getApp()
-=======
-      app:getApp()
->>>>>>> origin/release
     });
     console.info("page_index:页面渲染");
   },
