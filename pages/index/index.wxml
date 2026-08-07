@@ -1,13 +1,11 @@
 <!-- index.wxml -->
 <!-- 页头-开始 -->
-<!-- 
-  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
+<!-- <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
       <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
     </view>
-  </view> 
--->
+  </view>  -->
 <!-- 页头-结束 -->
 <view id="index_page" class="page">
   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
@@ -17,6 +15,180 @@
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+
   <view class="page_main_view">
+    <view class="mod_provite">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+        模组推荐
+      </view>
+      <view class="mod_provite_data_block">
+        <view class="mod_provite_data_block_first_line">
+          <image src="{{search_resource_list.mod.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          </image>
+          <view class="mod_provite_data_block_first_line_right_block">
+            <view class="mod_provite_data_block_tittle">
+              {{search_resource_list.mod.title}}
+            </view>
+            <view class="mod_provite_data_block_author">
+              {{'作者:'+search_resource_list.mod.author}}
+            </view>
+            <view class="mod_provite_data_block_userinfo">
+              <view class="mod_provite_data_block_downloads">
+                <image src="/resource/images/download_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.mod.downloads}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;">
+                <image src="/resource/images/follow_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.mod.follows}}
+              </view>
+              <view user-select="true" class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_mod_id">
+                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
+                </image>
+                {{search_resource_list.mod.project_id}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="mod_provite_data_block_second_line">
+          <view style="font-size: small;">
+            简介:
+          </view>
+          {{search_resource_list.mod.description}}
+        </view>
+      </view>
+
+    </view>
+    <view class="mod_provite">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+        整合包推荐
+      </view>
+      <view class="mod_provite_data_block">
+        <view class="mod_provite_data_block_first_line">
+          <image src="{{search_resource_list.modpack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          </image>
+          <view class="mod_provite_data_block_first_line_right_block">
+            <view class="mod_provite_data_block_tittle">
+              {{search_resource_list.modpack.title}}
+            </view>
+            <view class="mod_provite_data_block_author">
+              {{'作者:'+search_resource_list.modpack.author}}
+            </view>
+            <view class="mod_provite_data_block_userinfo">
+              <view class="mod_provite_data_block_downloads">
+                <image src="/resource/images/download_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.modpack.downloads}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;">
+                <image src="/resource/images/follow_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.modpack.follows}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_modpack_id">
+                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
+                </image>
+                {{search_resource_list.modpack.project_id}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="mod_provite_data_block_second_line">
+          <view style="font-size: small;">
+            简介:
+          </view>
+          {{search_resource_list.modpack.description}}
+        </view>
+      </view>
+    </view>
+
+    <view class="mod_provite">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+        资源包推荐
+      </view>
+      <view class="mod_provite_data_block">
+        <view class="mod_provite_data_block_first_line">
+          <image src="{{search_resource_list.resourcepack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          </image>
+          <view class="mod_provite_data_block_first_line_right_block">
+            <view class="mod_provite_data_block_tittle">
+              {{search_resource_list.resourcepack.title}}
+            </view>
+            <view class="mod_provite_data_block_author">
+              {{'作者:'+search_resource_list.resourcepack.author}}
+            </view>
+            <view class="mod_provite_data_block_userinfo">
+              <view class="mod_provite_data_block_downloads">
+                <image src="/resource/images/download_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.resourcepack.downloads}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;">
+                <image src="/resource/images/follow_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.resourcepack.follows}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_resourcepack_id">
+                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
+                </image>
+                {{search_resource_list.resourcepack.project_id}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="mod_provite_data_block_second_line">
+          <view style="font-size: small;">
+            简介:
+          </view>
+          {{search_resource_list.resourcepack.description}}
+        </view>
+      </view>
+    </view>
+
+    <view class="mod_provite">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+        光影包推荐
+      </view>
+      <view class="mod_provite_data_block">
+        <view class="mod_provite_data_block_first_line">
+          <image src="{{search_resource_list.shader.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          </image>
+          <view class="mod_provite_data_block_first_line_right_block">
+            <view class="mod_provite_data_block_tittle">
+              {{search_resource_list.shader.title}}
+            </view>
+            <view class="mod_provite_data_block_author">
+              {{'作者:'+search_resource_list.shader.author}}
+            </view>
+            <view class="mod_provite_data_block_userinfo">
+              <view class="mod_provite_data_block_downloads">
+                <image src="/resource/images/download_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.shader.downloads}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;">
+                <image src="/resource/images/follow_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;">
+                </image>
+                {{search_resource_list.shader.follows}}
+              </view>
+              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_shader_id">
+                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
+                </image>
+                {{search_resource_list.shader.project_id}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="mod_provite_data_block_second_line">
+          <view style="font-size: small;">
+            简介:
+          </view>
+          {{search_resource_list.shader.description}}
+        </view>
+      </view>
+    </view>
+
+
   </view>
 </view>

@@ -16,6 +16,20 @@ Page({
 
   item_click(event) {
     console.info("page_minecraft_function_menu:项目(name:", event.currentTarget.dataset.name, ")被点击\n", event);
+    if (this.data.menu_page <= 6) {
+      wx.navigateTo({
+        url: "/packages/packageA/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page,
+      })
+    } else if (this.data.menu_page > 6 && this.data.menu_page <= 12) {
+      wx.navigateTo({
+        url: "/packages/packageB/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page,
+      })
+    } else if (this.data.menu_page > 12 && this.data.menu_page <= 16) {
+      wx.navigateTo({
+        url: "/packages/packageC/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page,
+      })
+    }
+
   },
 
   /**

@@ -8,5 +8,152 @@
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
   <view class="page_main_view">
+    <view class="description_block">
+      <view class="description_tittle">
+        关于
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          作者
+        </view>
+        <view style="color: #ffffff;font-size: small;">
+          金苹果
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          AppId
+        </view>
+        <view style="color: #ffffff;font-size: small;">
+          wx10339c15b75e6686
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          原始Id
+        </view>
+        <view style="color: #ffffff;font-size: small;">
+          gh_d117d6dbda5b
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          版本号
+        </view>
+        <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
+          1.0.0r
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          更新日期
+        </view>
+        <view style="color: #ffffff;font-size: small;">
+          2026.8.7
+        </view>
+      </view>
+    </view>
+    <view class="description_block">
+      <view class="description_tittle">
+        开源信息
+      </view>
+      <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
+        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;">
+          此与小程序使用 Attribution-NonCommercial-ShareAlike 3.0 协议开源,使用时请注意相关限制.
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          GitHub
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          https://github.com/GoldenAppleStudio-GA/Minecraft-Wiki
+        </view>
+      </view>
+    </view>
+    <view class="description_block">
+      <view class="description_tittle">
+        反馈
+      </view>
+      <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
+        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;">
+          由于开发者技术水平限制,程序出现问题在所难免,如果您在使用此小程序过程中发现任何问题或有关于此小程序的改进建议,请向开发者反馈.您的支持就是我们最大的动力,谢谢.
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          开发者邮箱
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          suyuqing-555@qq.com
+        </view>
+      </view>
+      <view class="description_author">
+        <button open-type="feedback" size="mini" type="primary">意见反馈</button>
+      </view>
+    </view>
+    <view class="description_block">
+      <view class="description_tittle">
+        运行环境
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          小程序基础库版本
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.app_base_info.SDKVersion}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          微信客户端版本
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.app_base_info.version}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          设备信息
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.device_info.platform}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          系统信息
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.device_info.system}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          设备型号
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.device_info.model}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          调试
+        </view>
+        <view style="color: #ffffff;font-size: smaller;">
+          {{app.globalData.debug_mode == true ? '已启用':'未启用'}}
+        </view>
+      </view>
+    </view>
+    <view class="description_block">
+      <view class="description_tittle">
+        其他信息
+      </view>
+      <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
+        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;">
+          此小程序使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.
+        </view>
+      </view>
+    </view>
   </view>
 </view>

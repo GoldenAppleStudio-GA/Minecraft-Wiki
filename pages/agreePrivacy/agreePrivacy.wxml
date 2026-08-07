@@ -1,0 +1,29 @@
+<!--pages/agreePrivacy/agreePrivacy.wxml-->
+<view class="page" id="agreePrivacy">
+  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
+    <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
+      <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+    </view>
+  </view>
+  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+  <view class="page_main_view">
+    <view style="height: max-content;width: 750rpx;display: flex;flex-direction: column;align-items: center;justify-content: space-evenly;margin-top: 3rem;">
+      <view style="width: 100%;box-sizing: border-box;height: max-content;padding: 2rem; color: #ffffff;font-size: small;margin-bottom: 3rem;">
+        为了更好的提供服务，我的世界百科会根据具体功能需要，收集必要的用户信息，请您务必谨慎阅读，充分理解
+        <text style="color: #576B95;font-size: small;" catch:tap="agreePrivacy_page">
+          《我的世界百科小程序隐私保护指引》
+        </text>
+        点击「同意」按钮即代表您已同意前述协议。
+      </view>
+      <view style="width: 100%;box-sizing: border-box;height: max-content;padding: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;">
+        <button type="default" size="mini" catch:tap="disagree">
+          不同意
+        </button>
+        <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="agreePrivacy" type="primary" size="mini">
+          同意
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

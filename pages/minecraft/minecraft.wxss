@@ -17,6 +17,7 @@
 }
 
 .item_icon {
+  border-radius: 5px;
   margin-left: 30rpx;
   height: 6vh;
   width: 6vh;

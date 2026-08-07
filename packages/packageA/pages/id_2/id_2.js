@@ -1,32 +1,39 @@
-// packages/packageA/pages/id_2/id_2.js
+// packages/packageA/pages/id_0/id_0.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    app: getApp()
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.info(options);
+    this.setData({
+      app: getApp()
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    this.setData({
+      app: getApp()
+    });
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      app: getApp()
+    });
   },
 
   /**
@@ -55,6 +62,9 @@ Page({
    */
   onReachBottom() {
 
+  }, navigate_back(event) {
+    console.info("page_minecraft_function_menu:返回被点击\n", event);
+    wx.navigateBack();
   },
 
   /**

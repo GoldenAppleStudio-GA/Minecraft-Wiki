@@ -21,7 +21,26 @@ Page({
     },
     search_resource_list: [],
     net_request_data: String,
-    search_resource_page: 1
+    search_resource_page: 1,
+    search_resource_page_number: 0,
+    __mod_types_view: ""
+  },
+  search_page_back(event) {
+    if (!this.data.search_resource_page <= 1) {
+      this.setData({
+        'search_resource_page': --this.data.search_resource_page
+      })
+    };
+    this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
+  },
+  search_page_next(event) {
+    if (this.data.search_resource_page < this.data.search_resource_page_number) {
+      this.setData({
+        'search_resource_page': ++this.data.search_resource_page
+      });
+      this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
+    };
+
   },
   download_number(num) {
     if (!num || num < 0) return '0';
@@ -46,7 +65,7 @@ Page({
         this.data.search_resource_page = --this.data.search_resource_page;
       }
     };
-    return (this.data.search_resource_page - 1) * 20
+    return
   },
   getModTypeValue(data) {
     const type = data;
@@ -58,6 +77,9 @@ Page({
     }
   },
   mod_search_config_type_name(event) {
+    this.setData({
+      'mod_search_config_click.type_input': "mod_search_config_click"
+    })
     console.info("模组搜索类型改变:\n", event);
     this.setData({
       'mod_search_config.mod_type': this.getModTypeValue(event.detail.value)
@@ -65,13 +87,14 @@ Page({
   },
   mod_search_config_push(event) {
     this.setData({
+      'search_resource_list': [],
       'disabled_search_button': true
-    });
+    })
     setTimeout(() => {
       this.setData({
         'disabled_search_button': false
       })
-    }, 300)
+    }, 500);
     console.info("模组搜索表单提交:\n", event);
     this.setData({
       'mod_search_config.mod_game_version': event.detail.value.mod_game_version.replace(/\s/g, '').match(/[\d.]/g)?.join('') || '',
@@ -79,34 +102,74 @@ Page({
       'mod_search_config.mod_type': this.getModTypeValue(event.detail.value.mod_type)
     });
     this.data.mod_search_config.mod_type = this.getModTypeValue(this.data.mod_search_config.mod_type);
-    if (!this.data.mod_search_config.mod_game_version) {
-      this.setData({
-        'net_request_data': [
-          ["project_type:" + this.data.mod_types[this.data.mod_search_config.mod_type]]
-        ]
-      })
+    this.data.search_resource_list = [];
+    this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
+
+    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
+  },
+
+  mod_search_config_reset(event) {
+    this.setData({
+      'search_resource_list': []
+    })
+    this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
+    console.info("page_mods:模组搜索表单重置:\n", event);
+    this.setData({
+      'mod_search_config.mod_game_version': null,
+      'mod_search_config.mod_name': "",
+      'mod_search_config.mod_type': 0
+    })
+    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
+  },
+  //网络请求模板
+  search_request(searchname, type, version) {
+    var net_request_data //= JSON.stringify([["project_type:"+type],["game_versions:"+version]]);
+    if (type === undefined || type === null || type === '') {
+      if (version === undefined || version === null || version === '') {
+        net_request_data = [
+          ["project_type:mod"]
+        ];
+      } else {
+        net_request_data = [
+          ["game_versions:" + version]
+        ];
+      }
+    } else if (version === undefined || version === null || version === '') {
+      if (type === undefined || type === null || type === '') {
+        net_request_data = [
+          ["project_type:mod"]
+        ];
+      } else {
+        net_request_data = [
+          ["project_type:" + type]
+        ];
+      }
     } else {
-      this.setData({
-        'net_request_data': [
-          ["project_type:" + this.data.mod_types[this.data.mod_search_config.mod_type]]
-        ]
-      })
-    }
-    console.info("page_mods:网络请求数据:\n", this.data.net_request_data)
+      net_request_data = JSON.stringify([
+        ["project_type:" + type],
+        ["game_versions:" + version]
+      ]);
+    };
+    console.info("page_mods:网络请求数据:\n", net_request_data);
+    wx.showLoading({
+      title: "加载中",
+      mask: true
+    })
     wx.request({
       url: "https://api.modrinth.com/v2/search",
       data: {
-        query: this.data.mod_search_config.mod_name, // 空表示搜索全部
-        facets: this.data.net_request_data,
-        index: 'downloads', // 排序方式：relevance | downloads | follows | newest | updated
+        query: searchname, // 空表示搜索全部
+        facets: net_request_data,
+        index: 'relevance', // 排序方式:relevance | downloads | follows | newest | updated
         limit: 20,
-        offset: 0
+        offset: (this.data.search_resource_page - 1) * 20
       },
       success: (res) => {
         console.info("page_mods:网络请求成功:\n", res)
         if (res.statusCode === 200) {
           this.setData({
-            'search_resource_list': this.arry_number(res.data.hits)
+            'search_resource_list': this.arry_number(res.data.hits),
+            'search_resource_page_number': Math.floor(res.data.total_hits / 20)
           })
         } else {
           wx.showToast({
@@ -116,58 +179,83 @@ Page({
         }
       },
       fail: (err) => {
+        wx.hideLoading();
         wx.showToast({
           title: "网络请求失败",
           icon: "none"
         })
         console.error("page_mods:网络请求失败:\n", err)
+      },
+      complete: (res) => {
+        wx.hideLoading()
       }
     })
-    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
   },
-
-  mod_search_config_reset(event) {
-    console.info("page_mods:模组搜索表单重置:\n", event);
-    this.setData({
-      'mod_search_config.mod_game_version': null,
-      'mod_search_config.mod_name': "",
-      'mod_search_config.mod_type': 0
+  copy_project_id(event) {
+    console.info("复制ID被点击(", event.currentTarget.dataset.index, "):\n", event);
+    wx.setClipboardData({
+      data: this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
+      success: (res) => {
+        console.info("设置剪切板成功:\n", res);
+        wx.showToast({
+          title: "已复制项目ID",
+          icon: "success",
+          duration: 1500,
+          complete: (res) => {
+            wx.hideToast
+          }
+        })
+      },
+      fail: (err) => {
+        console.error("设置剪切板失败:\n", err);
+      }
     })
-    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
   },
-
+  copy_project_url(event) {
+    console.info("复制URL被点击(", event.currentTarget.dataset.index, "):\n", event);
+    wx.setClipboardData({
+      data: "https://modrinth.com/project/" + this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
+      success: (res) => {
+        console.info("设置剪切板成功:\n", res);
+        wx.showToast({
+          title: "已复制项目链接",
+          icon: "success",
+          duration: 1500,
+          complete: (res) => {
+            wx.hideToast
+          }
+        })
+      },
+      fail: (err) => {
+        console.error("设置剪切板失败:\n", err);
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    wx.request({
-      url: "https://api.modrinth.com/v2/search",
-      data: {
-        query: "", // 空表示搜索全部
-        facets: '[["project_type:mod"]]',
-        index: 'downloads', // 排序方式：relevance | downloads | follows | newest | updated
-        limit: 20,
-        offset: 0
-      },
-      success: (res) => {
-        console.info("page_mods:网络请求成功:\n", res)
-        if (res.statusCode === 200) {
-          this.setData({
-            'search_resource_list': this.arry_number(res.data.hits)
-          })
-        }
-      },
-      fail: (err) => {
-        console.error("page_mods:网络请求失败:\n", err)
-      }
-    })
+    setInterval(() => {
+      this.setData({
+        '__mod_types_view': this.data.mod_types_view[this.data.mod_search_config.mod_type]
+      })
+    }, 100)
     this.setData({
+      'search_resource_list': [],
+      'search_resource_page': 1,
       app: getApp()
-    });
+    })
+    this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
     console.info("page_mods:页面加载完成\n", options);
   },
   search_resource_item_click(event) {
-    console.info("page_mods:搜索项目(id:", event.currentTarget.dataset.index, ")被点击\n", event)
+    console.info("page_mods:搜索项目(id:", event.currentTarget.dataset.index, ")被点击\n", event);
+    wx.navigateTo({
+      url: "/pages/minecraft_pages/mods_learn/mods_learn?project_id=" + this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
+      success: (res) => {
+        console.info("跳转到页面/pages/minecraft_pages/mods_learn/mods_learn:\n", res)
+      }
+    })
   },
 
   /**
@@ -193,16 +281,12 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide() {
-
-  },
+  onHide() {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload() {
-
-  },
+  onUnload() {},
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
@@ -224,4 +308,4 @@ Page({
   onShareAppMessage() {
 
   }
-})
+});

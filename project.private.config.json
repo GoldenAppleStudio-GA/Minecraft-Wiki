@@ -15,6 +15,20 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/agreePrivacy/agreePrivacy",
+          "pathName": "pages/agreePrivacy/agreePrivacy",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
+          "name": "pages/more/more",
+          "pathName": "pages/more/more",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/mods/mods",
           "pathName": "pages/mods/mods",
           "query": "",

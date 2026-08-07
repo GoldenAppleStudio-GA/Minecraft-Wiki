@@ -19,11 +19,11 @@
 
 
 page {
+  font-family: 'WeChatSansSS', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
   height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Source Han Sans SC", system-ui;
   background-color: #16181C;
 }
 
@@ -32,15 +32,16 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Source Han Sans SC", system-ui;
+  font-family: 'WeChatSansSS', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
   background-color: #16181C;
 }
 
 .page_main_view {
-  height: max-content;
-  z-index: 0;
   width: 750rpx;
+  height: max-content;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -50,29 +51,43 @@ page {
   width: 750rpx;
 }
 
+.minecraft_page_item {
+  padding: 1em;
+  border-radius: 5px;
+  border: solid 1px #32343A;
+  display: inline-flex;
+  margin-top: 1.5vh;
+  width: 710rpx;
+  height: max-content;
+  font-size: small;
+  color: #ffffff;
+  justify-content: space-between;
+  background-color: #27292E;
+  box-sizing: border-box;
+  margin-bottom: 4vh;
+}
+
 .page_item {
-  border-style: solid;
-  /* 上边，左边#5A5B5C */
-  /* 下边，右边#464747 */
-  /* 上，右，下，左 */
-  border-color: #5A5B5C #464747 #464747 #5A5B5C;
-  border-width: 5px;
+  border: solid 1px #32343A;
+  border-radius: 5px;
   display: inline-flex;
   margin-top: 0.8vh;
   width: 710rpx;
   height: 10vh;
   justify-content: space-between;
-  background-color: #313233;
+  background-color: #27292E;
   box-sizing: border-box;
 }
 
 .page_item_click {
+  border: solid 1px #32343A;
+  border-radius: 5px;
   display: inline-flex;
   margin-top: 0.8vh;
   width: 710rpx;
   height: 10vh;
   justify-content: space-between;
-  background-color: #464646;
+  background-color: #3d4047;
   box-sizing: border-box;
 }
 
@@ -87,7 +102,7 @@ page {
   width: 750rpx;
   background-color: #292929;
   align-items: center;
-  box-shadow: 1px 1px 1.5px #000000;
+  border-bottom: solid 1px #32343A;
 }
 
 .page_head_item {
@@ -115,8 +130,8 @@ page {
 /* 返回栏-开始 */
 .page_back_item {
   width: 750rpx;
-  background-color: #292929;
-  box-shadow: 0 0 2px 2px #00000070;
+  background-color: #27292E;
+  border-bottom: solid 1px #32343A;
   display: flex;
   flex-direction: row;
   align-items: center;

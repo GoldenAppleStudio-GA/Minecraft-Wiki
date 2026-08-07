@@ -43,9 +43,12 @@
             <view class="mod_search_config_type_tittle">
               资源类型
             </view>
-            <picker class="mod_search_config_type_name" mode="selector" range="{{mod_types_view}}" name="mod_type" bindchange="mod_search_config_type_name">
-              <view style="height: 100%;width: 100%;background-color: #34363C;">{{mod_types_view[mod_search_config.mod_type]}}</view>
-            </picker>
+            <view class="mod_search_config_type_name">
+              <picker mode="selector" range="{{mod_types_view}}" name="mod_type" bindchange="mod_search_config_type_name" style="height: 100%;width: 3em;display: flex;align-items: center;">
+                <view style="height: 100%;width: 100%;background-color: #34363C;">{{__mod_types_view}}</view>
+              </picker>
+              <image src="/resource/images/pulldown_icon_FFFFFF_px.png" class="mod_search_more_icon"></image>
+            </view>
           </view>
         </view>
         <view class="mod_search_config_third_line">
@@ -58,6 +61,13 @@
         </view>
       </view>
     </form>
+    <view class="search_resource_page_change">
+      <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
+      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
+        {{search_resource_page+'/'+search_resource_page_number}}
+      </view>
+      <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>
+    </view>
     <view class="search_resource_list" wx:for="{{search_resource_list}}" wx:key="*this" data-index="{{index}}" catch:tap="search_resource_item_click">
       <image src="{{item.icon_url}}" class="resource_image"></image>
       <view class="resource_data_block">
@@ -78,8 +88,29 @@
             <image src="/resource/images/follow_icon.png" class="download_icon"></image>
             {{item.follows}}
           </view>
+          <view class="resource_data_copy_block" catch:tap="copy_project_id" data-index="{{index}}">
+            <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem; margin-left: 0.5em;margin-right: 0.5em;">
+            </image>
+            <view>
+              复制ID
+            </view>
+          </view>
+          <view class="resource_data_copy_block" catch:tap="copy_project_url" data-index="{{index}}">
+            <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem; margin-left: 0.5em;margin-right: 0.5em;">
+            </image>
+            <view>
+              复制链接
+            </view>
+          </view>
         </view>
       </view>
+    </view>
+    <view class="search_resource_page_change">
+      <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
+      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
+        {{search_resource_page+'/'+search_resource_page_number}}
+      </view>
+      <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>
     </view>
   </view>
 </view>

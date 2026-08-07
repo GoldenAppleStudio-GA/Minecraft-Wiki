@@ -4,7 +4,8 @@
     "pages/minecraft/minecraft",
     "pages/mods/mods",
     "pages/more/more",
-    "pages/minecraft_pages/function_page/menu/menu"
+    "pages/minecraft_pages/function_page/menu/menu",
+    "pages/agreePrivacy/agreePrivacy"
   ],
   "entryPagePath": "pages/index/index",
   "window": {
@@ -37,7 +38,7 @@
       },
       {
         "pagePath": "pages/mods/mods",
-        "text": "附属资源",
+        "text": "资源搜索",
         "iconPath": "/resource/images/mods_icon_FFFFFF_px.png",
         "selectedIconPath": "/resource/images/mods_icon_FFFFFF_px.png"
       },
@@ -85,9 +86,7 @@
         "pages/id_13/id_13",
         "pages/id_14/id_14",
         "pages/id_15/id_15",
-        "pages/id_16/id_16",
-        "pages/id_17/id_17",
-        "pages/id_18/id_18"
+        "pages/id_16/id_16"
       ]
     }
   ],

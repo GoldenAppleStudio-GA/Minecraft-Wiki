@@ -1,2 +1,683 @@
-<!--packages/packageA/pages/id_2/id_2.wxml-->
-<text>packages/packageA/pages/id_2/id_2.wxml</text>
+<view class="page">
+  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
+    <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
+      <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+    </view>
+  </view>
+  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+  <view class="page_back_item" style="height: {{app.globalData.page_head_info.height_nopx + 'px'}};">
+    <image src="/resource/images/back_icon_FFFFFF_px.png" style="--length:{{app.globalData.page_head_info.height_nopx * 0.8 + 'px'}};height: var(--length);width: var(--length);" class="page_back_item_icon" catch:tap="navigate_back"></image>
+  </view>
+  <view class="page_main_view">
+    <view class="minecraft_page_item">
+      药水酿造
+
+      Java版药水酿造配方表（最有效率的配方）
+      Wiki上有与该主题相关的教程！
+      见教程:自动简易药水酿造机。
+
+      药水酿造（Brewing）是在酿造台中往水瓶里加入各种材料而制作药水、喷溅药水和滞留药水的过程。
+      酿造药水
+
+
+
+      原版酿造台UI
+
+
+
+
+      在本Wiki中大部分条目使用以上表示酿造配方。
+      箭头左侧的是输入，右侧是输出。
+      将1-3个水瓶或药水放入酿造台界面底部的药水槽中，将材料放入顶部的材料槽中，再在燃料槽里放置烈焰粉，便可开始酿造。
+
+      药水的酿造一般从水瓶开始，水瓶可以用玻璃瓶从水源或炼药锅里盛水获得。在酿造台具有能量的前提下，添加基础材料来制作基础药水，这一步的产物大部分不具有效果（一般情况下，需要在这一步使用下界疣制作粗制的药水）。在此基础上，若继续放入影响材料，就可以制作出效果药水。继续向具有效果的药水中添加改性剂，就可以使药水效果增强、变得更加持久或是腐化现有的效果。
+
+      加入火药，可以将药水转化成喷溅药水，使药水可以投掷（或被发射器发射），造成范围效果。还可以对喷溅药水加入龙息，将喷溅药水转化成滞留药水，使滞留药水投掷后产生一片区域效果云。
+
+      每次酿造耗时总是20秒，与材料种类无关。
+
+      酿造需要能量才能进行，酿造台没有能量时会消耗一份燃料槽中的烈焰粉增加20点能量，即一份烈焰粉可以进行20次酿造。在Java版中，酿造需要消耗1点能量才能开始，若材料被取出等原因导致酿造终止时，消耗的能量不会返还。在基岩版中，只有酿造过程结束之后才会消耗能量，在酿造中途取出酿造材料不会损失能量。
+
+      酿造设备
+      名称 图标 用途
+      酿造台
+      Invicon Brewing Stand.png：Minecraft中Brewing Stand的精灵图，链接到酿造台，描述：酿造台
+      用于添加材料到水瓶或药水里。
+      炼药锅
+      Invicon Cauldron.png：Minecraft中Cauldron的精灵图，链接到炼药锅，描述：炼药锅
+      用于储存水或药水[仅基岩版]。
+      可以装满3个玻璃瓶。
+      烈焰粉
+      Invicon Blaze Powder.png：Minecraft中Blaze Powder的精灵图，链接到烈焰粉，描述：烈焰粉
+      酿造台的燃料。
+      玻璃瓶
+      Invicon Glass Bottle.png：Minecraft中Glass Bottle的精灵图，链接到玻璃瓶，描述：玻璃瓶
+      所有药水的容器。
+      水瓶
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+      所有药水的基础。
+      将一个玻璃瓶从水源或是炼药锅里装水获得。
+      材料
+      基础材料与改性剂
+      基础材料是直接加入水瓶的材料，是所有药水的起点。下界疣是此阶段的最基本材料，需要用它来制作绝大多数的药水。
+
+      改性剂是用来改变药水属性或是使药水效果相反的材料。发酵蛛眼是唯一可以直接酿造成有效药水的改性剂。
+
+      名称 图标 加入水瓶时得到 改性剂效果
+      下界疣
+      Invicon Nether Wart.png：Minecraft中Nether Wart的精灵图，链接到下界疣，描述：下界疣
+      粗制的药水 无
+      荧石粉
+      Invicon Glowstone Dust.png：Minecraft中Glowstone Dust的精灵图，链接到荧石粉，描述：荧石粉
+      浓稠的药水 提升效果等级
+      红石粉
+      Invicon Redstone.png：Minecraft中Redstone的精灵图，链接到红石粉，描述：红石粉
+      平凡的药水 延长持续时间
+      发酵蛛眼
+      Invicon Fermented Spider Eye.png：Minecraft中Fermented Spider Eye的精灵图，链接到发酵蛛眼，描述：发酵蛛眼
+      虚弱药水 腐化效果（具体用法见下文）
+      火药
+      Invicon Gunpowder.png：Minecraft中Gunpowder的精灵图，链接到火药，描述：火药
+      喷溅药水 将普通药水变为喷溅药水
+      龙息
+      Invicon Dragon's Breath.png：Minecraft中Dragon's Breath的精灵图，链接到龙息，描述：龙息
+      滞留药水
+      （加入喷溅药水时） 将喷溅药水变为滞留药水
+      腐化效果：发酵蛛眼会改变药水的基本效果，通常会产生与原效果相反的负面效果。
+
+      腐化药水通常与原药水效果相反。
+      腐化支持相同改性剂的延长版或增强版的药水会得到带有相同改性效果的药水。
+      腐化延长版的剧毒药水只会让其变成普通版的伤害药水，增强版的跳跃药水和迅捷药水不能腐化。
+      隐身药水是夜视药水的腐化版本。也就是说，它将夜视药水“外界于你的可视度变到最高”的效果反转成“你于外界的可见度变为零”，即：隐身。
+      在基岩版中，力量药水可以被腐化成虚弱药水。
+      喷溅和滞留药水：任何药水都可以变为喷溅药水或滞留药水，后者是长时间滞留的药水。
+
+      喷溅药水和滞留药水都可以像它们的普通药水一样改性。例如，喷溅的水瓶可以加入任何基础材料，得到的依然是喷溅药水。
+      喷溅药水和可饮用版本的持续时间相同。
+      滞留药水的持续时间只有可饮用版本的四分之一。例如，8:00的可饮用药水变为滞留药水后只有2:00。
+      影响材料
+      影响材料将给予粗制的药水一个特定效果，但不会改变药水强度和时间。 若直接加入到水瓶中，任何这些材料都只会造出无效果的药水（河豚、金胡萝卜、海龟壳、幻翼膜除外，它们不能加入到水瓶中来制造药水）。
+
+      名称 图标 效果 腐化效果
+      糖
+      Invicon Sugar.png：Minecraft中Sugar的精灵图，链接到糖，描述：糖
+      迅捷 缓慢
+      兔子脚
+      Invicon Rabbit's Foot.png：Minecraft中Rabbit's Foot的精灵图，链接到兔子脚，描述：兔子脚
+      跳跃提升
+      闪烁的西瓜片
+      Invicon Glistering Melon.png：Minecraft中Glistering Melon的精灵图，链接到闪烁的西瓜片，描述：闪烁的西瓜片
+      瞬间治疗 瞬间伤害
+      蜘蛛眼
+      Invicon Spider Eye.png：Minecraft中Spider Eye的精灵图，链接到蜘蛛眼，描述：蜘蛛眼
+      中毒
+      金胡萝卜
+      Invicon Golden Carrot.png：Minecraft中Golden Carrot的精灵图，链接到金胡萝卜，描述：金胡萝卜
+      夜视 隐身
+      烈焰粉
+      Invicon Blaze Powder.png：Minecraft中Blaze Powder的精灵图，链接到烈焰粉，描述：烈焰粉
+      力量 虚弱[仅基岩版]
+      河豚
+      Invicon Pufferfish.png：Minecraft中Pufferfish的精灵图，链接到河豚（物品），描述：河豚
+      水下呼吸 无
+      岩浆膏
+      Invicon Magma Cream.png：Minecraft中Magma Cream的精灵图，链接到岩浆膏，描述：岩浆膏
+      抗火
+      恶魂之泪
+      Invicon Ghast Tear.png：Minecraft中Ghast Tear的精灵图，链接到恶魂之泪，描述：恶魂之泪
+      生命恢复
+      海龟壳
+      Invicon Turtle Shell.png：Minecraft中Turtle Shell的精灵图，链接到海龟壳，描述：海龟壳 戴在头上时： +2 护甲值
+      抗性提升、缓慢
+      幻翼膜
+      Invicon Phantom Membrane.png：Minecraft中Phantom Membrane的精灵图，链接到幻翼膜，描述：幻翼膜
+      缓降
+      石头
+      Invicon Stone.png：Minecraft中Stone的精灵图，链接到石头，描述：石头
+      寄生
+      黏液块
+      Invicon Slime Block.png：Minecraft中Slime Block的精灵图，链接到黏液块，描述：黏液块
+      渗浆
+      蜘蛛网
+      Invicon Cobweb.png：Minecraft中Cobweb的精灵图，链接到蜘蛛网，描述：蜘蛛网
+      盘丝
+      旋风棒
+      Invicon Breeze Rod.png：Minecraft中Breeze Rod的精灵图，链接到旋风棒，描述：旋风棒
+      蓄风
+      元素
+
+      此段落描述的是教育版相关特性。
+      该特性仅在教育版和开启了“Education Edition”选项的基岩版世界中可用。
+
+      某些元素可以作为酿造材料制作出能够去除特定负面状态的药物。
+
+      元素 图标 能去除的状态
+      铋
+      Invicon Bismuth.png：Minecraft中Bismuth的精灵图，链接到元素，描述：铋
+      反胃
+      钙
+      Invicon Calcium.png：Minecraft中Calcium的精灵图，链接到元素，描述：钙
+      失明
+      钴
+      Invicon Cobalt.png：Minecraft中Cobalt的精灵图，链接到元素，描述：钴
+      虚弱
+      银
+      Invicon Silver.png：Minecraft中Silver的精灵图，链接到元素，描述：银
+      中毒
+      酿造配方
+      基础药水
+      基础药水是没有效果的药水。水瓶以外的所有基础药水都是在水瓶里加入单个材料制作而来的。
+
+      药水 配方 用于配方
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+
+      水瓶 - 粗制的药水
+      平凡的药水
+      浓稠的药水
+      虚弱药水
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+
+      粗制的药水
+
+      Invicon Nether Wart.png：Minecraft中Nether Wart的精灵图，链接到下界疣，描述：下界疣
+
+
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+      效果药水
+      Invicon Mundane Potion.png：Minecraft中Mundane Potion的精灵图，链接到平凡的药水，描述：平凡的药水 无效果
+
+      平凡的药水
+
+      Invicon Blaze Powder.png：Minecraft中Blaze Powder的精灵图，链接到烈焰粉，描述：烈焰粉
+
+
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+      无[仅Java版]
+      虚弱药水[仅基岩版]
+      Invicon Thick Potion.png：Minecraft中Thick Potion的精灵图，链接到浓稠的药水，描述：浓稠的药水 无效果
+
+      浓稠的药水
+
+      Invicon Glowstone Dust.png：Minecraft中Glowstone Dust的精灵图，链接到荧石粉，描述：荧石粉
+
+
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+      无[仅Java版]
+      虚弱药水[仅基岩版]
+      在基岩版中，长久平凡药水无法制作，只能通过/give命令或创造模式物品栏获得，但其能够用于酿造虚弱药水。
+
+      效果药水
+      效果药水通过将单个材料加入粗制的药水酿造而来（虚弱药水除外），可以和火药结合以制造其对应的喷溅药水。然而，某些药水需要使用发酵蛛眼腐化其他药水来得到。
+
+      正面效果
+      药水 配方 ItemSprite redstone-dust.png：Minecraft中redstone-dust的精灵图 延长版 ItemSprite glowstone-dust.png：Minecraft中glowstone-dust的精灵图 增强版 效果
+      Invicon Potion of Healing.png：Minecraft中Potion of Healing的精灵图，链接到治疗药水，描述：治疗药水 瞬间治疗
+
+      治疗药水
+
+      Invicon Glistering Melon.png：Minecraft中Glistering Melon的精灵图，链接到闪烁的西瓜片，描述：闪烁的西瓜片
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      -
+      Invicon Potion of Healing.png：Minecraft中Potion of Healing的精灵图，链接到治疗药水，描述：治疗药水 瞬间治疗 II
+
+      治疗药水 瞬间治疗
+      立即恢复4（♥♥）生命值。
+      增强版：
+      瞬间治疗 II
+      立即恢复8（♥♥♥♥）生命值。
+
+      Invicon Potion of Fire Resistance.png：Minecraft中Potion of Fire Resistance的精灵图，链接到抗火药水，描述：抗火药水 抗火（03:00）
+
+      抗火药水
+      EffectSprite fire-resistance.png：Minecraft中fire-resistance的精灵图 3:00
+
+      Invicon Magma Cream.png：Minecraft中Magma Cream的精灵图，链接到岩浆膏，描述：岩浆膏
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Fire Resistance.png：Minecraft中Potion of Fire Resistance的精灵图，链接到抗火药水，描述：抗火药水 抗火（08:00）
+
+      抗火药水
+      EffectSprite fire-resistance.png：Minecraft中fire-resistance的精灵图 8:0 - 抗火
+      获得对火、熔岩、烈焰人火球冲击与岩浆块、营火效果的免疫。
+      Invicon Potion of Regeneration.png：Minecraft中Potion of Regeneration的精灵图，链接到再生药水，描述：再生药水 生命恢复（00:45）
+
+      再生药水
+      EffectSprite regeneration.png：Minecraft中regeneration的精灵图 0:45
+
+      Invicon Ghast Tear.png：Minecraft中Ghast Tear的精灵图，链接到恶魂之泪，描述：恶魂之泪
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Regeneration.png：Minecraft中Potion of Regeneration的精灵图，链接到再生药水，描述：再生药水 生命恢复（01:30）
+
+      再生药水
+      EffectSprite regeneration.png：Minecraft中regeneration的精灵图 1:30[仅Java版]或2:00[仅基岩版]
+      Invicon Potion of Regeneration.png：Minecraft中Potion of Regeneration的精灵图，链接到再生药水，描述：再生药水 生命恢复 II（00:22）
+
+      再生药水
+      EffectSprite regeneration.png：Minecraft中regeneration的精灵图 0:22 生命恢复
+      每2.5秒恢复1生命值。
+      增强版：
+      生命恢复 II
+      每1.25秒恢复1生命值。
+
+      Invicon Potion of Strength.png：Minecraft中Potion of Strength的精灵图，链接到力量药水，描述：力量药水 力量（03:00） 当生效后： +3 攻击伤害
+
+      力量药水
+      EffectSprite strength.png：Minecraft中strength的精灵图 3:00
+
+      Invicon Blaze Powder.png：Minecraft中Blaze Powder的精灵图，链接到烈焰粉，描述：烈焰粉
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Strength.png：Minecraft中Potion of Strength的精灵图，链接到力量药水，描述：力量药水 力量（08:00） 当生效后： +3 攻击伤害
+
+      力量药水
+      EffectSprite strength.png：Minecraft中strength的精灵图 8:00
+      Invicon Potion of Strength.png：Minecraft中Potion of Strength的精灵图，链接到力量药水，描述：力量药水 力量 II（01:30） 当生效后： +6 攻击伤害
+
+      力量药水
+    ffectSprite strength.png：Minecraft中strength的精灵图 1:30 力量
+      攻击伤害属性增加3（♥♥）。[仅Java版]
+      近战攻击伤害增加30%再加1（♥）。[仅基岩版]
+      增强版：
+      力量 II
+      攻击伤害属性增加6（♥♥♥）。[仅Java版]
+      近战攻击伤害增加69%再加2.3（♥ × 1.15）。[仅基岩版]
+
+      Invicon Potion of Swiftness.png：Minecraft中Potion of Swiftness的精灵图，链接到迅捷药水，描述：迅捷药水 迅捷（03:00） 当生效后： +20% 速度
+
+      迅捷药水
+      EffectSprite speed.png：Minecraft中speed的精灵图 3:00
+
+      Invicon Sugar.png：Minecraft中Sugar的精灵图，链接到糖，描述：糖
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Swiftness.png：Minecraft中Potion of Swiftness的精灵图，链接到迅捷药水，描述：迅捷药水 迅捷（08:00） 当生效后： +20% 速度
+
+      迅捷药水
+      EffectSprite speed.png：Minecraft中speed的精灵图 8:00
+      Invicon Potion of Swiftness.png：Minecraft中Potion of Swiftness的精灵图，链接到迅捷药水，描述：迅捷药水 迅捷 II（01:30） 当生效后： +40% 速度
+
+      迅捷药水
+      EffectSprite speed.png：Minecraft中speed的精灵图 1:30 迅捷
+      提升大约20%的移动速度、疾跑速度与跳跃距离。
+      增强版：
+      迅捷 II
+      提升大约40%的移动速度、疾跑速度与跳跃距离。
+
+      Invicon Potion of Night Vision.png：Minecraft中Potion of Night Vision的精灵图，链接到夜视药水，描述：夜视药水 夜视（03:00）
+
+      夜视药水
+      EffectSprite night-vision.png：Minecraft中night-vision的精灵图 3:00
+
+      Invicon Golden Carrot.png：Minecraft中Golden Carrot的精灵图，链接到金胡萝卜，描述：金胡萝卜
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Night Vision.png：Minecraft中Potion of Night Vision的精灵图，链接到夜视药水，描述：夜视药水 夜视（08:00）
+
+      夜视药水
+      EffectSprite night-vision.png：Minecraft中night-vision的精灵图 8:0- 夜视
+      使一切区域以最大亮度显示，包括水下区域。
+      Invicon Potion of Invisibility.png：Minecraft中Potion of Invisibility的精灵图，链接到隐身药水，描述：隐身药水 隐身（03:00） 当生效后： -100% 路径点传输距离
+
+      隐身药水
+      EffectSprite invisibility.png：Minecraft中invisibility的精灵图 3:00
+
+      Invicon Fermented Spider Eye.png：Minecraft中Fermented Spider Eye的精灵图，链接到发酵蛛眼，描述：发酵蛛眼
+
+
+      Invicon Potion of Night Vision.png：Minecraft中Potion of Night Vision的精灵图，链接到夜视药水，描述：夜视药水 夜视（03:00）
+      Invicon Potion of Invisibility.png：Minecraft中Potion of Invisibility的精灵图，链接到隐身药水，描述：隐身药水 隐身（08:00） 当生效后： -100% 路径点传输距离
+
+      隐身药水
+      EffectSprite invisibility.png：Minecraft中invisibility的精灵图 8:00 - 隐身
+      将实体渲染为透明的。但装备着的/手持的物品仍然可见。
+      Invicon Potion of Water Breathing.png：Minecraft中Potion of Water Breathing的精灵图，链接到水肺药水，描述：水肺药水 水下呼吸（03:00）
+
+      水肺药水
+      EffectSprite water-breathing.png：Minecraft中water-breathing的精灵图 3:00
+
+      Invicon Pufferfish.png：Minecraft中Pufferfish的精灵图，链接到河豚（物品），描述：河豚
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Water Breathing.png：Minecraft中Potion of Water Breathing的精灵图，链接到水肺药水，描述：水肺药水 水下呼吸（08:00）
+
+      水肺药水
+      EffectSprite water-breathing.png：Minecraft中water-breathing的精灵图 8:00 - 水下呼吸
+      在水下时氧气条不会耗尽，并恢复氧气条。
+      Invicon Potion of Leaping.png：Minecraft中Potion of Leaping的精灵图，链接到跳跃药水，描述：跳跃药水 跳跃提升（03:00） 当生效后： +1 安全摔落高度
+
+      跳跃药水
+      EffectSprite jump-boost.png：Minecraft中jump-boost的精灵图 3:00
+
+      Invicon Rabbit's Foot.png：Minecraft中Rabbit's Foot的精灵图，链接到兔子脚，描述：兔子脚
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Leaping.png：Minecraft中Potion of Leaping的精灵图，链接到跳跃药水，描述：跳跃药水 跳跃提升（08:00） 当生效后： +1 安全摔落高度
+
+      跳跃药水
+      EffectSprite jump-boost.png：Minecraft中jump-boost的精灵图 8:00
+      Invicon Potion of Leaping.png：Minecraft中Potion of Leaping的精灵图，链接到跳跃药水，描述：跳跃药水 跳跃提升 II（01:30） 当生效后： +2 安全摔落高度
+
+      跳跃药水
+      EffectSprite jump-boost.png：Minecraft中jump-boost的精灵图 1:30 跳跃提升
+      将生物的跳跃高度提升1⁄2个方块，并减少1（♥）摔落伤害。
+      增强版：
+      跳跃提升 II
+      将生物的跳跃高度提升1 1⁄4个方块，并减少2（♥）摔落伤害。
+
+      Invicon Potion of Slow Falling.png：Minecraft中Potion of Slow Falling的精灵图，链接到缓降药水，描述：缓降药水 缓降（01:30）
+
+      缓降药水
+    EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 1:30
+
+      Invicon Phantom Membrane.png：Minecraft中Phantom Membrane的精灵图，链接到幻翼膜，描述：幻翼膜
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Slow Falling.png：Minecraft中Potion of Slow Falling的精灵图，链接到缓降药水，描述：缓降药水 缓降（04:00）
+
+      缓降药水
+    EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 4:00
+      - 缓降
+      减缓生物的降落速度，并在着地时不会受到摔落伤害。
+      负面效果
+      药水 配方 ItemSprite redstone-dust.png：Minecraft中redstone-dust的精灵图 延长版 ItemSprite glowstone-dust.png：Minecraft中glowstone-dust的精灵图 增强版 效果
+      Invicon Potion of Poison.png：Minecraft中Potion of Poison的精灵图，链接到剧毒药水，描述：剧毒药水 中毒（00:45）
+
+      剧毒药水
+      EffectSprite poison.png：Minecraft中poison的精灵图 0:45
+
+      Invicon Spider Eye.png：Minecraft中Spider Eye的精灵图，链接到蜘蛛眼，描述：蜘蛛眼
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of Poison.png：Minecraft中Potion of Poison的精灵图，链接到剧毒药水，描述：剧毒药水 中毒（01:30）
+
+      剧毒药水
+      EffectSprite poison.png：Minecraft中poison的精灵图 1:30[仅Java版]或2:00[仅基岩版]
+      Invicon Potion of Poison.png：Minecraft中Potion of Poison的精灵图，链接到剧毒药水，描述：剧毒药水 中毒 II（00:21）
+
+      剧毒药水
+      EffectSprite poison.png：Minecraft中poison的精灵图 0:21[仅Java版]或0:22[仅基岩版]中毒
+      每1.25秒受到1（♥）伤害（不致死）。
+      增强版：
+      中毒 II
+      每0.48秒受到1（♥）伤害（不致死）。
+
+      Invicon Potion of Weakness.png：Minecraft中Potion of Weakness的精灵图，链接到虚弱药水，描述：虚弱药水 虚弱（01:30） 当生效后： -4 攻击伤害
+
+      虚弱药水
+      EffectSprite weakness.png：Minecraft中weakness的精灵图 1:30
+
+      Invicon Fermented Spider Eye.png：Minecraft中Fermented Spider Eye的精灵图，链接到发酵蛛眼，描述：发酵蛛眼
+
+
+      Invicon Water Bottle.png：Minecraft中Water Bottle的精灵图，链接到水瓶，描述：水瓶 无效果
+      Invicon Potion of Weakness.png：Minecraft中Potion of Weakness的精灵图，链接到虚弱药水，描述：虚弱药水 虚弱（04:00） 当生效后： -4 攻击伤害
+
+      虚弱药水
+      EffectSprite weakness.png：Minecraft中weakness的精灵图 4:00 - 虚弱
+      攻击伤害属性减少4（♥♥）。[仅Java版]
+      近战攻击伤害减少20%再减0.5（♥ × 0.25）。[仅基岩版]
+      Invicon Potion of Harming.png：Minecraft中Potion of Harming的精灵图，链接到伤害药水，描述：伤害药水 瞬间伤害
+
+      伤害药水
+
+      Invicon Fermented Spider Eye.png：Minecraft中Fermented Spider Eye的精灵图，链接到发酵蛛眼，描述：发酵蛛眼
+
+
+      Invicon Potion of Healing.png：Minecraft中Potion of Healing的精灵图，链接到治疗药水，描述：治疗药水 瞬间治疗
+      Invicon Potion of Poison.png：Minecraft中Potion of Poison的精灵图，链接到剧毒药水，描述：剧毒药水 中毒（00:45）
+      -
+      Invicon Potion of Harming.png：Minecraft中Potion of Harming的精灵图，链接到伤害药水，描述：伤害药水 瞬间伤害 II
+
+      伤害药水 瞬间伤害
+      立即造成6伤害。
+      增强版：
+      瞬间伤害 II
+      立即造成12伤害。
+
+      Invicon Potion of Slowness.png：Minecraft中Potion of Slowness的精灵图，链接到迟缓药水，描述：迟缓药水 缓慢（1:30）
+
+      迟缓药水
+      EffectSprite slowness.png：Minecraft中slowness的精灵图 1:30
+
+      Invicon Fermented Spider Eye.png：Minecraft中Fermented Spider Eye的精灵图，链接到发酵蛛眼，描述：发酵蛛眼
+
+
+      Invicon Potion of Swiftness.png：Minecraft中Potion of Swiftness的精灵图，链接到迅捷药水，描述：迅捷药水 迅捷（03:00） 当生效后： +20% 速度
+      Invicon Potion of Leaping.png：Minecraft中Potion of Leaping的精灵图，链接到跳跃药水，描述：跳跃药水 跳跃提升（03:00） 当生效后： +1 安全摔落高度
+      Invicon Potion of Slowness.png：Minecraft中Potion of Slowness的精灵图，链接到迟缓药水，描述：迟缓药水 缓慢（04:00） 当生效后： -15% 速度
+
+      迟缓药水
+      EffectSprite slowness.png：Minecraft中slowness的精灵图 4:00
+      Invicon Potion of Slowness.png：Minecraft中Potion of Slowness的精灵图，链接到迟缓药水，描述：迟缓药水 缓慢 IV（00:20） 当生效后： -60% 速度
+
+      迟缓药水
+    EffectSprite slowness.png：Minecraft中slowness的精灵图 0:20 缓慢
+      减缓实体的移动速度至正常速度85%。
+      增强版：
+      缓慢 IV
+      减缓实体的移动速度至正常速度40%。
+
+      Invicon Potion of Wind Charging.png：Minecraft中Potion of Wind Charging的精灵图，链接到蓄风药水，描述：蓄风药水 蓄风（03:00）
+
+      蓄风药水
+      EffectSprite wind-charged.png：Minecraft中wind-charged的精灵图 3:00
+
+      Invicon Breeze Rod.png：Minecraft中Breeze Rod的精灵图，链接到旋风棒，描述：旋风棒
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      - - 蓄风
+      生物死亡后产生风爆。
+      Invicon Potion of Oozing.png：Minecraft中Potion of Oozing的精灵图，链接到渗浆药水，描述：渗浆药水 渗浆（03:00）
+
+      渗浆药水
+      EffectSprite oozing.png：Minecraft中oozing的精灵图 3:00
+
+      Invicon Slime Block.png：Minecraft中Slime Block的精灵图，链接到黏液块，描述：黏液块
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      - - 渗浆
+      生物死亡后生成史莱姆。
+      Invicon Potion of Weaving.png：Minecraft中Potion of Weaving的精灵图，链接到盘丝药水，描述：盘丝药水 盘丝（03:00）
+
+      盘丝药水
+      EffectSprite weaving.png：Minecraft中weaving的精灵图 3:00
+
+      Invicon Cobweb.png：Minecraft中Cobweb的精灵图，链接到蜘蛛网，描述：蜘蛛网
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      - - 盘丝
+      生物死亡后在附近随机生成蜘蛛网。会被蜘蛛网减速的生物会以正常速度的50%而不是25%穿过蜘蛛网。
+      Invicon Potion of Infestation.png：Minecraft中Potion of Infestation的精灵图，链接到虫蚀药水，描述：虫蚀药水 寄生（03:00）
+
+      虫蚀药水
+      EffectSprite infested.png：Minecraft中infested的精灵图 3:00
+
+      Invicon Stone.png：Minecraft中Stone的精灵图，链接到石头，描述：石头
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      - - 寄生
+      生物受伤时10%概率生成蠹虫。
+      混合效果
+      药水 配方 ItemSprite redstone-dust.png：Minecraft中redstone-dust的精灵图 延长版 ItemSprite glowstone-dust.png：Minecraft中glowstone-dust的精灵图 增强版 效果
+      Invicon Potion of the Turtle Master.png：Minecraft中Potion of the Turtle Master的精灵图，链接到神龟药水，描述：神龟药水 缓慢 IV（00:20） 抗性提升 III（00:20） 当生效后： -60% 速度
+
+      神龟药水
+      EffectSprite slowness.png：Minecraft中slowness的精灵图EffectSprite resistance.png：Minecraft中resistance的精灵图0:20
+
+      Invicon Turtle Shell.png：Minecraft中Turtle Shell的精灵图，链接到海龟壳，描述：海龟壳 戴在头上时： +2 护甲值
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      Invicon Potion of the Turtle Master.png：Minecraft中Potion of the Turtle Master的精灵图，链接到神龟药水，描述：神龟药水 缓慢 IV（00:40） 抗性提升 III（00:40） 当生效后： -60% 速度
+
+      神龟药水
+      EffectSprite slowness.png：Minecraft中slowness的精灵图EffectSprite resistance.png：Minecraft中resistance的精灵图0:40
+      Invicon Potion of the Turtle Master Enhanced.png：Minecraft中Potion of the Turtle Master Enhanced的精灵图，链接到Potion of the Turtle Master Enhanced，描述：神龟药水 缓慢 VI（00:20） 抗性提升 IV（00:20） 当生效后： -90% 速度
+
+      神龟药水
+      EffectSprite slowness.png：Minecraft中slowness的精灵图EffectSprite resistance.png：Minecraft中resistance的精灵图0:20
+      缓慢 IV，抗性提升 III
+      移动速度减缓到原来的40%， 受到的伤害减少到原来的40%。
+      增强版：
+      缓慢 VI，抗性提升 IV
+      移动速度减缓到原来的10%，受到的伤害减少到原来的20%。
+
+      药物
+
+      此段落描述的是教育版相关特性。
+      该特性仅在教育版和开启了“Education Edition”选项的基岩版世界中可用。
+
+      药物可由粗制的药水加入不同的元素酿造成，使用后可以去除特定的效果。药物不是药水，因此没有喷溅、滞留、增强、延长的版本。
+
+      药水 配方 效果
+      Invicon Antidote.png：Minecraft中Antidote的精灵图，链接到药物，描述：解毒剂
+
+      解毒剂
+
+      Invicon Silver.png：Minecraft中Silver的精灵图，链接到元素，描述：银
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      去除中毒效果
+      Invicon Elixir.png：Minecraft中Elixir的精灵图，链接到药物，描述：灵药
+
+      灵药
+
+      Invicon Cobalt.png：Minecraft中Cobalt的精灵图，链接到元素，描述：钴
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      去除虚弱效果
+      Invicon Eye Drops.png：Minecraft中Eye Drops的精灵图，链接到药物，描述：眼药水
+
+      眼药水
+
+      Invicon Calcium.png：Minecraft中Calcium的精灵图，链接到元素，描述：钙
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      去除失明效果
+      Invicon Tonic.png：Minecraft中Tonic的精灵图，链接到药物，描述：补药
+
+      补药
+
+      Invicon Bismuth.png：Minecraft中Bismuth的精灵图，链接到元素，描述：铋
+
+
+      Invicon Awkward Potion.png：Minecraft中Awkward Potion的精灵图，链接到粗制的药水，描述：粗制的药水 无效果
+      去除反胃效果
+      不可酿造的药水
+      以下药水不能通过酿造获得。在Java版中，幸运药水可以使用命令（如/give @s minecraft:potion[minecraft:potion_contents="luck"]）获得或在创造模式物品栏中获得。
+
+      药水 ItemSprite redstone-dust.png：Minecraft中redstone-dust的精灵图 延长版 ItemSprite glowstone-dust.png：Minecraft中glowstone-dust的精灵图 增强版 效果
+      Invicon Uncraftable Potion.png：Minecraft中Uncraftable Potion的精灵图，链接到不可合成的药水，描述：不可合成的药水
+
+      不可合成的药水[仅Java版] - - 无
+      Invicon Potion of Luck.png：Minecraft中Potion of Luck的精灵图，链接到幸运药水，描述：幸运药水 幸运（05:00） 当生效后： +1 幸运值
+
+      幸运药水[仅Java版]
+      EffectSprite luck.png：Minecraft中luck的精灵图 5:00- - 幸运
+      幸运属性增加1。
+      Invicon Potion of Decay.png：Minecraft中Potion of Decay的精灵图，链接到衰变药水，描述：衰变药水
+
+      衰变药水[仅基岩版]
+      EffectSprite wither.png：Minecraft中wither的精灵图 0:40 - - 凋零
+      每1秒受到1（♥）伤害。
+      Invicon Long Mundane Potion.png：Minecraft中Long Mundane Potion的精灵图，链接到长久平凡药水，描述：长久平凡药水
+
+      长久平凡药水[仅基岩版] - - 无
+      视频
+      注意：水瓶（未加入下界疣）实际上可加入发酵蛛眼酿造成虚弱药水
+
+      历史
+      Java版
+      ? 酿造系统的最初设想是随机生成，也就是说每一个不同的Minecraft世界中酿造配方也各不相同。[1]
+      1.0.0 Beta 1.9-pre2 最初，炼药锅是药水的酿造设备。但是当时炼药锅并没有方块ID，使得药水的酿造只能通过修改炼药锅得以实现。得到炼药锅后，依次往锅里添加水和特定材料便可获得药水。以正确顺序加入材料会获得正面的药水效果，组合顺序不正确则会承受负面效果。这个系统非常复杂，没有图形界面，而且会产生很多相同的药水（或说完全相同的药水可以通过多种方法制作），因此Notch和Jeb想出了一个使用酿造台的新药水酿造方式。[2]
+      Beta 1.9-pre3 新增了酿造界面，且移除了许多重复的药水组合（原本总共150种组合降到了25种药水、31种组合）。某些在Beta 1.9早期可以获得的药水现在无法获得了（例如，反胃药水、失明药水与隐身药水）。
+      酿造的时间为30秒。
+      Beta 1.9-pre4 喷溅药水加入游戏，可在酿造台中往任意药水中添加火药获得。
+      闪烁的西瓜片加入游戏，作为再生药水的原材料，直至恶魂之泪将其取代，从而转而用于制作治疗药水。
+      将一些材料移至基础（一级）药水原料（蜘蛛眼、闪烁的西瓜片和烈焰粉在保留先前功能的同时，可以结合水瓶酿造出平凡的药水），使得药水的种类变成了28种，有35种不同的组合。
+      1.1 12w01a 酿造的时间降至20秒。
+      1.4.2 12w34a 夜视药水与隐身药水的酿造配方加入游戏。夜视药水可以通过向粗制的药水添加金胡萝卜制作，隐身药水可以通过向夜视药水添加发酵蛛眼制作。
+      1.5 13w01a 加入了漏斗，可以向酿造台里取出或放入物品。
+      1.7.2 13w36a 加入了水肺药水，可以往粗制的药水里添加河豚制作。
+      1.8 14w27a 增加了跳跃药水，可以向粗制的药水添加兔子脚制作。
+      1.8.1 pre1 跳跃药水的持续时间可以被红石粉延长。
+      1.9 15w31a 现在可从任意药水中酿造出喷溅药水，包括水瓶。
+      荧石粉不再可以添加到延长版药水中。
+      红石粉不再可以添加到增强版药水中。
+      发酵蛛眼不再可以添加到增强版迅捷药水和增强版跳跃药水中。
+      浓稠的药水、平凡的药水、粗制的药水、再生药水和力量药水不可以再用来酿造虚弱药水了。
+      抗火药水不可以再用来酿造迟缓药水了。
+      水肺药水不可以再用来酿造伤害药水了。
+      移除还原药水，详见还原药水。
+      15w33a 加入了滞留药水。
+      15w42a 现在酿造需要提供烈焰粉作为燃料。
+      15w43a 烈焰粉的燃料值从30降至20。
+      1.13 18w07a 加入了神龟药水，可以用海龟壳来酿造，同时也有3:00版和II级药水。
+      18w14a 加入了缓降药水，可以用幻翼膜来酿造，同时也有延长版药水。
+      1.20.5 24w13a 加入了蓄风药水，可以向粗制的药水添加旋风棒来酿造。
+      加入了盘丝药水，可以向粗制的药水添加蜘蛛网来酿造。
+      加入了渗浆药水，可以向粗制的药水添加黏液块来酿造。
+      加入了虫蚀药水，可以向粗制的药水添加石头来酿造。
+      pre1 蓄风药水、盘丝药水、渗浆药水和虫蚀药水不再能酿造。
+      1.20.5
+      实验性内容
+      1.21更新 pre1 蓄风药水、盘丝药水、渗浆药水和虫蚀药水酿造配方现在属于实验性内容。[3]
+      1.21 24w18a 蓄风药水、盘丝药水、渗浆药水和虫蚀药水的酿造配方不再属于实验性内容。
+      携带版Alpha
+      0.12.1 build 1 加入了药水和酿造系统。
+      携带版
+      1.0.0 0.17.0.1 加入了滞留药水。
+      基岩版
+      1.2.0 1.2.0.2 现在酿造需要提供烈焰粉作为燃料。
+      1.4.0 1.2.20.1 加入了4种药物：解毒剂、灵药、眼药水、补药。
+      1.5.0 1.5.0.4 加入了神龟药水，可以用海龟壳来酿造，同时也有3:00版和II级药水。
+      1.6.0 1.6.0.5 加入了缓降药水，可以用幻翼膜来酿造，同时也有延长版药水。
+      1.21.0
+      实验性玩法
+      下一个主要更新 1.21.0.20 加入了蓄风药水，可以向粗制的药水添加旋风棒来酿造。
+      加入了盘丝药水，可以向粗制的药水添加蜘蛛网来酿造。
+      加入了渗浆药水，可以向粗制的药水添加黏液块来酿造。
+      加入了虫蚀药水，可以向粗制的药水添加石头来酿造。
+      1.21.0 1.21.0.22 1.21.0.20中的变更不再属于实验性玩法。
+      原主机版
+      Xbox 360 Xbox One PS3 PS4 PS Vita Wii U Switch
+      TU7 CU1 1.00 1.00 1.00 Patch 1 加入了药水和酿造系统。
+      TU14 1.04 加入了隐身药水与夜视药水。
+      TU46 CU36 1.38 1.38 1.38 Patch 15 加入了滞留药水。
+      烈焰粉被作为酿造台的燃料。
+      你知道吗
+      3个药水槽里只要有1个放有药水瓶，酿造过程就会继续，且可以继续放入药水瓶。然而，若移走酿造材料或清空药水槽，那么酿造过程就会终止。
+      虽然Jeb说过在Beta 1.9-pre3里有161种药水组合而将来会有2,653种，但实际不使用外部程序的话只有22种不同的药水。这些药水中的其中19种各有8种不同效果。
+      亡灵生物不受剧毒药水和再生药水的影响，但会受治疗药水的伤害，并从伤害药水中获得治疗，同时会受衰变药水的凋零效果影响。
+      画廊
+      在Beta 1.9-pre2使用炼药锅的药水酿造系统
+      在Beta 1.9-pre2使用炼药锅的药水酿造系统
+
+      使用火药酿造出的喷溅药水
+      使用火药酿造出的喷溅药水
+
+      Java版1.9中的酿造界面纹理文件
+      Java版1.9中的酿造界面纹理文件
+    </view>
+  </view>
+</view>

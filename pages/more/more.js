@@ -7,7 +7,12 @@ Page({
   data: {
     app: getApp()
   },
-
+  debug(event) {
+    this.data.app.on_debug_mode();
+    this.setData({
+      app: getApp()
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
