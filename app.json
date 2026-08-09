@@ -5,9 +5,10 @@
     "pages/mods/mods",
     "pages/more/more",
     "pages/minecraft_pages/function_page/menu/menu",
-    "pages/agreePrivacy/agreePrivacy"
+    "pages/agreePrivacy/agreePrivacy",
+    "pages/minecraft_pages/project_learn/project_learn"
   ],
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/agreePrivacy/agreePrivacy",
   "window": {
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom",
@@ -91,7 +92,7 @@
     }
   ],
   "preloadRule": {
-    "pages/index/index": {
+    "pages/agreePrivacy/agreePrivacy": {
       "network": "all",
       "packages": [
         "packageA",

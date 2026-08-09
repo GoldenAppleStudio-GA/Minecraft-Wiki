@@ -79,7 +79,7 @@
 .mod_provite_data_block_userinfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   height: 1.7rem;
   width: 500rpx;

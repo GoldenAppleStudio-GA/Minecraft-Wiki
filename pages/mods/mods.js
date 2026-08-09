@@ -23,7 +23,6 @@ Page({
     net_request_data: String,
     search_resource_page: 1,
     search_resource_page_number: 0,
-    __mod_types_view: ""
   },
   search_page_back(event) {
     if (!this.data.search_resource_page <= 1) {
@@ -123,7 +122,7 @@ Page({
   },
   //网络请求模板
   search_request(searchname, type, version) {
-    var net_request_data //= JSON.stringify([["project_type:"+type],["game_versions:"+version]]);
+    var net_request_data;
     if (type === undefined || type === null || type === '') {
       if (version === undefined || version === null || version === '') {
         net_request_data = [
@@ -151,10 +150,7 @@ Page({
       ]);
     };
     console.info("page_mods:网络请求数据:\n", net_request_data);
-    wx.showLoading({
-      title: "加载中",
-      mask: true
-    })
+    wx.showNavigationBarLoading();
     wx.request({
       url: "https://api.modrinth.com/v2/search",
       data: {
@@ -187,7 +183,7 @@ Page({
         console.error("page_mods:网络请求失败:\n", err)
       },
       complete: (res) => {
-        wx.hideLoading()
+        wx.hideNavigationBarLoading()
       }
     })
   },
@@ -235,11 +231,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    setInterval(() => {
-      this.setData({
-        '__mod_types_view': this.data.mod_types_view[this.data.mod_search_config.mod_type]
-      })
-    }, 100)
     this.setData({
       'search_resource_list': [],
       'search_resource_page': 1,
