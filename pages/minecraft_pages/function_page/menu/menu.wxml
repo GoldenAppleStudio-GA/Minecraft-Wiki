@@ -11,7 +11,6 @@
     <image src="/resource/images/back_icon_FFFFFF_px.png" style="--length:{{app.globalData.page_head_info.height_nopx * 0.8 + 'px'}};height: var(--length);width: var(--length);" class="page_back_item_icon" catch:tap="navigate_back"></image>
   </view>
   <view class="page_main_view">
-    <view class="menu_tittle">目录</view>
     <view class="menu_all">
       <view id="version" wx:if="{{menu_page == 0}}" class="menu">
         <view class="level_line" data-name="1_0_0_0_0" catch:tap="item_click">

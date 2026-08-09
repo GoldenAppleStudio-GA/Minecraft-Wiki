@@ -44,7 +44,9 @@ page {
   align-items: center;
 }
 
-
+.item_hover_class {
+  background: #3d4047b0 !important;
+}
 
 .hidden_block {
   z-index: 0;
