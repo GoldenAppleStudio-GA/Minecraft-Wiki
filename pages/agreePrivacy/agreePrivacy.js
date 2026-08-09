@@ -1,21 +1,19 @@
 // pages/agreePrivacy/agreePrivacy.js
 Page({
   data: {
-    app: null,
-    privacyName: ''
+    app: getApp(),
+    privacyName: "《我的世界百科小程序隐私保护指引》"
   },
 
   onLoad(options) {
-    const app = getApp();
     this.setData({
-      app: app,
-      privacyName:  "《我的世界百科小程序隐私保护指引》"
+      app: getApp(),
     });
-    console.info("page_agreePrivacy:页面加载完成", options);
+    console.info("page_agreePrivacy:页面加载完成\n", options);
   },
 
   agreePrivacy(event) {
-    console.info("用户同意隐私协议:", event);
+    console.info("用户同意隐私协议:\n", event);
     const app = getApp();
 
     // 1. 调用 resolve 通知微信
@@ -34,27 +32,22 @@ Page({
     // 2. 更新状态
     app.globalData.showPrivacy = false;
     app.globalData.privacyResolve = null;
-
-    // 3. 返回上一页
-    wx.navigateBack({
-      fail: () => {
-        // 如果没有上一页，跳转到首页
-        wx.reLaunch({
-          url: '/pages/index/index'
-        });
-      }
+    wx.reLaunch({
+      url: '/pages/index/index'
     });
   },
 
-  // ✅ 用户点击"不同意"
+  // 用户点击"不同意"
   disagree(event) {
-    console.info("用户不同意隐私协议:", event);
-    wx.navigateBack()
+    console.info("用户不同意隐私协议:\n", event);
+    wx.reLaunch({
+      url: '/pages/index/index'
+    });
   },
 
-  // ✅ 查看隐私协议
+  // 查看隐私协议
   agreePrivacy_page(event) {
-    wx.openPrivacyContract({});
+    wx.openPrivacyContract();
   },
 
   onReady() {

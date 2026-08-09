@@ -41,7 +41,7 @@
           版本号
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
-          1.0.0r
+          2.0.1a
         </view>
       </view>
       <view class="description_author">
@@ -49,7 +49,7 @@
           更新日期
         </view>
         <view style="color: #ffffff;font-size: small;">
-          2026.8.7
+          2026.8.9
         </view>
       </view>
     </view>
@@ -59,7 +59,7 @@
       </view>
       <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
         <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;">
-          此与小程序使用 Attribution-NonCommercial-ShareAlike 3.0 协议开源,使用时请注意相关限制.
+          此小程序使用 Attribution-NonCommercial-ShareAlike 3.0 协议开源,使用时请注意相关限制.
         </view>
       </view>
       <view class="description_author">

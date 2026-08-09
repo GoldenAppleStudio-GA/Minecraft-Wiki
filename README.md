@@ -1,6 +1,6 @@
 ---
 # Minecraft-Wiki
 ## A wechat miniprogram project.
-## version:1.0.0alpha
-## update:2026.8.7-6
+## version:2.0.1a
+## update:2026.8.9-1
 ---

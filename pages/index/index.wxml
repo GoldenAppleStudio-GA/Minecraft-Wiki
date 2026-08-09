@@ -17,7 +17,7 @@
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
 
   <view class="page_main_view">
-    <view class="mod_provite">
+    <view class="mod_provite" catch:tap="project_mod_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         模组推荐
       </view>
@@ -43,11 +43,6 @@
                 </image>
                 {{search_resource_list.mod.follows}}
               </view>
-              <view user-select="true" class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_mod_id">
-                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
-                </image>
-                {{search_resource_list.mod.project_id}}
-              </view>
             </view>
           </view>
         </view>
@@ -60,7 +55,7 @@
       </view>
 
     </view>
-    <view class="mod_provite">
+    <view class="mod_provite" catch:tap="project_modpack_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         整合包推荐
       </view>
@@ -86,11 +81,6 @@
                 </image>
                 {{search_resource_list.modpack.follows}}
               </view>
-              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_modpack_id">
-                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
-                </image>
-                {{search_resource_list.modpack.project_id}}
-              </view>
             </view>
           </view>
         </view>
@@ -103,7 +93,7 @@
       </view>
     </view>
 
-    <view class="mod_provite">
+    <view class="mod_provite" catch:tap="project_resourcepack_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         资源包推荐
       </view>
@@ -129,11 +119,6 @@
                 </image>
                 {{search_resource_list.resourcepack.follows}}
               </view>
-              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_resourcepack_id">
-                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
-                </image>
-                {{search_resource_list.resourcepack.project_id}}
-              </view>
             </view>
           </view>
         </view>
@@ -146,7 +131,7 @@
       </view>
     </view>
 
-    <view class="mod_provite">
+    <view class="mod_provite" catch:tap="project_shader_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         光影包推荐
       </view>
@@ -172,11 +157,6 @@
                 </image>
                 {{search_resource_list.shader.follows}}
               </view>
-              <view class="mod_provite_data_block_downloads" style="margin-left: 0.5rem;border-radius: 3px;background-color: #34363C;box-sizing: border-box;border: solid 1px #32343A;width: 8em;" catch:tap="copy_shader_id">
-                <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem;margin-right: 0.3rem;margin-left: 0.3em;">
-                </image>
-                {{search_resource_list.shader.project_id}}
-              </view>
             </view>
           </view>
         </view>
@@ -188,7 +168,5 @@
         </view>
       </view>
     </view>
-
-
   </view>
 </view>

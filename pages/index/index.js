@@ -7,7 +7,15 @@ Page({
   data: {
     app: getApp(),
     search_resource_list: {
-      mod: {},
+      mod: {
+        'title': "VeinMiner",
+        'project_id': "OhduvhIc",
+        'author': "Miraculixx",
+        'downloads': "70.0M",
+        'follows': "5.7K",
+        'icon_url': "https://cdn.modrinth.com/data/OhduvhIc/5ea1f538e66ee4d4e5e571ad952cba0e06e0bd5c.png",
+        'description': "Mine the whole vein on mining a single ore/block. Make the tedious mining experience to something satisfying and fun!"
+      },
       modpack: {
         'title': "金苹果综合优化 GoldenApple Optimized",
         'project_id': "nEPdBliE",
@@ -15,93 +23,43 @@ Page({
         'downloads': "546",
         'follows': "1",
         'icon_url': "https://cdn.modrinth.com/data/nEPdBliE/5f65882d87881a09e89cc0b2237e257f55d36a0c.png",
-        'description': "一款优化辅助类整合包,相较原版增加了诸多实用性功能. An optimisation‑oriented modpack that adds numerous practical functionalities to the vanilla game."
+        'description': "一款优化辅助类整合包,相较原版增加了诸多实用性功能. An optimisation-oriented modpack that adds numerous practical functionalities to the vanilla game."
       },
-      resourcepack: {},
-      shader: {}
+      resourcepack: {
+        'title': "Fresh Animations",
+        'project_id': "50dA9Sha",
+        'author': "FreshLX",
+        'downloads': "42.4M",
+        'follows': "1.4W",
+        'icon_url': "https://cdn.modrinth.com/data/50dA9Sha/3132c10e9e3c73fde9799720fd3da5561071708c_96.webp",
+        'description': "Make your game like the trailers! Dynamic animated entities to freshen your Minecraft experience."
+      },
+      shader: {
+        'title': "OPAL Shaders",
+        'project_id': "w8N6pbsN",
+        'author': "FENVEN",
+        'downloads': "35.5W",
+        'follows': "255",
+        'icon_url': "https://cdn.modrinth.com/data/w8N6pbsN/976c04d34460dc4a9e4abcf59f7dd46bba487371_96.webp",
+        'description': "OPAL Shaders is a shaderpack for Minecraft Java Edition based on BSL Shaders created by Capt Tatsu.\nIt aims to blend a fantasy atmosphere with natural colors and contrast while staying true to Minecraft's original style."
+      },
+      datapack: {}
     }
   },
-  copy_mod_id(event) {
-    console.info("复制ID被点击:\n", event);
-    wx.setClipboardData({
-      data: this.data.search_resource_list.mod.project_id,
-      success: (res) => {
-        console.info("设置剪切板成功:\n", res);
-        wx.showToast({
-          title: "已复制项目ID",
-          icon: "success",
-          duration: 1500,
-          complete: (res) => {
-            wx.hideToast
-          }
-        })
-      },
-      fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
-      }
-    })
+  project_mod_click(event) {
+    console.info("page_index:模组推荐被点击\n", event)
   },
-  copy_modpack_id(event) {
-    console.info("复制ID被点击:\n", event);
-    wx.setClipboardData({
-      data: this.data.search_resource_list.modpack.project_id,
-      success: (res) => {
-        console.info("设置剪切板成功:\n", res);
-        wx.showToast({
-          title: "已复制项目ID",
-          icon: "success",
-          duration: 1500,
-          complete: (res) => {
-            wx.hideToast
-          }
-        })
-      },
-      fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
-      }
-    })
+  project_resourcepack_click(event) {
+    console.info("page_index:资源包推荐被点击\n", event)
   },
-  copy_resourcepack_id(event) {
-    console.info("复制ID被点击:\n", event);
-    wx.setClipboardData({
-      data: this.data.search_resource_list.resourcepack.project_id,
-      success: (res) => {
-        console.info("设置剪切板成功:\n", res);
-        wx.showToast({
-          title: "已复制项目ID",
-          icon: "success",
-          duration: 1500,
-          complete: (res) => {
-            wx.hideToast
-          }
-        })
-      },
-      fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
-      }
-    })
+  project_modpack_click(event) {
+    console.info("page_index:整合包推荐被点击\n", event)
   },
-  copy_shader_id(event) {
-    console.info("复制ID被点击:\n", event);
-    wx.setClipboardData({
-      data: this.data.search_resource_list.shader.project_id,
-      success: (res) => {
-        console.info("设置剪切板成功:\n", res);
-        wx.showToast({
-          title: "已复制项目ID",
-          icon: "success",
-          duration: 1500,
-          complete: (res) => {
-            wx.hideToast
-          }
-        })
-      },
-      fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
-      }
-    })
+  project_shader_click(event) {
+    console.info("page_index:光影包推荐被点击\n", event)
   },
   search_request() {
+    wx.showNavigationBarLoading();
     var search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
     wx.request({
       url: "https://api.modrinth.com/v2/search",
@@ -160,8 +118,14 @@ Page({
             'search_resource_list.resourcepack': this.arry_number(res.data.hits)[0]
           })
         } else {
-
-        }
+          wx.showToast({
+            title: "page_index:网络请求错误:" + res.statusCode,
+            icon: "none"
+          });
+          setTimeout(() => {
+            wx.hideToast()
+          }, 500)
+        };
       },
       fail: (err) => {
         wx.showToast({
@@ -204,7 +168,6 @@ Page({
         }
       },
       fail: (err) => {
-        wx.hideLoading();
         wx.showToast({
           title: "page_index:网络请求错误:" + res.statusCode,
           icon: "none"
@@ -215,6 +178,47 @@ Page({
         console.error("page_index:网络请求失败:\n", err)
       }
     });
+    search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
+    wx.request({
+      url: "https://api.modrinth.com/v2/search",
+      data: {
+        query: search_text, // 空表示搜索全部
+        facets: [
+          ["project_type:modpack"]
+        ],
+        index: 'relevance', // 排序方式:relevance | downloads | follows | newest | updated
+        limit: 1,
+        offset: 0
+      },
+      success: (res) => {
+        console.info("page_index:网络请求成功:\n", res)
+        if (res.statusCode === 200) {
+          this.setData({
+            'search_resource_list.modpack': this.arry_number(res.data.hits)[0]
+          })
+        } else {
+          wx.showToast({
+            title: "page_index:网络请求错误:" + res.statusCode,
+            icon: "none"
+          });
+          setTimeout(() => {
+            wx.hideToast()
+          }, 500)
+          console.error("page_index:网络请求失败:\n", err)
+        }
+      },
+      fail: (err) => {
+        wx.showToast({
+          title: "page_index:网络请求错误:" + res.statusCode,
+          icon: "none"
+        });
+        setTimeout(() => {
+          wx.hideToast()
+        }, 500)
+        console.error("page_index:网络请求失败:\n", err)
+      }
+    });
+    wx.hideNavigationBarLoading();
   },
   download_number(num) {
     if (!num || num < 0) return '0';
@@ -235,10 +239,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.search_request();
     this.setData({
       app: getApp()
     });
+    this.search_request();
     console.info("page_index:页面加载完成\n", options);
   },
 
