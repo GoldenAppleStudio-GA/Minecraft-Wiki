@@ -59,6 +59,7 @@ Page({
     getApp().globalData.RealtimeLog.info("page_index:光影包推荐被点击\n", event)
   },
   search_request() {
+    wx.showNavigationBarLoading();
     var search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
     wx.request({
       url: "https://api.modrinth.com/v2/search",
@@ -217,6 +218,47 @@ Page({
         getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
       }
     });
+    search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
+    wx.request({
+      url: "https://api.modrinth.com/v2/search",
+      data: {
+        query: search_text, // 空表示搜索全部
+        facets: [
+          ["project_type:modpack"]
+        ],
+        index: 'relevance', // 排序方式:relevance | downloads | follows | newest | updated
+        limit: 1,
+        offset: 0
+      },
+      success: (res) => {
+        console.info("page_index:网络请求成功:\n", res)
+        if (res.statusCode === 200) {
+          this.setData({
+            'search_resource_list.modpack': this.arry_number(res.data.hits)[0]
+          })
+        } else {
+          wx.showToast({
+            title: "page_index:网络请求错误:" + res.statusCode,
+            icon: "none"
+          });
+          setTimeout(() => {
+            wx.hideToast()
+          }, 500)
+          console.error("page_index:网络请求失败:\n", err)
+        }
+      },
+      fail: (err) => {
+        wx.showToast({
+          title: "page_index:网络请求错误:" + res.statusCode,
+          icon: "none"
+        });
+        setTimeout(() => {
+          wx.hideToast()
+        }, 500)
+        console.error("page_index:网络请求失败:\n", err)
+      }
+    });
+    wx.hideNavigationBarLoading();
   },
   download_number(num) {
     if (!num || num < 0) return '0';
