@@ -26,7 +26,39 @@ App({
     modrinth_api_url: "https://api.modrinth.com",
     search_resource_list: [],
     showPrivacy: true,
-    privacyResolve: null
+    privacyResolve: null,
+    RealtimeLog: {
+      info(...args) {
+        console.info(...args);
+        // 将多个参数拼接成一个字符串
+        const message = args.map(arg =>
+          typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
+        ).join(' ');
+        wx.getRealtimeLogManager().info("log-info", {
+          data: message
+        });
+      },
+
+      warn(...args) {
+        console.warn(...args);
+        const message = args.map(arg =>
+          typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
+        ).join(' ');
+        wx.getRealtimeLogManager().warn("log-warn", {
+          data: message
+        });
+      },
+
+      error(...args) {
+        console.error(...args);
+        const message = args.map(arg =>
+          typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
+        ).join(' ');
+        wx.getRealtimeLogManager().error("log-error", {
+          data: message
+        });
+      }
+    }
   },
   reload_runtime_data() {
     this.globalData.all_data.runtime_data = JSON.parse(
@@ -50,48 +82,45 @@ App({
       source: 'WeChatSansSS',
       global: true,
       success: (res) => {
-        console.info("微信内置字体加载成功:", res);
+        this.globalData.RealtimeLog.info("微信内置字体加载成功:\n", res);
       },
       fail: (err) => {
-        console.error("微信内置字体加载失败:", err);
+        this.globalData.RealtimeLog.error("微信内置字体加载失败:\n", err);
       }
     });
-
     this.globalData.app_base_info = wx.getAppBaseInfo();
     wx.onMemoryWarning((res) => {
-      console.warn("内存不足告警:", res);
+      this.globalData.RealtimeLog.warn("内存不足告警:\n", res);
     });
     wx.setKeepScreenOn({
       keepScreenOn: true
     });
-    this.globalData.modules = require("resource/javascript/modules");
-    this.globalData.login_code = this.globalData.modules.login();
+    // this.globalData.modules = require("resource/javascript/modules");
+    wx.login({
+      success: (res) => {
+        this.globalData.RealtimeLog.info("用户登录凭证:\n", res.code);
+        this.globalData.login_code = res.code;
+      },
+      fail: (err) => {
+        this.globalData.RealtimeLog.error("用户登录凭证获取失败:\n", err.errMsg);
+      },
+    });
     this.globalData.device_info = wx.getDeviceInfo();
     this.load_data();
-    var debug_mode
-    try {
-      debug_mode = wx.getStorageSync('debug_mode');
-    } catch (e) {
-      wx.setStorageSync('debug_mode', false)
-    }
-    if (this.globalData.device_info.platform === "devtools" || wx.getStorageSync('debug_mode') === true) {
+    this.globalData.debug_mode = this.globalData.app_base_info.enableDebug;
+    wx.setStorageSync('debug_mode', this.globalData.debug_mode);
+    if (this.globalData.device_info.platform === "devtools" || this.globalData.debug_mode === true) {
       wx.setEnableDebug({
         enableDebug: true
       });
       this.globalData.debug_mode = true;
-      console.warn("调试已启用");
+      this.globalData.RealtimeLog.warn("调试已启用");
     } else {
       wx.setEnableDebug({
         enableDebug: false
       });
-      wx.setStorageSync('debug_mode', false);
-      this.globalData.debug_mode = false;
-      console.warn("调试已禁用");
-    }
-
-    this.globalData.modules.modrinth_url_test((state) => {
-      this.globalData.has_modrinth_connect = state;
-    });
+      this.globalData.RealtimeLog.warn("调试已禁用");
+    };
 
     this.globalData.page_head_info = {
       start_nopx: wx.getMenuButtonBoundingClientRect().top,
@@ -100,16 +129,17 @@ App({
       height: wx.getMenuButtonBoundingClientRect().height + "px"
     };
 
-    console.info("APP初始化完成:", res);
-    console.info("APP_globalData:", this.globalData);
-    console.info("微信APP基础信息:", this.globalData.app_base_info);
+    this.globalData.RealtimeLog.info("APP初始化完成:\n", res);
+    this.globalData.RealtimeLog.info("APP_globalData:\n", this.globalData);
+    this.globalData.RealtimeLog.info("微信APP基础信息:\n", this.globalData.app_base_info);
+    this.globalData.RealtimeLog.warn("RealtimeLog日志测试");
   },
 
   onShow() {
-    console.info("APP渲染完成");
+    this.globalData.RealtimeLog.info("APP渲染完成");
   },
 
   onError(msg) {
-    console.error("错误:", msg);
+    this.globalData.RealtimeLog.error("错误:", msg);
   }
 });

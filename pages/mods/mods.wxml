@@ -112,5 +112,8 @@
       </view>
       <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>
     </view>
+    <view wx:if="{{search_resource_list.length == 0}}" class="no_data_block">
+      -- 暂无数据 --
+    </view>
   </view>
 </view>

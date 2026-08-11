@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.info(options);
+    getApp().globalData.RealtimeLog.info(options);
     this.setData({
       app: getApp()
     });
@@ -36,7 +36,7 @@ Page({
     });
   },
   navigate_back(event) {
-    console.info("page_minecraft_function_menu:返回被点击\n", event);
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:返回被点击\n", event);
     wx.navigateBack();
   },
   /**

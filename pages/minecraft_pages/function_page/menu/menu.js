@@ -10,12 +10,12 @@ Page({
   },
 
   navigate_back(event) {
-    console.info("page_minecraft_function_menu:返回被点击\n", event);
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:返回被点击\n", event);
     wx.navigateBack();
   },
 
   item_click(event) {
-    console.info("page_minecraft_function_menu:项目(name:", event.currentTarget.dataset.name, ")被点击\n", event);
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:项目(name:", event.currentTarget.dataset.name, ")被点击\n", event);
     if (this.data.menu_page <= 6) {
       wx.navigateTo({
         url: "/packages/packageA/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page + "?name=" + event.currentTarget.dataset.name,
@@ -40,7 +40,7 @@ Page({
       app: getApp(),
       menu_page: options.page_id
     });
-    console.info("page_minecraft_function_menu:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面加载完成\n", options);
   },
 
   /**
@@ -50,7 +50,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_minecraft_function_menu:页面初次渲染完成\n");
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面初次渲染完成\n");
   },
 
   /**
@@ -60,7 +60,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_minecraft_function_menu:页面渲染\n");
+    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面渲染\n");
   },
 
   /**
