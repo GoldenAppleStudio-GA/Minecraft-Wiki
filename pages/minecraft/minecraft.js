@@ -9,7 +9,7 @@ Page({
     Timeout_number: Number
   },
   item_click(event) {
-    console.info("page_minecraft:项目(id:", event.currentTarget.dataset.itemid, ")被点击\n", event);
+    getApp().globalData.RealtimeLog.info("page_minecraft:项目(id:", event.currentTarget.dataset.itemid, ")被点击\n", event);
     const APP = getApp();
     const update_1 = APP.globalData.all_data.runtime_data.minecraft_data.main[event.currentTarget.dataset.itemid].style = "page_item_click";
 
@@ -39,7 +39,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_minecraft:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("page_minecraft:页面加载完成\n", options);
   },
 
   /**
@@ -49,7 +49,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_minecraft:页面初次渲染完成\n");
+    getApp().globalData.RealtimeLog.info("page_minecraft:页面初次渲染完成\n");
   },
 
   /**
@@ -59,7 +59,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_minecraft:页面渲染\n");
+    getApp().globalData.RealtimeLog.info("page_minecraft:页面渲染\n");
     this.data.app.reload_runtime_data();
     this.setData({
       app: getApp()

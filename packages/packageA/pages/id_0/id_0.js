@@ -8,14 +8,14 @@ Page({
     app: getApp()
   },
   navigate_back(event) {
-    console.info("/packages/packageA/pages/id_0/id_0:返回被点击\n", event);
+    getApp().globalData.RealtimeLog.info("/packages/packageA/pages/id_0/id_0:返回被点击\n", event);
     wx.navigateBack();
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.info("/packages/packageA/pages/id_0/id_0:页面加载\n", options);
+    getApp().globalData.RealtimeLog.info("/packages/packageA/pages/id_0/id_0:页面加载\n", options);
     this.setData({
       app: getApp()
     });

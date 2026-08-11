@@ -1,0 +1,1 @@
+console.info("packagesB分包已加载")

@@ -15,11 +15,18 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/agreePrivacy/agreePrivacy",
-          "pathName": "pages/agreePrivacy/agreePrivacy",
+          "name": "pages/minecraft/minecraft",
+          "pathName": "pages/minecraft/minecraft",
           "query": "",
           "scene": null,
           "launchMode": "default"
+        },
+        {
+          "name": "pages/agreePrivacy/agreePrivacy",
+          "pathName": "pages/agreePrivacy/agreePrivacy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/more/more",

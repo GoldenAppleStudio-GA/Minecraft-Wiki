@@ -15,7 +15,11 @@ Page({
     });
     setTimeout(() => {
       wx.hideToast();
-    }, 500)
+    }, 500);
+    getApp().globalData.RealtimeLog.warn("调试已启用");
+    wx.setEnableDebug({
+      enableDebug: true
+    });
   },
   /**
    * 生命周期函数--监听页面加载
@@ -24,7 +28,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_more:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("page_more:页面加载完成\n", options);
   },
 
   /**
@@ -34,7 +38,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_more:页面初次渲染完成");
+    getApp().globalData.RealtimeLog.info("page_more:页面初次渲染完成");
   },
 
   /**
@@ -44,7 +48,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_mods:页面渲染");
+    getApp().globalData.RealtimeLog.info("page_mods:页面渲染");
   },
 
   /**

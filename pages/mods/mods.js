@@ -79,7 +79,7 @@ Page({
     this.setData({
       'mod_search_config_click.type_input': "mod_search_config_click"
     })
-    console.info("模组搜索类型改变:\n", event);
+    getApp().globalData.RealtimeLog.info("模组搜索类型改变:\n", event);
     this.setData({
       'mod_search_config.mod_type': this.getModTypeValue(event.detail.value)
     })
@@ -94,7 +94,7 @@ Page({
         'disabled_search_button': false
       })
     }, 500);
-    console.info("模组搜索表单提交:\n", event);
+    getApp().globalData.RealtimeLog.info("模组搜索表单提交:\n", event);
     this.setData({
       'mod_search_config.mod_game_version': event.detail.value.mod_game_version.replace(/\s/g, '').match(/[\d.]/g)?.join('') || '',
       'mod_search_config.mod_name': event.detail.value.mod_name.replace(/\s/g, ''),
@@ -104,7 +104,7 @@ Page({
     this.data.search_resource_list = [];
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
 
-    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
+    getApp().globalData.RealtimeLog.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
   },
 
   mod_search_config_reset(event) {
@@ -112,16 +112,20 @@ Page({
       'search_resource_list': []
     })
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
-    console.info("page_mods:模组搜索表单重置:\n", event);
+    getApp().globalData.RealtimeLog.info("page_mods:模组搜索表单重置:\n", event);
     this.setData({
       'mod_search_config.mod_game_version': null,
       'mod_search_config.mod_name': "",
       'mod_search_config.mod_type': 0
     })
-    console.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
+    getApp().globalData.RealtimeLog.info("page_mods:模组搜索配置:\n", this.data.mod_search_config);
   },
   //网络请求模板
   search_request(searchname, type, version) {
+    wx.showLoading({
+      title: "加载中",
+      mask: true
+    })
     var net_request_data;
     if (type === undefined || type === null || type === '') {
       if (version === undefined || version === null || version === '') {
@@ -149,8 +153,7 @@ Page({
         ["game_versions:" + version]
       ]);
     };
-    console.info("page_mods:网络请求数据:\n", net_request_data);
-    wx.showNavigationBarLoading();
+    getApp().globalData.RealtimeLog.info("page_mods:网络请求数据:\n", net_request_data);
     wx.request({
       url: "https://api.modrinth.com/v2/search",
       data: {
@@ -161,7 +164,7 @@ Page({
         offset: (this.data.search_resource_page - 1) * 20
       },
       success: (res) => {
-        console.info("page_mods:网络请求成功:\n", res)
+        getApp().globalData.RealtimeLog.info("page_mods:网络请求成功:\n", res)
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list': this.arry_number(res.data.hits),
@@ -169,61 +172,60 @@ Page({
           })
         } else {
           wx.showToast({
-            title: "page_mods:网络请求错误:" + res.statusCode,
+            title: "网络请求错误:" + res.statusCode,
             icon: "none"
           })
         }
       },
       fail: (err) => {
-        wx.hideLoading();
         wx.showToast({
-          title: "网络请求失败",
+          title: "网络请求失败:" + err.errno,
           icon: "none"
         })
-        console.error("page_mods:网络请求失败:\n", err)
+        getApp().globalData.RealtimeLog.error("page_mods:网络请求失败:\n", err)
       },
-      complete: (res) => {
-        wx.hideNavigationBarLoading()
+      complete: () => {
+        wx.hideLoading()
       }
     })
   },
   copy_project_id(event) {
-    console.info("复制ID被点击(", event.currentTarget.dataset.index, "):\n", event);
+    getApp().globalData.RealtimeLog.info("复制ID被点击(", event.currentTarget.dataset.index, "):\n", event);
     wx.setClipboardData({
       data: this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
       success: (res) => {
-        console.info("设置剪切板成功:\n", res);
+        getApp().globalData.RealtimeLog.info("设置剪切板成功:\n", res);
         wx.showToast({
           title: "已复制项目ID",
           icon: "success",
           duration: 1500,
-          complete: (res) => {
+          complete: () => {
             wx.hideToast
           }
         })
       },
       fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
+        getApp().globalData.RealtimeLog.error("设置剪切板失败:\n", err);
       }
     })
   },
   copy_project_url(event) {
-    console.info("复制URL被点击(", event.currentTarget.dataset.index, "):\n", event);
+    getApp().globalData.RealtimeLog.info("复制URL被点击(", event.currentTarget.dataset.index, "):\n", event);
     wx.setClipboardData({
       data: "https://modrinth.com/project/" + this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
       success: (res) => {
-        console.info("设置剪切板成功:\n", res);
+        getApp().globalData.RealtimeLog.info("设置剪切板成功:\n", res);
         wx.showToast({
           title: "已复制项目链接",
           icon: "success",
-          duration: 1500,
-          complete: (res) => {
-            wx.hideToast
-          }
+          duration: 1500
         })
       },
       fail: (err) => {
-        console.error("设置剪切板失败:\n", err);
+        getApp().globalData.RealtimeLog.error("设置剪切板失败:\n", err);
+      },
+      complete: () => {
+        wx.hideToast();
       }
     })
   },
@@ -237,14 +239,14 @@ Page({
       app: getApp()
     })
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
-    console.info("page_mods:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("page_mods:页面加载完成\n", options);
   },
   search_resource_item_click(event) {
-    console.info("page_mods:搜索项目(id:", event.currentTarget.dataset.index, ")被点击\n", event);
+    getApp().globalData.RealtimeLog.info("page_mods:搜索项目(id:", event.currentTarget.dataset.index, ")被点击\n", event);
     wx.navigateTo({
       url: "/pages/minecraft_pages/mods_learn/mods_learn?project_id=" + this.data.search_resource_list[event.currentTarget.dataset.index].project_id,
       success: (res) => {
-        console.info("跳转到页面/pages/minecraft_pages/mods_learn/mods_learn:\n", res)
+        getApp().globalData.RealtimeLog.info("跳转到页面/pages/minecraft_pages/mods_learn/mods_learn:\n", res)
       }
     })
   },
@@ -256,7 +258,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_mods:页面初次渲染完成");
+    getApp().globalData.RealtimeLog.info("page_mods:页面初次渲染完成");
   },
 
   /**
@@ -266,7 +268,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    console.info("page_mods:页面渲染");
+    getApp().globalData.RealtimeLog.info("page_mods:页面渲染");
   },
 
   /**
