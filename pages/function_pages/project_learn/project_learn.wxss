@@ -1,0 +1,122 @@
+/* pages/minecraft_pages/project_learn/project_learn.wxss */
+
+.project_main_info_line {
+  margin-top: 1vh;
+  width: 710rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+  height: max-content;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: solid 1px #34363c;
+}
+
+.project_image {
+  border: solid 1px #2D2F35;
+  border-radius: 8px;
+  height: 10vh;
+  width: 10vh;
+  box-shadow: #00000040 0px 2px 4px 0px;
+}
+
+.project_main_info_first_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+}
+
+.project_main_info_first_line_right_block {
+  margin-left: 0.6rem;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.project_main_info_title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.project_main_info_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #B0BAC5;
+  font-size: 16px;
+  line-height: 1.3em;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.project_main_info_second_line {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project_download_block {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: #1BD96A;
+  border: solid 1px #269556;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+
+.project_follow_false {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: #34363C;
+  border: solid 1px #36383E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+
+.project_follow_true {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: #FF7043;
+  border: solid 1px #a0462b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+
+.project_more_icon {
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rpx;
+}
+
+.project_body_info {
+  margin-top: 2vh;
+  height: max-content;
+  width: 710rpx;
+  background-color: #27292E;
+  border-radius: 10px;
+  border: solid 1px #34363C;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}

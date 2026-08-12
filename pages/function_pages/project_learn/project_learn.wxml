@@ -1,0 +1,48 @@
+<!--pages/minecraft_pages/project_learn/project_learn.wxml-->
+<view class="page" id="/pages/minecraft_pages/project_learn/project_learn">
+  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
+    <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
+      <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+    </view>
+  </view>
+  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
+  <view class="page_back_item" style="height: {{app.globalData.page_head_info.height_nopx + 'px'}};">
+    <image src="/resource/images/back_icon_FFFFFF_px.png" style="--length:{{app.globalData.page_head_info.height_nopx * 0.8 + 'px'}};height: var(--length);width: var(--length);" class="page_back_item_icon" catch:tap="navigate_back"></image>
+  </view>
+  <view class="page_main_view">
+    <view class="project_main_info_line" wx:if="{{has_project_data === true}}">
+      <view class="project_main_info_first_line">
+        <view>
+          <image class="project_image" src="{{project_data.icon_url}}">
+          </image>
+        </view>
+        <view class="project_main_info_first_line_right_block">
+          <view class="project_main_info_title">
+            {{project_data.title}}
+          </view>
+          <view class="project_main_info_description">
+            {{project_data.description}}
+          </view>
+        </view>
+      </view>
+      <view class="project_main_info_second_line">
+        <view class="project_download_block">
+          <image src="/resource/images/download_icon_000000.png" style="height: 50%;width: 50%;">
+          </image>
+        </view>
+        <view class="{{has_follow === false ? 'project_follow_false' : 'project_follow_true'}}">
+          <image src="{{has_follow === false ? '/resource/images/follow_icon_AAB4BE.png' : '/resource/images/follow_icon_000000.png'}}" style="height: 50%;width: 50%;">
+          </image>
+        </view>
+        <view class="project_more_icon">
+          <image src="/resource/images/project_more_icon_AAB4BE.png" style="height: 60%;width: 60%;">
+          </image>
+        </view>
+      </view>
+    </view>
+    <view class="project_body_info">
+    </view>
+  </view>
+
+</view>

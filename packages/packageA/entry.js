@@ -1,1 +1,1 @@
-console.info("packagesA分包已加载")
+getApp().globalData.RealtimeLog.warn("_packageA_:分包加载");

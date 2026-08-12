@@ -9,11 +9,11 @@ Page({
     this.setData({
       app: getApp(),
     });
-    getApp().globalData.RealtimeLog.info("page_agreePrivacy:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("pages/privacy/privacy:页面加载完成\n", options);
   },
 
   agreePrivacy(event) {
-    getApp().globalData.RealtimeLog.info("用户同意隐私协议:\n", event);
+    getApp().globalData.RealtimeLog.info("pages/privacy/privacy:同意隐私协议\n", event);
     const app = getApp();
 
     // 1. 调用 resolve 通知微信
@@ -23,9 +23,9 @@ Page({
           buttonId: 'agree-btn',
           event: 'agree'
         });
-        getApp().globalData.RealtimeLog.info("已调用 privacyResolve");
+        getApp().globalData.RealtimeLog.info("pages/privacy/privacy:调用privacyResolve");
       } catch (e) {
-        getApp().globalData.RealtimeLog.error("调用 resolve 失败:", e);
+        getApp().globalData.RealtimeLog.error("pages/privacy/privacy:调用resolve失败\n", e);
       }
     }
 
@@ -39,7 +39,7 @@ Page({
 
   // 用户点击"不同意"
   disagree(event) {
-    getApp().globalData.RealtimeLog.info("用户不同意隐私协议:\n", event);
+    getApp().globalData.RealtimeLog.warn("pages/privacy/privacy:不同意隐私协议\n", event);
     wx.reLaunch({
       url: '/pages/index/index'
     });
@@ -51,11 +51,11 @@ Page({
   },
 
   onReady() {
-    getApp().globalData.RealtimeLog.info("page_agreePrivacy:页面初次渲染完成");
+    getApp().globalData.RealtimeLog.info("pages/privacy/privacy:页面初次渲染完成");
   },
 
   onShow() {
-    getApp().globalData.RealtimeLog.info("page_agreePrivacy:页面渲染");
+    getApp().globalData.RealtimeLog.info("pages/privacy/privacy:页面渲染");
   },
 
   onHide() {},

@@ -2,13 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/minecraft/minecraft",
-    "pages/mods/mods",
+    "pages/project_search/project_search",
     "pages/more/more",
-    "pages/minecraft_pages/function_page/menu/menu",
-    "pages/agreePrivacy/agreePrivacy",
-    "pages/minecraft_pages/project_learn/project_learn"
+    "pages/function_pages/menu/menu",
+    "pages/privacy/privacy",
+    "pages/function_pages/project_learn/project_learn"
   ],
-  "entryPagePath": "pages/agreePrivacy/agreePrivacy",
+  "entryPagePath": "pages/privacy/privacy",
   "window": {
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom",
@@ -38,7 +38,7 @@
         "selectedIconPath": "/resource/images/minecraft_icon_FFFFFF_px.png"
       },
       {
-        "pagePath": "pages/mods/mods",
+        "pagePath": "pages/project_search/project_search",
         "text": "资源搜索",
         "iconPath": "/resource/images/mods_icon_FFFFFF_px.png",
         "selectedIconPath": "/resource/images/mods_icon_FFFFFF_px.png"
@@ -62,8 +62,7 @@
         "pages/id_2/id_2",
         "pages/id_3/id_3",
         "pages/id_4/id_4",
-        "pages/id_5/id_5",
-        "pages/id_6/id_6"
+        "pages/id_5/id_5"
       ]
     },
     {
@@ -71,12 +70,12 @@
       "name": "packageB",
       "entry": "entry.js",
       "pages": [
+        "pages/id_6/id_6",
         "pages/id_7/id_7",
         "pages/id_8/id_8",
         "pages/id_9/id_9",
         "pages/id_10/id_10",
-        "pages/id_11/id_11",
-        "pages/id_12/id_12"
+        "pages/id_11/id_11"
       ]
     },
     {
@@ -84,6 +83,7 @@
       "entry": "entry.js",
       "name": "packageC",
       "pages": [
+        "pages/id_12/id_12",
         "pages/id_13/id_13",
         "pages/id_14/id_14",
         "pages/id_15/id_15",
@@ -92,7 +92,7 @@
     }
   ],
   "preloadRule": {
-    "pages/agreePrivacy/agreePrivacy": {
+    "pages/privacy/privacy": {
       "network": "all",
       "packages": [
         "packageA",
@@ -102,9 +102,9 @@
     }
   },
   "networkTimeout": {
-    "request": 20000,
-    "connectSocket": 20000,
-    "uploadFile": 20000,
-    "downloadFile": 20000
+    "request": 15000,
+    "connectSocket": 15000,
+    "uploadFile": 15000,
+    "downloadFile": 15000
   }
 }

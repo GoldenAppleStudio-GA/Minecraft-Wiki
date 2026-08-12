@@ -7,15 +7,18 @@ Page({
   data: {
     app: getApp()
   },
-
+  navigate_back(event) {
+    getApp().globalData.RealtimeLog.info("packageB>>pages/id_7/id_7:返回被点击\n", event);
+    wx.navigateBack();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    getApp().globalData.RealtimeLog.info(options);
     this.setData({
       app: getApp()
     });
+    getApp().globalData.RealtimeLog.info("packageB>>pages/id_7/id_7:页面加载\n", options);
   },
 
   /**
@@ -25,6 +28,7 @@ Page({
     this.setData({
       app: getApp()
     });
+    getApp().globalData.RealtimeLog.info("packageB>>pages/id_7/id_7:页面初次渲染完成");
   },
 
   /**
@@ -34,6 +38,7 @@ Page({
     this.setData({
       app: getApp()
     });
+    getApp().globalData.RealtimeLog.info("packageB>>pages/id_7/id_7:页面渲染");
   },
 
   /**
@@ -62,9 +67,6 @@ Page({
    */
   onReachBottom() {
 
-  }, navigate_back(event) {
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:返回被点击\n", event);
-    wx.navigateBack();
   },
 
   /**

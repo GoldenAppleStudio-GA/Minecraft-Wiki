@@ -10,21 +10,21 @@ Page({
   },
 
   navigate_back(event) {
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:返回被点击\n", event);
+    getApp().globalData.RealtimeLog.info("pages/function_pages/menu/menu:返回被点击\n", event);
     wx.navigateBack();
   },
 
   item_click(event) {
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:项目(name:", event.currentTarget.dataset.name, ")被点击\n", event);
-    if (this.data.menu_page <= 6) {
+    getApp().globalData.RealtimeLog.info("pages/function_pages/menu/menu:项目(name=", event.currentTarget.dataset.name, ")被点击\n", event);
+    if (this.data.menu_page <= 5) {
       wx.navigateTo({
         url: "/packages/packageA/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page + "?name=" + event.currentTarget.dataset.name,
       })
-    } else if (this.data.menu_page > 6 && this.data.menu_page <= 12) {
+    } else if (this.data.menu_page > 5 && this.data.menu_page <= 11) {
       wx.navigateTo({
         url: "/packages/packageB/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page + "?name=" + event.currentTarget.dataset.name,
       })
-    } else if (this.data.menu_page > 12 && this.data.menu_page <= 16) {
+    } else if (this.data.menu_page > 11 && this.data.menu_page <= 16) {
       wx.navigateTo({
         url: "/packages/packageC/pages/id_" + this.data.menu_page + "/id_" + this.data.menu_page + "?name=" + event.currentTarget.dataset.name,
       })
@@ -40,7 +40,7 @@ Page({
       app: getApp(),
       menu_page: options.page_id
     });
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("pages/function_pages/menu/menu:页面加载完成\n", options);
   },
 
   /**
@@ -50,7 +50,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面初次渲染完成\n");
+    getApp().globalData.RealtimeLog.info("pages/function_pages/menu/menu:页面初次渲染完成\n");
   },
 
   /**
@@ -60,7 +60,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_minecraft_function_menu:页面渲染\n");
+    getApp().globalData.RealtimeLog.info("pages/function_pages/menu/menu:页面渲染\n");
   },
 
   /**

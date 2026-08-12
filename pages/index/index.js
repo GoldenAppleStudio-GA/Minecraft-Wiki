@@ -47,16 +47,16 @@ Page({
     }
   },
   project_mod_click(event) {
-    getApp().globalData.RealtimeLog.info("page_index:模组推荐被点击\n", event)
+    getApp().globalData.RealtimeLog.info("pages/index/index:模组推荐被点击\n", event);
   },
   project_resourcepack_click(event) {
-    getApp().globalData.RealtimeLog.info("page_index:资源包推荐被点击\n", event)
+    getApp().globalData.RealtimeLog.info("pages/index/index:资源包推荐被点击\n", event);
   },
   project_modpack_click(event) {
-    getApp().globalData.RealtimeLog.info("page_index:整合包推荐被点击\n", event)
+    getApp().globalData.RealtimeLog.info("pages/index/index:整合包推荐被点击\n", event);
   },
   project_shader_click(event) {
-    getApp().globalData.RealtimeLog.info("page_index:光影包推荐被点击\n", event)
+    getApp().globalData.RealtimeLog.info("pages/index/index:光影包推荐被点击\n", event);
   },
   search_request() {
     var search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -72,7 +72,7 @@ Page({
         offset: 0
       },
       success: (res) => {
-        getApp().globalData.RealtimeLog.info("page_index:网络请求成功:\n", res)
+        getApp().globalData.RealtimeLog.info("pages/index/index:网络请求成功\n", res)
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list.mod': this.arry_number(res.data.hits)[0]
@@ -95,7 +95,7 @@ Page({
         setTimeout(() => {
           wx.hideToast()
         }, 500)
-        getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -111,7 +111,7 @@ Page({
         offset: 0
       },
       success: (res) => {
-        getApp().globalData.RealtimeLog.info("page_index:网络请求成功:\n", res)
+        getApp().globalData.RealtimeLog.info("pages/index/index:网络请求成功\n", res)
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list.resourcepack': this.arry_number(res.data.hits)[0]
@@ -134,7 +134,7 @@ Page({
         setTimeout(() => {
           wx.hideToast()
         }, 500)
-        getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -150,7 +150,7 @@ Page({
         offset: 0
       },
       success: (res) => {
-        getApp().globalData.RealtimeLog.info("page_index:网络请求成功:\n", res)
+        getApp().globalData.RealtimeLog.info("pages/index/index:网络请求成功\n", res)
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list.shader': this.arry_number(res.data.hits)[0]
@@ -163,7 +163,7 @@ Page({
           setTimeout(() => {
             wx.hideToast()
           }, 500)
-          getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
         }
       },
       fail: (err) => {
@@ -174,7 +174,7 @@ Page({
         setTimeout(() => {
           wx.hideToast()
         }, 500)
-        getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -190,7 +190,7 @@ Page({
         offset: 0
       },
       success: (res) => {
-        getApp().globalData.RealtimeLog.info("page_index:网络请求成功:\n", res)
+        getApp().globalData.RealtimeLog.info("pages/index/index:网络请求成功\n", res)
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list.modpack': this.arry_number(res.data.hits)[0]
@@ -203,7 +203,7 @@ Page({
           setTimeout(() => {
             wx.hideToast()
           }, 500)
-          getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
         }
       },
       fail: (err) => {
@@ -214,7 +214,7 @@ Page({
         setTimeout(() => {
           wx.hideToast()
         }, 500)
-        getApp().globalData.RealtimeLog.error("page_index:网络请求失败:\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
   },
@@ -241,7 +241,7 @@ Page({
       app: getApp()
     });
     this.search_request();
-    getApp().globalData.RealtimeLog.info("page_index:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("pages/index/index:页面加载完成\n", options);
   },
 
   /**
@@ -251,7 +251,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_index:页面初次渲染完成");
+    getApp().globalData.RealtimeLog.info("pages/index/index:页面初次渲染完成");
   },
 
   /**
@@ -261,7 +261,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_index:页面渲染");
+    getApp().globalData.RealtimeLog.info("pages/index/index:页面渲染");
   },
 
   /**

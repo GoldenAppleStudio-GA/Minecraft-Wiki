@@ -82,15 +82,15 @@ App({
       source: 'WeChatSansSS',
       global: true,
       success: (res) => {
-        this.globalData.RealtimeLog.info("微信内置字体加载成功:\n", res);
+        this.globalData.RealtimeLog.info("_APP_:微信内置字体加载成功\n", res);
       },
       fail: (err) => {
-        this.globalData.RealtimeLog.error("微信内置字体加载失败:\n", err);
+        this.globalData.RealtimeLog.error("_APP_:微信内置字体加载失败\n", err);
       }
     });
     this.globalData.app_base_info = wx.getAppBaseInfo();
     wx.onMemoryWarning((res) => {
-      this.globalData.RealtimeLog.warn("内存不足告警:\n", res);
+      this.globalData.RealtimeLog.warn("_APP_:内存不足告警\n", res);
     });
     wx.setKeepScreenOn({
       keepScreenOn: true
@@ -98,11 +98,11 @@ App({
     // this.globalData.modules = require("resource/javascript/modules");
     wx.login({
       success: (res) => {
-        this.globalData.RealtimeLog.info("用户登录凭证:\n", res.code);
+        this.globalData.RealtimeLog.info("_APP_:用户登录凭证\n", res.code);
         this.globalData.login_code = res.code;
       },
       fail: (err) => {
-        this.globalData.RealtimeLog.error("用户登录凭证获取失败:\n", err.errMsg);
+        this.globalData.RealtimeLog.error("_APP_:用户登录凭证获取失败\n", err.errMsg);
       },
     });
     this.globalData.device_info = wx.getDeviceInfo();
@@ -114,12 +114,12 @@ App({
         enableDebug: true
       });
       this.globalData.debug_mode = true;
-      this.globalData.RealtimeLog.warn("调试已启用");
+      this.globalData.RealtimeLog.warn("_APP_:调试已启用");
     } else {
       wx.setEnableDebug({
         enableDebug: false
       });
-      this.globalData.RealtimeLog.warn("调试已禁用");
+      this.globalData.RealtimeLog.warn("_APP_:调试已禁用");
     };
 
     this.globalData.page_head_info = {
@@ -129,17 +129,17 @@ App({
       height: wx.getMenuButtonBoundingClientRect().height + "px"
     };
 
-    this.globalData.RealtimeLog.info("APP初始化完成:\n", res);
-    this.globalData.RealtimeLog.info("APP_globalData:\n", this.globalData);
-    this.globalData.RealtimeLog.info("微信APP基础信息:\n", this.globalData.app_base_info);
-    this.globalData.RealtimeLog.warn("RealtimeLog日志测试");
+    this.globalData.RealtimeLog.info("_APP_:APP初始化完成\n", res);
+    this.globalData.RealtimeLog.info("_APP_:globalData\n", this.globalData);
+    this.globalData.RealtimeLog.info("_APP_:微信APP基础信息\n", this.globalData.app_base_info);
+    this.globalData.RealtimeLog.warn("_APP_:RealtimeLog日志测试");
   },
 
   onShow() {
-    this.globalData.RealtimeLog.info("APP渲染完成");
+    this.globalData.RealtimeLog.info("_APP_:APP渲染完成");
   },
 
   onError(msg) {
-    this.globalData.RealtimeLog.error("错误:", msg);
+    this.globalData.RealtimeLog.error("_APP_:错误", msg);
   }
 });

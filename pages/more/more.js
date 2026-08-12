@@ -7,6 +7,9 @@ Page({
   data: {
     app: getApp()
   },
+  feedback(event) {
+    getApp().globalData.RealtimeLog.warn("pages/more/more:用户意见反馈");
+  },
   debug(event) {
     wx.setStorageSync('debug_mode', true);
     wx.showToast({
@@ -16,7 +19,7 @@ Page({
     setTimeout(() => {
       wx.hideToast();
     }, 500);
-    getApp().globalData.RealtimeLog.warn("调试已启用");
+    getApp().globalData.RealtimeLog.warn("pages/more/more:调试已启用");
     wx.setEnableDebug({
       enableDebug: true
     });
@@ -28,7 +31,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_more:页面加载完成\n", options);
+    getApp().globalData.RealtimeLog.info("pages/more/more:页面加载完成\n", options);
   },
 
   /**
@@ -38,7 +41,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_more:页面初次渲染完成");
+    getApp().globalData.RealtimeLog.info("pages/more/more:页面初次渲染完成");
   },
 
   /**
@@ -48,7 +51,7 @@ Page({
     this.setData({
       app: getApp()
     });
-    getApp().globalData.RealtimeLog.info("page_mods:页面渲染");
+    getApp().globalData.RealtimeLog.info("pages/more/more:页面渲染");
   },
 
   /**
