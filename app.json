@@ -19,7 +19,9 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "resizable": false,
-  "usingComponents": {},
+  "usingComponents": {
+    "towxml": "/resource/utils/towxml/towxml"
+  },
   "tabBar": {
     "backgroundColor": "#171615",
     "color": "#ffffff",

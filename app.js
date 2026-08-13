@@ -1,5 +1,6 @@
 // app.js
 App({
+  towxml: require('/resource/utils/towxml/index'),
   globalData: {
     app_base_info: {},
     all_data: {

@@ -3,7 +3,7 @@
     "es6": true,
     "postcss": true,
     "minified": true,
-    "uglifyFileName": true,
+    "uglifyFileName": false,
     "enhance": true,
     "packNpmRelationList": [],
     "babelSetting": {

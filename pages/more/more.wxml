@@ -41,7 +41,7 @@
           版本号
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
-          2.1.3a
+          2.1.4a
         </view>
       </view>
       <view class="description_author">
@@ -58,7 +58,7 @@
         开源信息
       </view>
       <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
-        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;">
+        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;width: 100%;">
           此小程序使用 CC BY-NC-SA 3.0 协议开源,使用时请注意相关限制.
         </view>
       </view>
@@ -76,7 +76,7 @@
         反馈
       </view>
       <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
-        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;">
+        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;width: 100%;">
           由于开发者技术水平限制,程序出现问题在所难免,如果您在使用此小程序过程中发现任何问题或有关于此小程序的改进建议,请向开发者反馈.您的支持就是我们最大的动力,谢谢.
         </view>
       </view>
@@ -150,7 +150,7 @@
         其他信息
       </view>
       <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
-        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;">
+        <view style="color: #ffffff; font-size: smaller;padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;width: 100%;">
           此小程序使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.
         </view>
       </view>

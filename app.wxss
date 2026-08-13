@@ -16,7 +16,11 @@
 /* 色板-结束 */
 
 
-
+/* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 
 page {
   font-family: 'WeChatSansSS', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;

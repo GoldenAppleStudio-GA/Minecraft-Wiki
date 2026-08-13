@@ -48,15 +48,27 @@ Page({
   },
   project_mod_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:模组推荐被点击\n", event);
+    wx.navigateTo({
+      url: "/pages/function_pages/project_learn/project_learn?project_id=" + this.data.search_resource_list.mod.project_id
+    });
   },
   project_resourcepack_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:资源包推荐被点击\n", event);
+    wx.navigateTo({
+      url: "/pages/function_pages/project_learn/project_learn?project_id=" + this.data.search_resource_list.resourcepack.project_id
+    });
   },
   project_modpack_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:整合包推荐被点击\n", event);
+    wx.navigateTo({
+      url: "/pages/function_pages/project_learn/project_learn?project_id=" + this.data.search_resource_list.modpack.project_id
+    });
   },
   project_shader_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:光影包推荐被点击\n", event);
+    wx.navigateTo({
+      url: "/pages/function_pages/project_learn/project_learn?project_id=" + this.data.search_resource_list.shader.project_id
+    })
   },
   search_request() {
     var search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];

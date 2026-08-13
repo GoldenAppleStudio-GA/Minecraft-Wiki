@@ -17,10 +17,10 @@
         点击「同意」按钮即代表您已同意前述协议。
       </view>
       <view style="width: 750rpx;box-sizing: border-box;height: max-content;padding: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-evenly; position: fixed;top: 75vh;">
-        <button type="default" size="mini" catch:tap="disagree" style="height: 100%;width: 40%;">
+        <button type="default" size="mini" catch:tap="disagree" style="height: 100%;width: 35%;">
           不同意
         </button>
-        <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="agreePrivacy" type="primary" size="mini" style="height: 100%;width: 40%;">
+        <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="agreePrivacy" type="primary" size="mini" style="height: 100%;width: 35%;">
           同意
         </button>
       </view>

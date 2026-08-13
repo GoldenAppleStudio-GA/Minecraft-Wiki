@@ -6,10 +6,14 @@ Page({
    */
   data: {
     app: getApp(),
+    resource_base_path: "https://cdn.modrinth.com/",
     has_project_data: false,
-    has_follow:false,
+    has_follow: false,
     project_id: "",
-    project_data: ""
+    project_data: {},
+    data_ready:false,
+    article: {},
+    project_view_type:0
   },
   get_project_info(id, callback) {
     wx.request({
@@ -62,7 +66,19 @@ Page({
       this.setData({
         'project_data': res,
         'has_project_data': true
-      })
+      });
+      this.setData({
+        'article': this.data.app.towxml(this.data.project_data.body, 'markdown', {
+          base: this.data.resource_base_path, // 相对资源的base路径
+          theme: 'dark', // 主题，默认`light`
+          events: { // 为元素绑定的事件方法
+            tap: (e) => {
+              getApp().globalData.RealtimeLog.info('pages/function_pages/project_learn/project_learn:towxml>>\n', e);
+            }
+          }
+        }),
+        'data_ready':true
+      });
     });
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:页面加载\n", options);
 
