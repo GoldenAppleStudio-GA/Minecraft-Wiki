@@ -15,11 +15,18 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/function_pages/project_learn/project_learn",
-          "pathName": "pages/function_pages/project_learn/project_learn",
-          "query": "project_id=gvQqBUqZ",
+          "name": "pages/minecraft/minecraft",
+          "pathName": "pages/minecraft/minecraft",
+          "query": "",
           "scene": null,
           "launchMode": "default"
+        },
+        {
+          "name": "pages/function_pages/project_learn/project_learn",
+          "pathName": "pages/function_pages/project_learn/project_learn",
+          "query": "project_id=mOgUt4GM",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/minecraft/minecraft",

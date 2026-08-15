@@ -16,9 +16,9 @@ module.exports = {
         'sub',                      // 下标支持
         'sup',                      // 上标支持
         'ins',                      // 文本删除线支持
-        'mark'                     // 文本高亮支持
-        // 'emoji',                    // emoji表情支持
-        // 'todo'                      // todo支持
+        'mark',                     // 文本高亮支持
+        'emoji',                    // emoji表情支持
+        'todo'                      // todo支持
     ],
 
     // 代码高亮配置，保留需要的选项即可（尽量越少越好，不要随意调整顺序。部分高亮有顺序依赖）
@@ -50,8 +50,8 @@ module.exports = {
         'markdown',
         'powershell',
         'ruby',
-        // 'makefile',
-        // 'lua',
+        'makefile',
+        'lua',
         // 'stylus',
         // 'basic',
         // '1c',
@@ -115,10 +115,10 @@ module.exports = {
         // 'gherkin',
         // 'glsl',
         // 'gml',
-        // 'golo',
+        'golo',
         'gradle',
         // 'groovy',
-        // 'haml',
+        'haml',
         // 'handlebars',
         // 'haskell',
         // 'haxe',
@@ -284,7 +284,7 @@ module.exports = {
     ],
 
     // 图片倍数
-    dpr:1,
+    dpr:0.8,
 
     // 代码块显示行号
     showLineNumber:false

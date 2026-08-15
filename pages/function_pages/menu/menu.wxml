@@ -19,71 +19,71 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">独有特性</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">独有特性</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">获取游戏</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">获取游戏</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">开发</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">开发</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">创作过程</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">创作过程</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">Classic</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">Classic</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">Indev</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">Indev</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">Alpha</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">Alpha</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text" class="link_text">正式版</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">正式版</text>
         </view>
         <view class="level_line" data-name="1_3_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.6</text><text class="data_text" class="link_text">演示模式</text>
+          <text class="number_text">1.3.6</text><text class="data_text,link_text">演示模式</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">控制</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">控制</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">系统需求</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">系统需求</text>
         </view>
         <view class="level_line" data-name="1_5_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.1</text><text class="data_text" class="link_text">硬件需求</text>
+          <text class="number_text">1.5.1</text><text class="data_text,link_text">硬件需求</text>
         </view>
         <view class="level_line" data-name="1_5_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.2</text><text class="data_text" class="link_text">软件需求</text>
+          <text class="number_text">1.5.2</text><text class="data_text,link_text">软件需求</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">公众反应</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">公众反应</text>
         </view>
         <view class="level_line" data-name="1_6_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.6.1</text><text class="data_text" class="link_text">奖项</text>
+          <text class="number_text">1.6.1</text><text class="data_text,link_text">奖项</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">预告片</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">预告片</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="2_0_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 0em;display: inline-block;"></view>
@@ -91,59 +91,59 @@
         </view>
         <view class="level_line" data-name="2_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.1</text><text class="data_text" class="link_text">基岩代码库</text>
+          <text class="number_text">2.1</text><text class="data_text,link_text">基岩代码库</text>
         </view>
         <view class="level_line" data-name="2_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.2</text><text class="data_text" class="link_text">命名</text>
+          <text class="number_text">2.2</text><text class="data_text,link_text">命名</text>
         </view>
         <view class="level_line" data-name="2_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.3</text><text class="data_text" class="link_text">游戏内容</text>
+          <text class="number_text">2.3</text><text class="data_text,link_text">游戏内容</text>
         </view>
         <view class="level_line" data-name="2_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.3.1</text><text class="data_text" class="link_text">兼容设备</text>
+          <text class="number_text">2.3.1</text><text class="data_text,link_text">兼容设备</text>
         </view>
         <view class="level_line" data-name="2_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.4</text><text class="data_text" class="link_text">开发</text>
+          <text class="number_text">2.4</text><text class="data_text,link_text">开发</text>
         </view>
         <view class="level_line" data-name="2_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.1</text><text class="data_text" class="link_text">发布</text>
+          <text class="number_text">2.4.1</text><text class="data_text,link_text">发布</text>
         </view>
         <view class="level_line" data-name="2_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.2</text><text class="data_text" class="link_text">Alpha</text>
+          <text class="number_text">2.4.2</text><text class="data_text,link_text">Alpha</text>
         </view>
         <view class="level_line" data-name="2_4_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.3</text><text class="data_text" class="link_text">正式版</text>
+          <text class="number_text">2.4.3</text><text class="data_text,link_text">正式版</text>
         </view>
         <view class="level_line" data-name="2_4_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.4</text><text class="data_text" class="link_text">测试与预览版</text>
+          <text class="number_text">2.4.4</text><text class="data_text,link_text">测试与预览版</text>
         </view>
         <view class="level_line" data-name="2_4_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.5</text><text class="data_text" class="link_text">开发者版本</text>
+          <text class="number_text">2.4.5</text><text class="data_text,link_text">开发者版本</text>
         </view>
         <view class="level_line" data-name="2_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.5</text><text class="data_text" class="link_text">价格</text>
+          <text class="number_text">2.5</text><text class="data_text,link_text">价格</text>
         </view>
         <view class="level_line" data-name="2_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.6</text><text class="data_text" class="link_text">销量</text>
+          <text class="number_text">2.6</text><text class="data_text,link_text">销量</text>
         </view>
         <view class="level_line" data-name="2_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.7</text><text class="data_text" class="link_text">平台差异</text>
+          <text class="number_text">2.7</text><text class="data_text,link_text">平台差异</text>
         </view>
         <view class="level_line" data-name="2_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.8</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">2.8</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="trading" wx:if="{{menu_page == 1}}" class="menu">
@@ -153,139 +153,139 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">机制</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">机制</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">言论与声望</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">言论与声望</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">供需关系</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">供需关系</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">村庄英雄</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">村庄英雄</text>
         </view>
         <view class="level_line" data-name="1_1_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.4</text><text class="data_text" class="link_text">新增交易项与补货</text>
+          <text class="number_text">1.1.4</text><text class="data_text,link_text">新增交易项与补货</text>
         </view>
         <view class="level_line" data-name="1_1_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.5</text><text class="data_text" class="link_text">交易展示</text>
+          <text class="number_text">1.1.5</text><text class="data_text,link_text">交易展示</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">村民职业与交易选项</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">村民职业与交易选项</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">不能进行交易的村民</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">不能进行交易的村民</text>
         </view>
         <view class="level_line" data-name="1_2_1_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.1.1</text><text class="data_text" class="link_text">傻子</text>
+          <text class="number_text">1.2.1.1</text><text class="data_text,link_text">傻子</text>
         </view>
         <view class="level_line" data-name="1_2_1_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.1.2</text><text class="data_text" class="link_text">失业</text>
+          <text class="number_text">1.2.1.2</text><text class="data_text,link_text">失业</text>
         </view>
         <view class="level_line" data-name="1_2_1_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.1.3</text><text class="data_text" class="link_text">幼年</text>
+          <text class="number_text">1.2.1.3</text><text class="data_text,link_text">幼年</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">盔甲匠</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">盔甲匠</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">屠夫</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">屠夫</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">制图师</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">制图师</text>
         </view>
         <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.5</text><text class="data_text" class="link_text">牧师</text>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">牧师</text>
         </view>
         <view class="level_line" data-name="1_2_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.6</text><text class="data_text" class="link_text">农民</text>
+          <text class="number_text">1.2.6</text><text class="data_text,link_text">农民</text>
         </view>
         <view class="level_line" data-name="1_2_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.7</text><text class="data_text" class="link_text">渔夫</text>
+          <text class="number_text">1.2.7</text><text class="data_text,link_text">渔夫</text>
         </view>
         <view class="level_line" data-name="1_2_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.7</text><text class="data_text" class="link_text">渔夫</text>
+          <text class="number_text">1.2.7</text><text class="data_text,link_text">渔夫</text>
         </view>
         <view class="level_line" data-name="1_2_8_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.8</text><text class="data_text" class="link_text">制箭师</text>
+          <text class="number_text">1.2.8</text><text class="data_text,link_text">制箭师</text>
         </view>
         <view class="level_line" data-name="1_2_9_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.9</text><text class="data_text" class="link_text">皮匠</text>
+          <text class="number_text">1.2.9</text><text class="data_text,link_text">皮匠</text>
         </view>
         <view class="level_line" data-name="1_2_10_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.10</text><text class="data_text" class="link_text">图书管理员</text>
+          <text class="number_text">1.2.10</text><text class="data_text,link_text">图书管理员</text>
         </view>
         <view class="level_line" data-name="1_2_11_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.11</text><text class="data_text" class="link_text">石匠</text>
+          <text class="number_text">1.2.11</text><text class="data_text,link_text">石匠</text>
         </view>
         <view class="level_line" data-name="1_2_12_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.12</text><text class="data_text" class="link_text">牧羊人</text>
+          <text class="number_text">1.2.12</text><text class="data_text,link_text">牧羊人</text>
         </view>
         <view class="level_line" data-name="1_2_13_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.13</text><text class="data_text" class="link_text">工具匠</text>
+          <text class="number_text">1.2.13</text><text class="data_text,link_text">工具匠</text>
         </view>
         <view class="level_line" data-name="1_2_14_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.14</text><text class="data_text" class="link_text">武器匠</text>
+          <text class="number_text">1.2.14</text><text class="data_text,link_text">武器匠</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">流浪商人交易选项</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">流浪商人交易选项</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">交易选项(村民交易的平衡性调整)</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">交易选项(村民交易的平衡性调整)</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">盔甲匠</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">盔甲匠</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">图书管理员</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">图书管理员</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_9_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.9</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.9</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="brewing" wx:if="{{menu_page == 2}}" class="menu">
@@ -295,75 +295,75 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">酿造药水</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">酿造药水</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">酿造设备</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">酿造设备</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">材料</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">材料</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">基础材料与改性剂</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">基础材料与改性剂</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">影响材料</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">影响材料</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">元素</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">元素</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">酿造配方</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">酿造配方</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">基础药水</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">基础药水</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">效果药水</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">效果药水</text>
         </view>
         <view class="level_line" data-name="1_4_2_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.4.2.1</text><text class="data_text" class="link_text">正面效果</text>
+          <text class="number_text">1.4.2.1</text><text class="data_text,link_text">正面效果</text>
         </view>
         <view class="level_line" data-name="1_4_2_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.4.2.2</text><text class="data_text" class="link_text">负面效果</text>
+          <text class="number_text">1.4.2.2</text><text class="data_text,link_text">负面效果</text>
         </view>
         <view class="level_line" data-name="1_4_2_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.4.2.3</text><text class="data_text" class="link_text">混合效果</text>
+          <text class="number_text">1.4.2.3</text><text class="data_text,link_text">混合效果</text>
         </view>
         <view class="level_line" data-name="1_4_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.3</text><text class="data_text" class="link_text">药物</text>
+          <text class="number_text">1.4.3</text><text class="data_text,link_text">药物</text>
         </view>
         <view class="level_line" data-name="1_4_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.4</text><text class="data_text" class="link_text">不可酿造的药水</text>
+          <text class="number_text">1.4.4</text><text class="data_text,link_text">不可酿造的药水</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">视频</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">视频</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="enchantment" wx:if="{{menu_page == 3}}" class="menu">
@@ -373,71 +373,71 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">机制</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">机制</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">魔咒属性</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">魔咒属性</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">附魔书</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">附魔书</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">获取附魔物品</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">获取附魔物品</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">自然生成</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">自然生成</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">附魔</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">附魔</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">铁砧</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">铁砧</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">物品修复</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">物品修复</text>
         </view>
         <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.5</text><text class="data_text" class="link_text">作弊与命令</text>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">作弊与命令</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">移除物品魔咒</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">移除物品魔咒</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">所有魔咒</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">所有魔咒</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">宝藏型魔咒</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">宝藏型魔咒</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">魔咒的适用性</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">魔咒的适用性</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">手持物品魔咒</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">手持物品魔咒</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">盔甲位物品魔咒</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">盔甲位物品魔咒</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">数据驱动</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">数据驱动</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">历史</text>
         </view>
       </view>
       <view id="mob" wx:if="{{menu_page == 4}}" class="menu">
@@ -447,83 +447,83 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">生成</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">生成</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">行为</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">行为</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">生物列表</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">生物列表</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">玩家</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">玩家</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">友好生物</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">友好生物</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">敌对生物</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">敌对生物</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">未使用的生物</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">未使用的生物</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text" class="link_text">已移除的生物</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">已移除的生物</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">生物族群</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">生物族群</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">亡灵生物</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">亡灵生物</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">节肢生物</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">节肢生物</text>
         </view>
         <view class="level_line" data-name="1_4_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.3</text><text class="data_text" class="link_text">水生生物</text>
+          <text class="number_text">1.4.3</text><text class="data_text,link_text">水生生物</text>
         </view>
         <view class="level_line" data-name="1_4_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.4</text><text class="data_text" class="link_text">灾厄村民</text>
+          <text class="number_text">1.4.4</text><text class="data_text,link_text">灾厄村民</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">生物在不同平台的可用性</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">生物在不同平台的可用性</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">实体数据</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">实体数据</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_9_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.9</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.9</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_10_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.10</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.10</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_11_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.11</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.11</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="block" wx:if="{{menu_page == 5}}" class="menu">
@@ -533,47 +533,47 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">行为</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">行为</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">方块物品</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">方块物品</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">方块高度</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">方块高度</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">纹理</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">纹理</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">方块列表</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">方块列表</text>
         </view>
         <view class="level_line" data-name="1_5_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.1</text><text class="data_text" class="link_text">技术性方块</text>
+          <text class="number_text">1.5.1</text><text class="data_text,link_text">技术性方块</text>
         </view>
         <view class="level_line" data-name="1_5_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.2</text><text class="data_text" class="link_text">教育版方块</text>
+          <text class="number_text">1.5.2</text><text class="data_text,link_text">教育版方块</text>
         </view>
         <view class="level_line" data-name="1_5_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.3</text><text class="data_text" class="link_text">已移除的方块</text>
+          <text class="number_text">1.5.3</text><text class="data_text,link_text">已移除的方块</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="item" wx:if="{{menu_page == 6}}" class="menu">
@@ -583,43 +583,43 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">行为</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">行为</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">物品列表</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">物品列表</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">产生方块,液体或实体的物品</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">产生方块,液体或实体的物品</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">在世界中可以交互的物品</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">在世界中可以交互的物品</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">在世界中间接使用的物品</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">在世界中间接使用的物品</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">刷怪蛋</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">刷怪蛋</text>
         </view>
         <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.5</text><text class="data_text" class="link_text">教育版独有的物品</text>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">教育版独有的物品</text>
         </view>
         <view class="level_line" data-name="1_2_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.6</text><text class="data_text" class="link_text">已移除的物品</text>
+          <text class="number_text">1.2.6</text><text class="data_text,link_text">已移除的物品</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">数据值</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">数据值</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">历史</text>
         </view>
       </view>
       <view id="biome" wx:if="{{menu_page == 7}}" class="menu">
@@ -629,163 +629,163 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">种类</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">种类</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">主世界</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">主世界</text>
         </view>
         <view class="level_line" data-name="1_1_1_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.1</text><text class="data_text" class="link_text">海洋类生物群系</text>
+          <text class="number_text">1.1.1.1</text><text class="data_text,link_text">海洋类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.2</text><text class="data_text" class="link_text">山地类生物群系</text>
+          <text class="number_text">1.1.1.2</text><text class="data_text,link_text">山地类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.3</text><text class="data_text" class="link_text">森林类生物群系</text>
+          <text class="number_text">1.1.1.3</text><text class="data_text,link_text">森林类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_4_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.4</text><text class="data_text" class="link_text">湿地类生物群系</text>
+          <text class="number_text">1.1.1.4</text><text class="data_text,link_text">湿地类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_5_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.5</text><text class="data_text" class="link_text">平原类生物群系</text>
+          <text class="number_text">1.1.1.5</text><text class="data_text,link_text">平原类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_6_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.6</text><text class="data_text" class="link_text">干旱类生物群系</text>
+          <text class="number_text">1.1.1.6</text><text class="data_text,link_text">干旱类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_1_7_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.1.7</text><text class="data_text" class="link_text">洞穴类生物群系</text>
+          <text class="number_text">1.1.1.7</text><text class="data_text,link_text">洞穴类生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">下界</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">下界</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">末地</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">末地</text>
         </view>
         <view class="level_line" data-name="1_1_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.4</text><text class="data_text" class="link_text">特殊生物群系</text>
+          <text class="number_text">1.1.4</text><text class="data_text,link_text">特殊生物群系</text>
         </view>
         <view class="level_line" data-name="1_1_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.5</text><text class="data_text" class="link_text">已移除的生物群系</text>
+          <text class="number_text">1.1.5</text><text class="data_text,link_text">已移除的生物群系</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">生成</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">生成</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">主世界</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">主世界</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">下界</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">下界</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">末地</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">末地</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">气候</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">气候</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">温度</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">温度</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">降水</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">降水</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">降水类型</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">降水类型</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">积雪高度</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">积雪高度</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text" class="link_text">气候列表</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">气候列表</text>
         </view>
         <view class="level_line" data-name="1_3_5_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.5.1</text><text class="data_text" class="link_text">主世界</text>
+          <text class="number_text">1.3.5.1</text><text class="data_text,link_text">主世界</text>
         </view>
         <view class="level_line" data-name="1_3_5_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.5.2</text><text class="data_text" class="link_text">下界</text>
+          <text class="number_text">1.3.5.2</text><text class="data_text,link_text">下界</text>
         </view>
         <view class="level_line" data-name="1_3_5_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.5.3</text><text class="data_text" class="link_text">末地</text>
+          <text class="number_text">1.3.5.3</text><text class="data_text,link_text">末地</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">着色</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">着色</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">植物颜色</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">植物颜色</text>
         </view>
         <view class="level_line" data-name="1_4_1_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.4.1.1</text><text class="data_text" class="link_text">特殊植物颜色</text>
+          <text class="number_text">1.4.1.1</text><text class="data_text,link_text">特殊植物颜色</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">环境颜色</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">环境颜色</text>
         </view>
         <view class="level_line" data-name="1_4_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.3</text><text class="data_text" class="link_text">颜色过渡</text>
+          <text class="number_text">1.4.3</text><text class="data_text,link_text">颜色过渡</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">数据值</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">数据值</text>
         </view>
         <view class="level_line" data-name="1_5_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.1</text><text class="data_text" class="link_text">ID</text>
+          <text class="number_text">1.5.1</text><text class="data_text,link_text">ID</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_9_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.9</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.9</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_10_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.10</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.10</text><text class="data_text,link_text">画廊</text>
         </view>
         <view class="level_line" data-name="1_10_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.10.1</text><text class="data_text" class="link_text">日出和日落</text>
+          <text class="number_text">1.10.1</text><text class="data_text,link_text">日出和日落</text>
         </view>
         <view class="level_line" data-name="1_10_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.10.2</text><text class="data_text" class="link_text">早期开发</text>
+          <text class="number_text">1.10.2</text><text class="data_text,link_text">早期开发</text>
         </view>
       </view>
       <view id="effect" wx:if="{{menu_page == 8}}" class="menu">
@@ -795,59 +795,59 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">监测</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">监测</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">机制</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">机制</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">效果等级</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">效果等级</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">效果持续时间</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">效果持续时间</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">免疫状态效果</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">免疫状态效果</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">即时生效效果</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">即时生效效果</text>
         </view>
         <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.5</text><text class="data_text" class="link_text">状态效果分类</text>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">状态效果分类</text>
         </view>
         <view class="level_line" data-name="1_2_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.6</text><text class="data_text" class="link_text">解除效果</text>
+          <text class="number_text">1.2.6</text><text class="data_text,link_text">解除效果</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">状态效果列表</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">状态效果列表</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">作用对立的效果</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">作用对立的效果</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="crafting" wx:if="{{menu_page == 9}}" class="menu">
@@ -857,87 +857,87 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">合成系统</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">合成系统</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">合成方格</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">合成方格</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">配方书</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">配方书</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">配方系统</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">配方系统</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">原主机版的合成系统</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">原主机版的合成系统</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">完整配方列表</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">完整配方列表</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">建筑方块配方</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">建筑方块配方</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">装饰性方块配方</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">装饰性方块配方</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">装置配方</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">装置配方</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">运输配方</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">运输配方</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text" class="link_text">食物配方</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">食物配方</text>
         </view>
         <view class="level_line" data-name="1_3_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.6</text><text class="data_text" class="link_text">工具配方</text>
+          <text class="number_text">1.3.6</text><text class="data_text,link_text">工具配方</text>
         </view>
         <view class="level_line" data-name="1_3_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.7</text><text class="data_text" class="link_text">武器配方</text>
+          <text class="number_text">1.3.7</text><text class="data_text,link_text">武器配方</text>
         </view>
         <view class="level_line" data-name="1_3_8_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.8</text><text class="data_text" class="link_text">盔甲配方</text>
+          <text class="number_text">1.3.8</text><text class="data_text,link_text">盔甲配方</text>
         </view>
         <view class="level_line" data-name="1_3_9_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.9</text><text class="data_text" class="link_text">酿造配方</text>
+          <text class="number_text">1.3.9</text><text class="data_text,link_text">酿造配方</text>
         </view>
         <view class="level_line" data-name="1_3_10_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.10</text><text class="data_text" class="link_text">杂项配方</text>
+          <text class="number_text">1.3.10</text><text class="data_text,link_text">杂项配方</text>
         </view>
         <view class="level_line" data-name="1_3_11_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.11</text><text class="data_text" class="link_text">材料配方</text>
+          <text class="number_text">1.3.11</text><text class="data_text,link_text">材料配方</text>
         </view>
         <view class="level_line" data-name="1_3_12_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.12</text><text class="data_text" class="link_text">旗帜图案配方</text>
+          <text class="number_text">1.3.12</text><text class="data_text,link_text">旗帜图案配方</text>
         </view>
         <view class="level_line" data-name="1_3_13_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.13</text><text class="data_text" class="link_text">已移除的合成配方</text>
+          <text class="number_text">1.3.13</text><text class="data_text,link_text">已移除的合成配方</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">画廊</text>
         </view>
       </view>
       <view id="smelting" wx:if="{{menu_page == 10}}" class="menu">
@@ -947,67 +947,67 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">用途和机制</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">用途和机制</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">熔炉</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">熔炉</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">高炉和烟熏炉</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">高炉和烟熏炉</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">营火</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">营火</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">配方</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">配方</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">食物</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">食物</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">矿物</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">矿物</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">工具,武器和盔甲</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">工具,武器和盔甲</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">其他可烧炼物品</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">其他可烧炼物品</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">燃料效率</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">燃料效率</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">Java版</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">Java版</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">基岩版</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">基岩版</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">你知道吗</text>
         </view>
       </view>
       <view id="smithing" wx:if="{{menu_page == 11}}" class="menu">
@@ -1017,71 +1017,71 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">机制</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">机制</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">升级</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">升级</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">添加盔甲纹饰</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">添加盔甲纹饰</text>
         </view>
         <view class="level_line" data-name="1_1_2_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.2.1</text><text class="data_text" class="link_text">盔甲纹饰</text>
+          <text class="number_text">1.1.2.1</text><text class="data_text,link_text">盔甲纹饰</text>
         </view>
         <view class="level_line" data-name="1_1_2_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.2.2</text><text class="data_text" class="link_text">盔甲纹饰锻造模板</text>
+          <text class="number_text">1.1.2.2</text><text class="data_text,link_text">盔甲纹饰锻造模板</text>
         </view>
         <view class="level_line" data-name="1_1_2_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.2.3</text><text class="data_text" class="link_text">盔甲纹饰材料</text>
+          <text class="number_text">1.1.2.3</text><text class="data_text,link_text">盔甲纹饰材料</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">配方</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">配方</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">下界合金升级</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">下界合金升级</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">盔甲纹饰</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">盔甲纹饰</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">数据值</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">数据值</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">ID</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">ID</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">成就</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">成就</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">进度</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">进度</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">历史</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">你知道吗</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">你知道吗</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">画廊</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">画廊</text>
         </view>
         <view class="level_line" data-name="1_8_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.8.1</text><text class="data_text" class="link_text">盔甲纹饰</text>
+          <text class="number_text">1.8.1</text><text class="data_text,link_text">盔甲纹饰</text>
         </view>
       </view>
       <view id="generatedsturctuce" wx:if="{{menu_page == 12}}" class="menu">
@@ -1091,35 +1091,35 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">主世界</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">主世界</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">地下结构</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">地下结构</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">地表结构</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">地表结构</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">水下结构</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">水下结构</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">下界</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">下界</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">末地</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">末地</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">可被定位的结构</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">可被定位的结构</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">历史</text>
         </view>
       </view>
       <view id="redstonecircuits" wx:if="{{menu_page == 13}}" class="menu">
@@ -1129,195 +1129,195 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">基本概念</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">基本概念</text>
         </view>
         <view class="level_line" data-name="1_1_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.1</text><text class="data_text" class="link_text">红石元件</text>
+          <text class="number_text">1.1.1</text><text class="data_text,link_text">红石元件</text>
         </view>
         <view class="level_line" data-name="1_1_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.2</text><text class="data_text" class="link_text">位置</text>
+          <text class="number_text">1.1.2</text><text class="data_text,link_text">位置</text>
         </view>
         <view class="level_line" data-name="1_1_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.3</text><text class="data_text" class="link_text">电路与机械</text>
+          <text class="number_text">1.1.3</text><text class="data_text,link_text">电路与机械</text>
         </view>
         <view class="level_line" data-name="1_1_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.4</text><text class="data_text" class="link_text">信号与脉冲</text>
+          <text class="number_text">1.1.4</text><text class="data_text,link_text">信号与脉冲</text>
         </view>
         <view class="level_line" data-name="1_1_4_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.4.1</text><text class="data_text" class="link_text">信号有效极性/正负逻辑</text>
+          <text class="number_text">1.1.4.1</text><text class="data_text,link_text">信号有效极性/正负逻辑</text>
         </view>
         <view class="level_line" data-name="1_1_4_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.4.2</text><text class="data_text" class="link_text">边沿</text>
+          <text class="number_text">1.1.4.2</text><text class="data_text,link_text">边沿</text>
         </view>
         <view class="level_line" data-name="1_1_4_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.4.3</text><text class="data_text" class="link_text">相位</text>
+          <text class="number_text">1.1.4.3</text><text class="data_text,link_text">相位</text>
         </view>
         <view class="level_line" data-name="1_1_4_4_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.4.4</text><text class="data_text" class="link_text">脉冲</text>
+          <text class="number_text">1.1.4.4</text><text class="data_text,link_text">脉冲</text>
         </view>
         <view class="level_line" data-name="1_1_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.5</text><text class="data_text" class="link_text">信号强度</text>
+          <text class="number_text">1.1.5</text><text class="data_text,link_text">信号强度</text>
         </view>
         <view class="level_line" data-name="1_1_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.6</text><text class="data_text" class="link_text">激活</text>
+          <text class="number_text">1.1.6</text><text class="data_text,link_text">激活</text>
         </view>
         <view class="level_line" data-name="1_1_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.7</text><text class="data_text" class="link_text">充能</text>
+          <text class="number_text">1.1.7</text><text class="data_text,link_text">充能</text>
         </view>
         <view class="level_line" data-name="1_1_7_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.7.1</text><text class="data_text" class="link_text">充能类型</text>
+          <text class="number_text">1.1.7.1</text><text class="data_text,link_text">充能类型</text>
         </view>
         <view class="level_line" data-name="1_1_7_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.7.2</text><text class="data_text" class="link_text">充能等级</text>
+          <text class="number_text">1.1.7.2</text><text class="data_text,link_text">充能等级</text>
         </view>
         <view class="level_line" data-name="1_1_8_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.8</text><text class="data_text" class="link_text">充能与激活的不同</text>
+          <text class="number_text">1.1.8</text><text class="data_text,link_text">充能与激活的不同</text>
         </view>
         <view class="level_line" data-name="1_1_9_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.9</text><text class="data_text" class="link_text">方块更新(狭义)</text>
+          <text class="number_text">1.1.9</text><text class="data_text,link_text">方块更新(狭义)</text>
         </view>
         <view class="level_line" data-name="1_1_10_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.10</text><text class="data_text" class="link_text">红石系统</text>
+          <text class="number_text">1.1.10</text><text class="data_text,link_text">红石系统</text>
         </view>
         <view class="level_line" data-name="1_1_10_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.10.1</text><text class="data_text" class="link_text">部分细节</text>
+          <text class="number_text">1.1.10.1</text><text class="data_text,link_text">部分细节</text>
         </view>
         <view class="level_line" data-name="1_1_10_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.1.10.2</text><text class="data_text" class="link_text">拓展</text>
+          <text class="number_text">1.1.10.2</text><text class="data_text,link_text">拓展</text>
         </view>
         <view class="level_line" data-name="1_1_11_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.11</text><text class="data_text" class="link_text">红石刻</text>
+          <text class="number_text">1.1.11</text><text class="data_text,link_text">红石刻</text>
         </view>
         <view class="level_line" data-name="1_1_12_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.1.12</text><text class="data_text" class="link_text">电路特征</text>
+          <text class="number_text">1.1.12</text><text class="data_text,link_text">电路特征</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">基本种类</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">基本种类</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">数字电路</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">数字电路</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">模拟电路</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">模拟电路</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">机械电路</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">机械电路</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">飞行器科技</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">飞行器科技</text>
         </view>
         <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.5</text><text class="data_text" class="link_text">生存实用电路</text>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">生存实用电路</text>
         </view>
         <view class="level_line" data-name="1_2_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.6</text><text class="data_text" class="link_text">储存电路</text>
+          <text class="number_text">1.2.6</text><text class="data_text,link_text">储存电路</text>
         </view>
         <view class="level_line" data-name="1_2_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.7</text><text class="data_text" class="link_text">TNT大炮</text>
+          <text class="number_text">1.2.7</text><text class="data_text,link_text">TNT大炮</text>
         </view>
         <view class="level_line" data-name="1_2_7_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.7.1</text><text class="data_text" class="link_text">矢量炮</text>
+          <text class="number_text">1.2.7.1</text><text class="data_text,link_text">矢量炮</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">基本电路</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">基本电路</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">脉冲电路</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">脉冲电路</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">时钟电路</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">时钟电路</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">传输电路</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">传输电路</text>
         </view>
         <view class="level_line" data-name="1_3_3_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.1</text><text class="data_text" class="link_text">信号中继器</text>
+          <text class="number_text">1.3.3.1</text><text class="data_text,link_text">信号中继器</text>
         </view>
         <view class="level_line" data-name="1_3_3_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.2</text><text class="data_text" class="link_text">二极管</text>
+          <text class="number_text">1.3.3.2</text><text class="data_text,link_text">二极管</text>
         </view>
         <view class="level_line" data-name="1_3_3_3_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.3</text><text class="data_text" class="link_text">纵向传输电路</text>
+          <text class="number_text">1.3.3.3</text><text class="data_text,link_text">纵向传输电路</text>
         </view>
         <view class="level_line" data-name="1_3_3_4_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.4</text><text class="data_text" class="link_text">模拟传输</text>
+          <text class="number_text">1.3.3.4</text><text class="data_text,link_text">模拟传输</text>
         </view>
         <view class="level_line" data-name="1_3_3_5_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.5</text><text class="data_text" class="link_text">杂项传输电路</text>
+          <text class="number_text">1.3.3.5</text><text class="data_text,link_text">杂项传输电路</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">逻辑电路</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">逻辑电路</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">逻辑电路</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">逻辑电路</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text" class="link_text">记忆电路</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">记忆电路</text>
         </view>
         <view class="level_line" data-name="1_3_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.6</text><text class="data_text" class="link_text">杂项电路</text>
+          <text class="number_text">1.3.6</text><text class="data_text,link_text">杂项电路</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">建造电路</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">建造电路</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">计划</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">计划</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">建造</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">建造</text>
         </view>
         <view class="level_line" data-name="1_4_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.3</text><text class="data_text" class="link_text">解决问题</text>
+          <text class="number_text">1.4.3</text><text class="data_text,link_text">解决问题</text>
         </view>
         <view class="level_line" data-name="1_4_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.4</text><text class="data_text" class="link_text">优化</text>
+          <text class="number_text">1.4.4</text><text class="data_text,link_text">优化</text>
         </view>
       </view>
       <view id="command" wx:if="{{menu_page == 14}}" class="menu">
@@ -1327,83 +1327,79 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">使用</text>
-        </view>
-        <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">使用</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">使用</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">命令指引</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">命令指引</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">语法表示</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">语法表示</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">限制条件</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">限制条件</text>
         </view>
         <view class="level_line" data-name="1_2_2_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.2.1</text><text class="data_text" class="link_text">作弊</text>
+          <text class="number_text">1.2.2.1</text><text class="data_text,link_text">作弊</text>
         </view>
         <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.3</text><text class="data_text" class="link_text">参数类型</text>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">参数类型</text>
         </view>
         <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.4</text><text class="data_text" class="link_text">解析与执行</text>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">解析与执行</text>
         </view>
         <view class="level_line" data-name="1_2_4_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.4.1</text><text class="data_text" class="link_text">输出</text>
+          <text class="number_text">1.2.4.1</text><text class="data_text,link_text">输出</text>
         </view>
         <view class="level_line" data-name="1_2_4_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.2.4.2</text><text class="data_text" class="link_text">结果</text>
+          <text class="number_text">1.2.4.2</text><text class="data_text,link_text">结果</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">命令列表及其概述</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">命令列表及其概述</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">Java版</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">Java版</text>
         </view>
         <view class="level_line" data-name="1_3_1_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.1.1</text><text class="data_text" class="link_text">调试命令</text>
+          <text class="number_text">1.3.1.1</text><text class="data_text,link_text">调试命令</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">基岩版和教育版</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">基岩版和教育版</text>
         </view>
         <view class="level_line" data-name="1_3_2_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.2.1</text><text class="data_text" class="link_text">隐藏命令</text>
+          <text class="number_text">1.3.2.1</text><text class="data_text,link_text">隐藏命令</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">已移除的命令</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">已移除的命令</text>
         </view>
         <view class="level_line" data-name="1_3_3_1_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.1</text><text class="data_text" class="link_text">基岩版开发者命令</text>
+          <text class="number_text">1.3.3.1</text><text class="data_text,link_text">基岩版开发者命令</text>
         </view>
         <view class="level_line" data-name="1_3_3_2_0" catch:tap="item_click">
           <view style="height: 1em;width: 6em;display: inline-block;"></view>
-          <text class="number_text">1.3.3.2</text><text class="data_text" class="link_text">智能体命令</text>
+          <text class="number_text">1.3.3.2</text><text class="data_text,link_text">智能体命令</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">愚人节命令</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">愚人节命令</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">历史</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">历史</text>
         </view>
       </view>
       <view id="versionlog" wx:if="{{menu_page == 15}}" class="menu">
@@ -1413,55 +1409,55 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">Java版</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">Java版</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">基岩版</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">基岩版</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">原主机版</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">原主机版</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">New Nintendo 3DS版</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">New Nintendo 3DS版</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">教育版</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">教育版</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">中国版</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">中国版</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">树莓派版</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">树莓派版</text>
         </view>
         <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text" class="link_text">Minecraft Earth</text>
+          <text class="number_text">1.8</text><text class="data_text,link_text">Minecraft Earth</text>
         </view>
         <view class="level_line" data-name="1_9_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.9</text><text class="data_text" class="link_text">Minecraft Dungeons</text>
+          <text class="number_text">1.9</text><text class="data_text,link_text">Minecraft Dungeons</text>
         </view>
         <view class="level_line" data-name="1_10_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.10</text><text class="data_text" class="link_text">Minecraft Legends</text>
+          <text class="number_text">1.10</text><text class="data_text,link_text">Minecraft Legends</text>
         </view>
         <view class="level_line" data-name="1_11_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.11</text><text class="data_text" class="link_text">Minecraft: Story Mode</text>
+          <text class="number_text">1.11</text><text class="data_text,link_text">Minecraft: Story Mode</text>
         </view>
         <view class="level_line" data-name="1_12_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.12</text><text class="data_text" class="link_text">Minecraft启动器</text>
+          <text class="number_text">1.12</text><text class="data_text,link_text">Minecraft启动器</text>
         </view>
         <view class="level_line" data-name="1_13_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.13</text><text class="data_text" class="link_text">Minecraft Dungeons启动器</text>
+          <text class="number_text">1.13</text><text class="data_text,link_text">Minecraft Dungeons启动器</text>
         </view>
       </view>
       <view id="tutorial" wx:if="{{menu_page == 16}}" class="menu">
@@ -1471,119 +1467,119 @@
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text" class="link_text">概述</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">概述</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text" class="link_text">新手</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">新手</text>
         </view>
         <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.1</text><text class="data_text" class="link_text">新手生存</text>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">新手生存</text>
         </view>
         <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.2.2</text><text class="data_text" class="link_text">庇护所</text>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">庇护所</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text" class="link_text">综合</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">综合</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text" class="link_text">村民和交易</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">村民和交易</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text" class="link_text">建筑</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">建筑</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text" class="link_text">挑战</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">挑战</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text" class="link_text">漏洞相关</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">漏洞相关</text>
         </view>
         <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text" class="link_text">资源再生</text>
+          <text class="number_text">1.4</text><text class="data_text,link_text">资源再生</text>
         </view>
         <view class="level_line" data-name="1_4_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.1</text><text class="data_text" class="link_text">生产物品</text>
+          <text class="number_text">1.4.1</text><text class="data_text,link_text">生产物品</text>
         </view>
         <view class="level_line" data-name="1_4_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.4.2</text><text class="data_text" class="link_text">生物</text>
+          <text class="number_text">1.4.2</text><text class="data_text,link_text">生物</text>
         </view>
         <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text" class="link_text">红石电路</text>
+          <text class="number_text">1.5</text><text class="data_text,link_text">红石电路</text>
         </view>
         <view class="level_line" data-name="1_5_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.1</text><text class="data_text" class="link_text">基础红石</text>
+          <text class="number_text">1.5.1</text><text class="data_text,link_text">基础红石</text>
         </view>
         <view class="level_line" data-name="1_5_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.2</text><text class="data_text" class="link_text">物品</text>
+          <text class="number_text">1.5.2</text><text class="data_text,link_text">物品</text>
         </view>
         <view class="level_line" data-name="1_5_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.3</text><text class="data_text" class="link_text">探测器</text>
+          <text class="number_text">1.5.3</text><text class="data_text,link_text">探测器</text>
         </view>
         <view class="level_line" data-name="1_5_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.4</text><text class="data_text" class="link_text">矿车</text>
+          <text class="number_text">1.5.4</text><text class="data_text,link_text">矿车</text>
         </view>
         <view class="level_line" data-name="1_5_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.5</text><text class="data_text" class="link_text">活塞</text>
+          <text class="number_text">1.5.5</text><text class="data_text,link_text">活塞</text>
         </view>
         <view class="level_line" data-name="1_5_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.6</text><text class="data_text" class="link_text">陷阱</text>
+          <text class="number_text">1.5.6</text><text class="data_text,link_text">陷阱</text>
         </view>
         <view class="level_line" data-name="1_5_7_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.7</text><text class="data_text" class="link_text">高级红石</text>
+          <text class="number_text">1.5.7</text><text class="data_text,link_text">高级红石</text>
         </view>
         <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text" class="link_text">多人游戏</text>
+          <text class="number_text">1.6</text><text class="data_text,link_text">多人游戏</text>
         </view>
         <view class="level_line" data-name="1_6_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.6.1</text><text class="data_text" class="link_text">服务器设置</text>
+          <text class="number_text">1.6.1</text><text class="data_text,link_text">服务器设置</text>
         </view>
         <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text" class="link_text">技术性</text>
+          <text class="number_text">1.7</text><text class="data_text,link_text">技术性</text>
         </view>
         <view class="level_line" data-name="1_7_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.1</text><text class="data_text" class="link_text">地图</text>
+          <text class="number_text">1.7.1</text><text class="data_text,link_text">地图</text>
         </view>
         <view class="level_line" data-name="1_7_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.2</text><text class="data_text" class="link_text">游戏安装</text>
+          <text class="number_text">1.7.2</text><text class="data_text,link_text">游戏安装</text>
         </view>
         <view class="level_line" data-name="1_7_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.3</text><text class="data_text" class="link_text">资源包</text>
+          <text class="number_text">1.7.3</text><text class="data_text,link_text">资源包</text>
         </view>
         <view class="level_line" data-name="1_7_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.4</text><text class="data_text" class="link_text">数据包</text>
+          <text class="number_text">1.7.4</text><text class="data_text,link_text">数据包</text>
         </view>
         <view class="level_line" data-name="1_7_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.5</text><text class="data_text" class="link_text">命令</text>
+          <text class="number_text">1.7.5</text><text class="data_text,link_text">命令</text>
         </view>
         <view class="level_line" data-name="1_7_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.7.6</text><text class="data_text" class="link_text">附加包</text>
+          <text class="number_text">1.7.6</text><text class="data_text,link_text">附加包</text>
         </view>
       </view>
     </view>

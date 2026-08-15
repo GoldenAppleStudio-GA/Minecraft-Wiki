@@ -22,15 +22,13 @@
 
 .link_text {
   font-size: larger;
-  color: #576B95;
+  color: #576B95 !important;
   /* white-space: nowrap; */
   /* 强制不换行 */
   overflow: hidden;
   /* 隐藏溢出内容 */
   text-overflow: ellipsis;
   /* 显示省略号 */
-  /* text-decoration-line: underline;
-  text-decoration-color: #0645AD; */
 }
 
 .level_line {
@@ -39,7 +37,7 @@
 }
 
 .data_text {
-  color: #BFBFBF;
+  color: #B0BAC5;
   font-size: larger;
   white-space: nowrap;
   /* 强制不换行 */
@@ -47,11 +45,6 @@
   /* 隐藏溢出内容 */
   text-overflow: ellipsis;
   /* 显示省略号 */
-}
-
-
-#version {
-  height: max-content;
 }
 
 .number_text {

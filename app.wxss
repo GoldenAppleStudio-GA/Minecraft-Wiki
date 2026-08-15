@@ -23,7 +23,7 @@
     text-overflow: ellipsis; */
 
 page {
-  font-family: 'WeChatSansSS', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'WeChatSansSS', Consolas, "Microsoft YaHei", -apple-system, system-ui !important;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -158,7 +158,8 @@ page {
 }
 
 .CCBY-NC-SA3 {
+  font-size: smaller;
   margin: 1vh;
   padding: 0.5em;
-  color: #ffffff;
+  color: #B2B2B2;
 }

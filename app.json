@@ -9,11 +9,6 @@
     "pages/function_pages/project_learn/project_learn"
   ],
   "entryPagePath": "pages/privacy/privacy",
-  "window": {
-    "navigationBarTextStyle": "white",
-    "navigationStyle": "custom",
-    "homeButton": true
-  },
   "style": "v2",
   "renderer": "webview",
   "sitemapLocation": "sitemap.json",
@@ -21,6 +16,9 @@
   "resizable": false,
   "usingComponents": {
     "towxml": "/resource/utils/towxml/towxml"
+  },
+  "window": {
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "backgroundColor": "#171615",
@@ -108,5 +106,6 @@
     "connectSocket": 15000,
     "uploadFile": 15000,
     "downloadFile": 15000
-  }
+  },
+  "componentFramework": "glass-easel"
 }

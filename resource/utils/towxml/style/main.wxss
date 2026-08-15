@@ -1,6 +1,6 @@
 /*正文样式*/
 .h2w {
-    font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-family: 'WeChatSansSS',PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
     font-weight:300;
     font-size: 32rpx;
     line-height: 1.8;

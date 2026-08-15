@@ -2,6 +2,7 @@
 App({
   towxml: require('/resource/utils/towxml/index'),
   globalData: {
+    app_renderer: "",
     app_base_info: {},
     all_data: {
       init_data: {
@@ -133,7 +134,7 @@ App({
     this.globalData.RealtimeLog.info("_APP_:APP初始化完成\n", res);
     this.globalData.RealtimeLog.info("_APP_:globalData\n", this.globalData);
     this.globalData.RealtimeLog.info("_APP_:微信APP基础信息\n", this.globalData.app_base_info);
-    this.globalData.RealtimeLog.warn("_APP_:RealtimeLog日志测试");
+    this.globalData.RealtimeLog.info("_APP_:RealtimeLog日志测试");
   },
 
   onShow() {

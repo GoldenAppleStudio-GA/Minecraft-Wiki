@@ -9,5 +9,7 @@
     "todogroup": "/resource/utils/towxml/todogroup/todogroup",
     "yuml": "/resource/utils/towxml/yuml/yuml",
     "img": "/resource/utils/towxml/img/img"
-  }
+  },
+    "componentFramework": "glass-easel",
+    "glassEaselWebview": true
 }

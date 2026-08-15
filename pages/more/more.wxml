@@ -41,7 +41,7 @@
           版本号
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
-          2.1.4a
+          2.2.2a
         </view>
       </view>
       <view class="description_author">
@@ -49,7 +49,7 @@
           更新日期
         </view>
         <view style="color: #ffffff;font-size: small;">
-          2026.8.13
+          2026.8.16
         </view>
       </view>
     </view>

@@ -41,22 +41,27 @@
         </view>
       </view>
     </view>
-    <view class="project_view_type_block">
+    <view class="project_view_type_block" wx:if="{{data_ready === true}}">
       <view class="project_view_type_line">
-        <view class="project_view_type_description_block">
+        <view class="{{project_view_type === 0? 'project_view_type_description_block_click':'project_view_type_description_block'}}" catch:tap="project_view_type_0">
           项目介绍
         </view>
-        <view class="project_view_type_description_block">
+        <view class="{{project_view_type === 1? 'project_view_type_description_block_click':'project_view_type_description_block'}}" catch:tap="project_view_type_1">
           更新日志
         </view>
-        <view class="project_view_type_description_block" style="margin-right: 0.5em;">
+        <view class="{{project_view_type === 2? 'project_view_type_description_block_click':'project_view_type_description_block'}}" style="margin-right: 0.5em;" catch:tap="project_view_type_2">
           版本
         </view>
       </view>
     </view>
     <view class="project_body_info" wx:if="{{data_ready === true && project_view_type === 0}}">
-      <towxml nodes="{{article}}" />
+      <towxml nodes="{{project_data_article}}" />
     </view>
-    <view class="bottom_text">刷到基岩了~</view>
+    <view class="project_changelog_info" wx:if="{{project_view_type === 1 && project_changelog_article.length !=0}}">
+      <view class="project_changelog_info_block" data-index="{{index}}" wx:for="{{project_changelog_article}}" wx:key="*this">
+        <towxml nodes="{{item}}" />
+      </view>
+    </view>
+    <view class="bottom_text" wx:if="{{data_ready === true}}">刷到基岩了~</view>
   </view>
 </view>
