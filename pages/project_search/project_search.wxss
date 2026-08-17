@@ -177,7 +177,7 @@
   align-items: center;
   border: solid 1px #2D2F35;
   background-color: #27292E;
-  height: auto;
+  height: 11vh;
   width: 710rpx;
   margin-bottom: 1vh;
   border-radius: 5px;

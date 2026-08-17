@@ -62,7 +62,7 @@
       </view>
     </form>
     <view class="search_resource_page_change">
-        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
+      <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
       <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
         {{search_resource_page+'/'+search_resource_page_number}}
       </view>
@@ -108,7 +108,7 @@
     <view class="search_resource_page_change">
       <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
       <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
-        {{search_resource_page+'/'+search_resource_page_number}}
+        {{search_resource_page_number+'/'+search_resource_page}}
       </view>
       <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>
     </view>

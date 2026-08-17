@@ -109,7 +109,8 @@ Page({
 
   mod_search_config_reset(event) {
     this.setData({
-      'search_resource_list': []
+      'search_resource_list': [],
+      'mod_search_config.mod_name': ""
     })
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:模组搜索表单重置\n", event);

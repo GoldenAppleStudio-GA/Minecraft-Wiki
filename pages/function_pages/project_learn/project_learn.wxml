@@ -58,8 +58,67 @@
       <towxml nodes="{{project_data_article}}" />
     </view>
     <view class="project_changelog_info" wx:if="{{project_view_type === 1 && project_changelog_article.length !=0}}">
-      <view class="project_changelog_info_block" data-index="{{index}}" wx:for="{{project_changelog_article}}" wx:key="*this">
+      <view class="search_resource_page_change">
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
+          {{project_changelog_page_number+'/'+project_data.versions.length}}
+        </view>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+      </view>
+      <view class="project_changelog_info_block,{{project_changelog_type[index]}}" data-index="{{index}}" wx:for="{{project_changelog_article}}" wx:key="*this">
+        <view style="width: max-content;margin-left: 1em;">
+          <view style="line-height: 1.3em;width: 100%;font-weight: 600;font-size: x-large;overflow: hidden;">
+            {{project_changelog_data[index].name}}
+          </view>
+        </view>
         <towxml nodes="{{item}}" />
+      </view>
+      <view class="search_resource_page_change">
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
+          {{project_changelog_page_number+'/'+project_data.versions.length}}
+        </view>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+      </view>
+    </view>
+    <view class="projrct_version_info" wx:if="{{project_view_type === 2 && project_changelog_article.length !=0}}">
+      <view class="search_resource_page_change">
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
+          {{project_changelog_page_number+'/'+project_data.versions.length}}
+        </view>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+      </view>
+      <view class="project_version_bolck">
+        <view class="project_version_line" wx:for="{{project_changelog_data}}" wx:key="*this">
+          <view class="project_version_line_first_line">
+            <view style="display: flex;height: 100%;width: 70%;overflow: hidden;flex-direction: row;align-items: center;">
+              <view class="{{project_changelog_data[index].version_type + '_version_icon'}}" style="flex-grow: inherit;font-size: x-large;font-weight: 700;border-radius: 50%;height: 1.2em;width: 1.2em;display: flex;align-items: center;justify-content: center;">
+                {{project_changelog_type[index]}}
+              </view>
+              <view style="color: #ffffff;font-weight: 600;height: 1.3em;overflow: hidden;width: 70%;margin-left: 1em;line-height: 1.3em;">
+                {{item.name}}
+              </view>
+            </view>
+            <image src="/resource/images/download_icon_1BD96A.png" style="height: 1.3em;width: 1.3em;" catch:tap="project_download" data-index="{{index}}">
+            </image>
+          </view>
+          <view class="project_version_line_first_line" style="margin-top: 5%;justify-content: start;">
+            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 0.65em;border:solid 1px #42444A;padding: 1%;">
+              {{project_changelog_data[index].game_versions[0]}}
+            </view>
+            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 0.65em;border:solid 1px #42444A;margin-left: 0.5rem;padding: 1%;">
+              {{project_changelog_data[index].loaders[0]}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="search_resource_page_change">
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
+          {{project_changelog_page_number+'/'+project_data.versions.length}}
+        </view>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
       </view>
     </view>
     <view class="bottom_text" wx:if="{{data_ready === true}}">刷到基岩了~</view>
