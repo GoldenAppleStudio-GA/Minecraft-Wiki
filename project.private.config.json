@@ -15,16 +15,16 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/minecraft/minecraft",
-          "pathName": "pages/minecraft/minecraft",
-          "query": "",
+          "name": "packages/packageA/pages/id_0/id_0",
+          "pathName": "packages/packageA/pages/id_0/id_0",
+          "query": "name=1_1_0_0_0",
           "scene": null,
           "launchMode": "default"
         },
         {
           "name": "pages/function_pages/project_learn/project_learn",
           "pathName": "pages/function_pages/project_learn/project_learn",
-          "query": "project_id=mOgUt4GM",
+          "query": "project_id=1eAoo2KR",
           "launchMode": "default",
           "scene": null
         },

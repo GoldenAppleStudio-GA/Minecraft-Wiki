@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/minecraft/minecraft",
-    "pages/project_search/project_search",
+    "pages/search/search",
     "pages/more/more",
     "pages/function_pages/menu/menu",
     "pages/privacy/privacy",
@@ -38,7 +38,7 @@
         "selectedIconPath": "/resource/images/minecraft_icon_FFFFFF_px.png"
       },
       {
-        "pagePath": "pages/project_search/project_search",
+        "pagePath": "pages/search/search",
         "text": "资源搜索",
         "iconPath": "/resource/images/mods_icon_FFFFFF_px.png",
         "selectedIconPath": "/resource/images/mods_icon_FFFFFF_px.png"
@@ -107,5 +107,6 @@
     "uploadFile": 15000,
     "downloadFile": 15000
   },
-  "componentFramework": "glass-easel"
+  "componentFramework": "glass-easel",
+  "glassEaselWebview": true
 }

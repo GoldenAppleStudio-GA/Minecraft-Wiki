@@ -198,17 +198,17 @@
   /* 1px  */
 }
 
-.release {
+.R {
   border-color: #00AF5C;
   color: #00AF5C;
 }
 
-.alpha {
+.A {
   border-color: #CB2245;
   color: #CB2245;
 }
 
-.beta {
+.B {
   border-color: #E08325;
   color: #E08325;
 }

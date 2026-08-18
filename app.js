@@ -29,6 +29,8 @@ App({
     search_resource_list: [],
     showPrivacy: true,
     privacyResolve: null,
+    storage_data: [],
+    saved_project: [],
     RealtimeLog: {
       info(...args) {
         console.info(...args);
@@ -90,6 +92,7 @@ App({
         this.globalData.RealtimeLog.error("_APP_:微信内置字体加载失败\n", err);
       }
     });
+    this.globalData.storage_data = wx.getStorageInfoSync().keys;
     this.globalData.app_base_info = wx.getAppBaseInfo();
     wx.onMemoryWarning((res) => {
       this.globalData.RealtimeLog.warn("_APP_:内存不足告警\n", res);
@@ -97,7 +100,6 @@ App({
     wx.setKeepScreenOn({
       keepScreenOn: true
     });
-    // this.globalData.modules = require("resource/javascript/modules");
     wx.login({
       success: (res) => {
         this.globalData.RealtimeLog.info("_APP_:用户登录凭证\n", res.code);
@@ -123,14 +125,18 @@ App({
       });
       this.globalData.RealtimeLog.warn("_APP_:调试已禁用");
     };
-
     this.globalData.page_head_info = {
       start_nopx: wx.getMenuButtonBoundingClientRect().top,
       height_nopx: wx.getMenuButtonBoundingClientRect().height,
       start: wx.getMenuButtonBoundingClientRect().top + "px",
       height: wx.getMenuButtonBoundingClientRect().height + "px"
     };
-
+    if (this.globalData.storage_data.includes("save_projects")) {
+      this.globalData.saved_project = wx.getStorageSync("save_projects");
+    } else {
+      wx.setStorageSync("save_projects", []);
+      this.globalData.saved_project = []
+    };
     this.globalData.RealtimeLog.info("_APP_:APP初始化完成\n", res);
     this.globalData.RealtimeLog.info("_APP_:globalData\n", this.globalData);
     this.globalData.RealtimeLog.info("_APP_:微信APP基础信息\n", this.globalData.app_base_info);

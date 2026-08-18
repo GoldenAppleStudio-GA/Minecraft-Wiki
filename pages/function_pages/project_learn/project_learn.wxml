@@ -14,7 +14,7 @@
     <view class="project_main_info_line" wx:if="{{has_project_data === true}}">
       <view class="project_main_info_first_line">
         <view>
-          <image class="project_image" src="{{project_data.icon_url}}">
+          <image class="project_image" src="{{project_data.icon_url}}" catch:tap="project_image_click">
           </image>
         </view>
         <view class="project_main_info_first_line_right_block">
@@ -28,14 +28,14 @@
       </view>
       <view class="project_main_info_second_line">
         <view class="project_download_block">
-          <image src="/resource/images/download_icon_000000.png" style="height: 50%;width: 50%;">
+          <image src="/resource/images/download_icon_000000.png" style="height: 50%;width: 50%;" catch:tap="project_download_main">
           </image>
         </view>
         <view class="{{has_follow === false ? 'project_follow_false' : 'project_follow_true'}}">
-          <image src="{{has_follow === false ? '/resource/images/follow_icon_AAB4BE.png' : '/resource/images/follow_icon_000000.png'}}" style="height: 50%;width: 50%;">
+          <image src="/resource/images/follow_icon_AAB4BE.png" style="height: 50%;width: 50%;" catch:tap="follow_click">
           </image>
         </view>
-        <view class="project_more_icon">
+        <view class="project_more_icon" catch:tap="more_icon">
           <image src="/resource/images/project_more_icon_AAB4BE.png" style="height: 60%;width: 60%;">
           </image>
         </view>
@@ -66,7 +66,7 @@
         <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
       </view>
       <view class="project_changelog_info_block,{{project_changelog_type[index]}}" data-index="{{index}}" wx:for="{{project_changelog_article}}" wx:key="*this">
-        <view style="width: max-content;margin-left: 1em;">
+        <view style="width: max-content;margin-left: 1em;" catch:tap="version_name_click" id="{{'changelog_'+index}}">
           <view style="line-height: 1.3em;width: 100%;font-weight: 600;font-size: x-large;overflow: hidden;">
             {{project_changelog_data[index].name}}
           </view>
@@ -90,13 +90,13 @@
         <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
       </view>
       <view class="project_version_bolck">
-        <view class="project_version_line" wx:for="{{project_changelog_data}}" wx:key="*this">
+        <view class="project_version_line" wx:for="{{project_changelog_data}}" wx:key="*this" id="{{'version_' + index}}">
           <view class="project_version_line_first_line">
             <view style="display: flex;height: 100%;width: 70%;overflow: hidden;flex-direction: row;align-items: center;">
               <view class="{{project_changelog_data[index].version_type + '_version_icon'}}" style="flex-grow: inherit;font-size: x-large;font-weight: 700;border-radius: 50%;height: 1.2em;width: 1.2em;display: flex;align-items: center;justify-content: center;">
                 {{project_changelog_type[index]}}
               </view>
-              <view style="color: #ffffff;font-weight: 600;height: 1.3em;overflow: hidden;width: 70%;margin-left: 1em;line-height: 1.3em;">
+              <view style="color: #ffffff;font-weight: 600;height: 1.3em;overflow: hidden;width: 70%;margin-left: 1em;line-height: 1.3em;" catch:tap="changelog_name_click">
                 {{item.name}}
               </view>
             </view>
@@ -104,10 +104,10 @@
             </image>
           </view>
           <view class="project_version_line_first_line" style="margin-top: 5%;justify-content: start;">
-            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 0.65em;border:solid 1px #42444A;padding: 1%;">
+            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 1.3em;border:solid 1px #42444A;padding: 1.5%;">
               {{project_changelog_data[index].game_versions[0]}}
             </view>
-            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 0.65em;border:solid 1px #42444A;margin-left: 0.5rem;padding: 1%;">
+            <view style="height: 1.3em;line-height: 1.3em; width: fit-content;color: #96A2B0;font-size: smaller;border-radius: 1.3em;border:solid 1px #42444A;margin-left: 0.5rem;padding: 1.5%;">
               {{project_changelog_data[index].loaders[0]}}
             </view>
           </view>

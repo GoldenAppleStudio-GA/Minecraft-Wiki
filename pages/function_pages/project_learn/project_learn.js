@@ -161,6 +161,13 @@ Page({
       });
     });
     this.reload_project_version();
+    var follow_projects = wx.getStorageSync("save_projects");
+    if (!Array.isArray(follow_projects)) {
+      follow_projects = [];
+    }
+    this.setData({
+      has_follow: follow_projects.includes(this.data.project_id)
+    });
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:页面加载\n", options);
   },
   reload_project_version() {
@@ -183,6 +190,11 @@ Page({
           'project_changelog_type': changelog_type
         });
       };
+    });
+  },
+  project_download_main(event) {
+    this.setData({
+      'project_view_type': 2
     });
   },
   project_download(event) {
@@ -268,8 +280,108 @@ Page({
           })
         };
       }
-    })
+    });
   },
+  version_name_click(event) {
+    this.setData({
+      'project_view_type': 2
+    });
+    wx.pageScrollTo({
+      selector: "#version_" + event.target.dataset.index
+    });
+  },
+  changelog_name_click(event) {
+    this.setData({
+      'project_view_type': 1
+    });
+    wx.pageScrollTo({
+      selector: "#changelog_" + event.target.dataset.index
+    });
+  },
+  more_icon(event) {
+    wx.showActionSheet({
+      itemList: ["复制项目ID", "复制项目链接"],
+      success: (res) => {
+        getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:更多按钮选项选择\n", event, res);
+        if (res.tapIndex === 0) {
+          wx.setClipboardData({
+            data: this.data.project_data.id,
+            success: (res) => {
+              wx.showToast({
+                title: "已复制项目ID"
+              });
+              setTimeout(() => {
+                wx.hideToast();
+              }, 1000)
+            }
+          });
+        } else if (res.tapIndex === 1) {
+          wx.setClipboardData({
+            data: "https://modrinth.com/project/" + this.data.project_data.id,
+            success: (res) => {
+              wx.showToast({
+                title: "已复制项目链接"
+              });
+              setTimeout(() => {
+                wx.hideToast();
+              }, 1000);
+            }
+          });
+        };
+      }
+    });
+  },
+  follow_click(event) {
+    const newFollowState = !this.data.has_follow;
+    this.setData({
+      "has_follow": newFollowState
+    });
+
+    let follow_projects = wx.getStorageSync("save_projects");
+    if (!Array.isArray(follow_projects)) {
+      follow_projects = [];
+    }
+
+    const projectId = this.data.project_id;
+
+    if (newFollowState) {
+      if (!follow_projects.includes(projectId)) {
+        follow_projects.push(projectId);
+        wx.setStorageSync("save_projects", follow_projects);
+        wx.showToast({
+          title: "收藏成功",
+          icon: "none"
+        });
+        setTimeout(() => {
+          wx.hideToast();
+        }, 1000);
+        getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:项目关注成功\n", projectId);
+      }
+    } else {
+      const index = follow_projects.indexOf(projectId);
+      if (index !== -1) {
+        follow_projects.splice(index, 1);
+        wx.setStorageSync("save_projects", follow_projects);
+        wx.showToast({
+          title: "取消收藏",
+          icon: "none"
+        });
+        setTimeout(() => {
+          wx.hideToast();
+        }, 1000);
+        getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:项目取消关注\n", projectId);
+      }
+    }
+  },
+  project_image_click(event) {
+    wx.previewMedia({
+      sources: [{
+        url: this.data.project_data.icon_url
+      }],
+      showmenu: true
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
