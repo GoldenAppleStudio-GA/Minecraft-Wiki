@@ -15,16 +15,23 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/minecraft/minecraft",
-          "pathName": "pages/minecraft/minecraft",
+          "name": "packages/packageA/pages/id_1/id_1",
+          "pathName": "packages/packageA/pages/id_1/id_1",
           "query": "",
           "scene": null,
           "launchMode": "default"
         },
         {
+          "name": "pages/function_pages/menu/menu",
+          "pathName": "pages/function_pages/menu/menu",
+          "query": "page_id=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/function_pages/project_learn/project_learn",
           "pathName": "pages/function_pages/project_learn/project_learn",
-          "query": "project_id=mOgUt4GM",
+          "query": "project_id=1eAoo2KR",
           "launchMode": "default",
           "scene": null
         },

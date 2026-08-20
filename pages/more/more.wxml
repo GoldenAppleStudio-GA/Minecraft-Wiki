@@ -3,7 +3,7 @@
   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
-      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">我的世界百科</view>
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
@@ -41,7 +41,7 @@
           版本号
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
-          2.2.2a
+          2.3.3r
         </view>
       </view>
       <view class="description_author">
@@ -49,7 +49,7 @@
           更新日期
         </view>
         <view style="color: #ffffff;font-size: small;">
-          2026.8.16
+          2026.8.20
         </view>
       </view>
     </view>
@@ -89,7 +89,7 @@
         </view>
       </view>
       <view class="description_author">
-        <button open-type="feedback" size="mini" type="primary" catch:tap="feedback">意见反馈</button>
+        <button open-type="contact" size="mini" type="primary" catch:tap="contact" style="width: 40%;">客服</button>
       </view>
     </view>
     <view class="description_block">
@@ -155,5 +155,6 @@
         </view>
       </view>
     </view>
+    <view class="bottom_text">刷到基岩了~</view>
   </view>
 </view>

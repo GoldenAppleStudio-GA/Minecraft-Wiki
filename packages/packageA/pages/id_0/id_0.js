@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    app: getApp()
+    app: getApp(),
+    page_data: "",
+    item_name: "1_0_0_0_0"
   },
   navigate_back(event) {
     getApp().globalData.RealtimeLog.info("packageA>>pages/id_0/id_0:返回被点击\n", event);
@@ -16,7 +18,9 @@ Page({
    */
   onLoad(options) {
     this.setData({
-      app: getApp()
+      app: getApp(),
+      item_name: options.name,
+      page_data: require("./data")
     });
     getApp().globalData.RealtimeLog.info("packageA>>pages/id_0/id_0:页面加载\n", options);
   },

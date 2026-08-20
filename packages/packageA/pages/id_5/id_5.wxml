@@ -2,7 +2,7 @@
   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
-      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">我的世界百科</view>
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
@@ -1929,5 +1929,6 @@
       Java版1.16.5中的所有方块
       Java版1.16.5中的所有方块
     </view>
+    <view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>
   </view>
 </view>

@@ -177,7 +177,7 @@
   align-items: center;
   border: solid 1px #2D2F35;
   background-color: #27292E;
-  height: auto;
+  height: 11vh;
   width: 710rpx;
   margin-bottom: 1vh;
   border-radius: 5px;
@@ -206,17 +206,16 @@
   width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
 }
 
 .resource_data_download_block {
-  font-size: x-small !important;
+  font-size: small;
   display: inline-flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  font-size: 14px;
   color: #B0BAC5;
 }
 
@@ -231,14 +230,16 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: x-small;
+  font-size: small;
   color: #B0BAC5;
+  margin-top: 0.5em;
 }
 
 .resource_data_left_block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 30%;
 }

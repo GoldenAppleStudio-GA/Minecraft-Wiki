@@ -23,7 +23,12 @@
     text-overflow: ellipsis; */
 
 page {
-  font-family: 'WeChatSansSS', Consolas, "Microsoft YaHei", -apple-system, system-ui !important;
+  font-family: 'WeChatSansSS',
+    "PingFang SC",
+    Consolas,
+    "Microsoft YaHei",
+    -apple-system,
+    system-ui !important;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -36,11 +41,22 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'WeChatSansSS', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'WeChatSansSS',
+    "PingFang SC",
+    Consolas,
+    "Microsoft YaHei",
+    -apple-system,
+    system-ui !important;
   background-color: #16181C;
 }
 
 .page_main_view {
+  font-family: 'WeChatSansSS',
+    "PingFang SC",
+    Consolas,
+    "Microsoft YaHei",
+    -apple-system,
+    system-ui !important;
   width: 750rpx;
   height: max-content;
   display: flex;
@@ -71,8 +87,10 @@ page {
   justify-content: space-between;
   background-color: #27292E;
   box-sizing: border-box;
-  margin-bottom: 4vh;
+  margin-bottom: 1vh;
+  overflow: hidden;
 }
+
 
 .page_item {
   border: solid 1px #32343A;
@@ -122,9 +140,16 @@ page {
 
 .page_head_icon {
   border-radius: 20%;
+  border: solid 1px #32343A;
 }
 
 .page_head_main_text {
+  font-family: 'WeChatSansSS',
+    "PingFang SC",
+    Consolas,
+    "Microsoft YaHei",
+    -apple-system,
+    system-ui !important;
   display: flex;
   justify-content: center;
   font-weight: 500;
@@ -151,6 +176,7 @@ page {
 /* 返回栏-结束 */
 
 .bottom_text {
+  font-family: 'WeChatSansSS', "PingFang SC", Consolas, "Microsoft YaHei", -apple-system, system-ui !important;
   color: #7f7f7f;
   font-size: smaller;
   margin-top: 2vh;
@@ -158,6 +184,12 @@ page {
 }
 
 .CCBY-NC-SA3 {
+  font-family: 'WeChatSansSS',
+    "PingFang SC",
+    Consolas,
+    "Microsoft YaHei",
+    -apple-system,
+    system-ui !important;
   font-size: smaller;
   margin: 1vh;
   padding: 0.5em;

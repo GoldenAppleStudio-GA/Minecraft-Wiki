@@ -7,8 +7,8 @@ Page({
   data: {
     app: getApp()
   },
-  feedback(event) {
-    getApp().globalData.RealtimeLog.warn("pages/more/more:用户意见反馈");
+  contact(event) {
+    getApp().globalData.RealtimeLog.warn("pages/more/more:用户进入客服会话", event);
   },
   debug(event) {
     wx.setStorageSync('debug_mode', true);
@@ -18,7 +18,7 @@ Page({
     });
     setTimeout(() => {
       wx.hideToast();
-    }, 500);
+    }, 1000);
     getApp().globalData.RealtimeLog.warn("pages/more/more:调试已启用");
     wx.setEnableDebug({
       enableDebug: true

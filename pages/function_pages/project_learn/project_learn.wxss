@@ -191,7 +191,100 @@
   margin-top: 1vh;
   width: 100%;
   height: max-content;
-  border: solid 1px #1BD96A;
-  border-radius: 8px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 5px;
   overflow: hidden;
+  /* 1px  */
+}
+
+.R {
+  border-color: #00AF5C;
+  color: #00AF5C;
+}
+
+.A {
+  border-color: #CB2245;
+  color: #CB2245;
+}
+
+.B {
+  border-color: #E08325;
+  color: #E08325;
+}
+
+.search_resource_page_change {
+  height: 3.5vh;
+  width: 710rpx;
+  box-sizing: border-box;
+  margin-bottom: 1vh;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search_resource_page_number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  color: #96A2B0;
+  height: 3.5vh;
+  background-color: #27292E;
+  border-radius: 5px;
+  border: solid 1px #32343A;
+}
+
+.project_version_bolck {
+  height: max-content;
+  width: 710rpx;
+  background-color: #27292E;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 1vh;
+}
+
+.project_version_line {
+  border-bottom: solid 1px #42444A;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: solid 1px #42444A;
+}
+
+/* 如果需要最后一项没有下边框 */
+.project_version_line:last-child {
+  border-bottom: none !important;
+}
+
+.project_version_line_first_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+
+.release_version_icon {
+  color: #1BD96A;
+  background-color: #244C3A;
+}
+
+.beta_version_icon {
+  color: #FFA347;
+  background-color: #524233;
+}
+
+.alpha_version_icon {
+  color: #FF496E;
+  background-color: #52303B;
 }

@@ -1,5 +1,5 @@
 {
   "usingComponents": {},
-    "componentFramework": "glass-easel",
-    "glassEaselWebview": true
+  "componentFramework": "glass-easel",
+  "glassEaselWebview": true
 }
