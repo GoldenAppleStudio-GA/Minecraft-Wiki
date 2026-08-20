@@ -3,7 +3,7 @@
   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
-      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">我的世界百科</view>
     </view>
   </view>
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
@@ -88,20 +88,6 @@
             <image src="/resource/images/follow_icon.png" class="download_icon"></image>
             {{item.follows}}
           </view>
-          <!-- <view class="resource_data_copy_block" catch:tap="copy_project_id" data-index="{{index}}">
-            <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem; margin-left: 0.5em;margin-right: 0.5em;">
-            </image>
-            <view>
-              复制ID
-            </view>
-          </view>
-          <view class="resource_data_copy_block" catch:tap="copy_project_url" data-index="{{index}}">
-            <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem; margin-left: 0.5em;margin-right: 0.5em;">
-            </image>
-            <view>
-              复制链接
-            </view>
-          </view> -->
         </view>
       </view>
     </view>
@@ -115,5 +101,6 @@
     <view wx:if="{{search_resource_list.length == 0}}" class="no_data_block">
       -- 暂无数据 --
     </view>
+    <view class="bottom_text" wx:if="{{search_resource_list.length != 0}}">刷到基岩了~</view>
   </view>
 </view>
