@@ -13,6 +13,8 @@
   <view class="page_main_view">
     <scroll-view class="minecraft_page_item" scroll-x="true">
       <towxml nodes="{{page_data}}" />
+      <view class="CCBY-NC-SA3">更新日期:2026.8.20</view>
     </scroll-view>
   </view>
 </view>
+<view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>

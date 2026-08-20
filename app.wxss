@@ -87,7 +87,7 @@ page {
   justify-content: space-between;
   background-color: #27292E;
   box-sizing: border-box;
-  margin-bottom: 4vh;
+  margin-bottom: 1vh;
   overflow: hidden;
 }
 
@@ -140,6 +140,7 @@ page {
 
 .page_head_icon {
   border-radius: 20%;
+  border: solid 1px #32343A;
 }
 
 .page_head_main_text {

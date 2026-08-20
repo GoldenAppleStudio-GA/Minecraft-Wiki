@@ -18,7 +18,7 @@ Page({
     });
     setTimeout(() => {
       wx.hideToast();
-    }, 500);
+    }, 1000);
     getApp().globalData.RealtimeLog.warn("pages/more/more:调试已启用");
     wx.setEnableDebug({
       enableDebug: true

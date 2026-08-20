@@ -93,7 +93,7 @@ Page({
       this.setData({
         'disabled_search_button': false
       })
-    }, 500);
+    }, 1000);
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:模组搜索表单提交\n", event);
     this.setData({
       'mod_search_config.mod_game_version': event.detail.value.mod_game_version.replace(/\s/g, '').match(/[\d.]/g)?.join('') || '',

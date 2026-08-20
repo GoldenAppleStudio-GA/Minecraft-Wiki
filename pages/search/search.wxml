@@ -88,7 +88,7 @@
             <image src="/resource/images/follow_icon.png" class="download_icon"></image>
             {{item.follows}}
           </view>
-          <view class="resource_data_copy_block" catch:tap="copy_project_id" data-index="{{index}}">
+          <!-- <view class="resource_data_copy_block" catch:tap="copy_project_id" data-index="{{index}}">
             <image src="/resource/images/copy_icon.png" style="height: 1rem;width: 1rem; margin-left: 0.5em;margin-right: 0.5em;">
             </image>
             <view>
@@ -101,7 +101,7 @@
             <view>
               复制链接
             </view>
-          </view>
+          </view> -->
         </view>
       </view>
     </view>

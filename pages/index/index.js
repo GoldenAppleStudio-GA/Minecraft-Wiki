@@ -96,7 +96,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500)
+          }, 1000)
         };
       },
       fail: (err) => {
@@ -106,7 +106,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500)
+        }, 1000)
         getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
@@ -135,7 +135,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500)
+          }, 1000)
         };
       },
       fail: (err) => {
@@ -145,7 +145,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500)
+        }, 1000)
         getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
@@ -174,7 +174,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500)
+          }, 1000)
           getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
         }
       },
@@ -185,7 +185,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500)
+        }, 1000)
         getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });
@@ -214,7 +214,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500)
+          }, 1000)
           getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
         }
       },
@@ -225,7 +225,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500)
+        }, 1000)
         getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
       }
     });

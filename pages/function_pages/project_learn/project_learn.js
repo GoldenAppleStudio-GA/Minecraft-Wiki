@@ -80,7 +80,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500);
+          }, 1000);
         }
       },
       fail: (err) => {
@@ -90,7 +90,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500);
+        }, 1000);
         getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:网络请求失败\n", err);
       }
     });
@@ -115,7 +115,7 @@ Page({
           });
           setTimeout(() => {
             wx.hideToast()
-          }, 500);
+          }, 1000);
         }
       },
       fail: (err) => {
@@ -125,7 +125,7 @@ Page({
         });
         setTimeout(() => {
           wx.hideToast()
-        }, 500);
+        }, 1000);
         getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:网络请求失败\n", err);
       }
     });
@@ -193,6 +193,15 @@ Page({
     });
   },
   project_download_main(event) {
+    if (this.data.project_view_type === 2) {
+      wx.showToast({
+        title: "已在下载页",
+        icon: "none"
+      });
+      setTimeout(() => {
+        wx.hideToast();
+      }, 1000);
+    };
     this.setData({
       'project_view_type': 2
     });
@@ -210,7 +219,7 @@ Page({
             data: this.data.project_changelog_data[version_index].files[0].url,
             success: (res) => {
               wx.showToast({
-                title: "已复制下载链接,请前往浏览器下载",
+                title: "已复制",
                 icon: "none"
               });
               setTimeout(() => {
@@ -220,10 +229,14 @@ Page({
             }
           });
         } else if (tap_index === 1) {
-          wx.showLoading({
+          wx.showToast({
             title: "下载中",
-            mask: true
-          })
+            icon: "none"
+          });
+          setTimeout(() => {
+            wx.hideToast();
+          }, 1000)
+
           wx.downloadFile({
             url: this.data.project_changelog_data[version_index].files[0].url,
             enableHttp2: true,
@@ -240,7 +253,7 @@ Page({
                     });
                     setTimeout(() => {
                       wx.hideToast();
-                    }, 500)
+                    }, 1000)
                   },
                   fail: (err) => {
                     getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:下载文件收藏失败\n", err);
@@ -250,7 +263,7 @@ Page({
                     });
                     setTimeout(() => {
                       wx.hideToast();
-                    }, 500)
+                    }, 1000)
                   }
                 });
               } else {
@@ -261,7 +274,7 @@ Page({
                 });
                 setTimeout(() => {
                   wx.hideToast();
-                }, 500)
+                }, 1000)
               };
             },
             fail: (err) => {
@@ -272,10 +285,7 @@ Page({
               });
               setTimeout(() => {
                 wx.hideToast();
-              }, 500)
-            },
-            complete: (res) => {
-              wx.hideLoading();
+              }, 1000)
             }
           })
         };

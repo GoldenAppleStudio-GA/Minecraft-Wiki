@@ -15,135 +15,83 @@
       <view id="version" wx:if="{{menu_page == 0}}" class="menu">
         <view class="level_line" data-name="1_0_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 0em;display: inline-block;"></view>
-          <text class="number_text">1</text><text class="data_text">Java版</text>
+          <text class="number_text">1</text><text class="data_text">Minecraft</text>
         </view>
         <view class="level_line" data-name="1_1_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.1</text><text class="data_text,link_text">独有特性</text>
+          <text class="number_text">1.1</text><text class="data_text,link_text">购买及供应</text>
         </view>
         <view class="level_line" data-name="1_2_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.2</text><text class="data_text,link_text">获取游戏</text>
+          <text class="number_text">1.2</text><text class="data_text,link_text">游戏内容</text>
+        </view>
+        <view class="level_line" data-name="1_2_1_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.1</text><text class="data_text,link_text">方块</text>
+        </view>
+        <view class="level_line" data-name="1_2_2_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.2</text><text class="data_text,link_text">玩家</text>
+        </view>
+        <view class="level_line" data-name="1_2_3_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.3</text><text class="data_text,link_text">采矿</text>
+        </view>
+        <view class="level_line" data-name="1_2_4_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.4</text><text class="data_text,link_text">合成与烧炼</text>
+        </view>
+        <view class="level_line" data-name="1_2_5_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.5</text><text class="data_text,link_text">酿造与附魔</text>
+        </view>
+        <view class="level_line" data-name="1_2_6_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.6</text><text class="data_text,link_text">生物</text>
+        </view>
+        <view class="level_line" data-name="1_2_7_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.7</text><text class="data_text,link_text">下界</text>
+        </view>
+        <view class="level_line" data-name="1_2_8_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.8</text><text class="data_text,link_text">末地</text>
+        </view>
+        <view class="level_line" data-name="1_2_9_0_0" catch:tap="item_click">
+          <view style="height: 1em;width: 4em;display: inline-block;"></view>
+          <text class="number_text">1.2.9</text><text class="data_text,link_text">多人游戏</text>
+        </view>
+        <view class="level_line" data-name="1_2_9_1_0" catch:tap="item_click">
+          <view style="height: 1em;width: 6em;display: inline-block;"></view>
+          <text class="number_text">1.2.9.1</text><text class="data_text,link_text">Minecraft Realms</text>
         </view>
         <view class="level_line" data-name="1_3_0_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.3</text><text class="data_text,link_text">开发</text>
+          <text class="number_text">1.3</text><text class="data_text,link_text">平台</text>
         </view>
         <view class="level_line" data-name="1_3_1_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.1</text><text class="data_text,link_text">创作过程</text>
+          <text class="number_text">1.3.1</text><text class="data_text,link_text">基岩版</text>
         </view>
         <view class="level_line" data-name="1_3_2_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.2</text><text class="data_text,link_text">Classic</text>
+          <text class="number_text">1.3.2</text><text class="data_text,link_text">Java版</text>
         </view>
         <view class="level_line" data-name="1_3_3_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.3</text><text class="data_text,link_text">Indev</text>
+          <text class="number_text">1.3.3</text><text class="data_text,link_text">原主机版</text>
         </view>
         <view class="level_line" data-name="1_3_4_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.4</text><text class="data_text,link_text">Alpha</text>
+          <text class="number_text">1.3.4</text><text class="data_text,link_text">New Nintendo 3DS版</text>
         </view>
         <view class="level_line" data-name="1_3_5_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.5</text><text class="data_text,link_text">正式版</text>
+          <text class="number_text">1.3.5</text><text class="data_text,link_text">教育版</text>
         </view>
         <view class="level_line" data-name="1_3_6_0_0" catch:tap="item_click">
           <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.3.6</text><text class="data_text,link_text">演示模式</text>
-        </view>
-        <view class="level_line" data-name="1_4_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.4</text><text class="data_text,link_text">控制</text>
-        </view>
-        <view class="level_line" data-name="1_5_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.5</text><text class="data_text,link_text">系统需求</text>
-        </view>
-        <view class="level_line" data-name="1_5_1_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.1</text><text class="data_text,link_text">硬件需求</text>
-        </view>
-        <view class="level_line" data-name="1_5_2_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.5.2</text><text class="data_text,link_text">软件需求</text>
-        </view>
-        <view class="level_line" data-name="1_6_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.6</text><text class="data_text,link_text">公众反应</text>
-        </view>
-        <view class="level_line" data-name="1_6_1_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">1.6.1</text><text class="data_text,link_text">奖项</text>
-        </view>
-        <view class="level_line" data-name="1_7_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.7</text><text class="data_text,link_text">预告片</text>
-        </view>
-        <view class="level_line" data-name="1_8_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">1.8</text><text class="data_text,link_text">你知道吗</text>
-        </view>
-        <view class="level_line" data-name="2_0_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 0em;display: inline-block;"></view>
-          <text class="number_text">2</text><text class="data_text">基岩版</text>
-        </view>
-        <view class="level_line" data-name="2_1_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.1</text><text class="data_text,link_text">基岩代码库</text>
-        </view>
-        <view class="level_line" data-name="2_2_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.2</text><text class="data_text,link_text">命名</text>
-        </view>
-        <view class="level_line" data-name="2_3_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.3</text><text class="data_text,link_text">游戏内容</text>
-        </view>
-        <view class="level_line" data-name="2_3_1_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.3.1</text><text class="data_text,link_text">兼容设备</text>
-        </view>
-        <view class="level_line" data-name="2_4_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.4</text><text class="data_text,link_text">开发</text>
-        </view>
-        <view class="level_line" data-name="2_4_1_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.1</text><text class="data_text,link_text">发布</text>
-        </view>
-        <view class="level_line" data-name="2_4_2_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.2</text><text class="data_text,link_text">Alpha</text>
-        </view>
-        <view class="level_line" data-name="2_4_3_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.3</text><text class="data_text,link_text">正式版</text>
-        </view>
-        <view class="level_line" data-name="2_4_4_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.4</text><text class="data_text,link_text">测试与预览版</text>
-        </view>
-        <view class="level_line" data-name="2_4_5_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 4em;display: inline-block;"></view>
-          <text class="number_text">2.4.5</text><text class="data_text,link_text">开发者版本</text>
-        </view>
-        <view class="level_line" data-name="2_5_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.5</text><text class="data_text,link_text">价格</text>
-        </view>
-        <view class="level_line" data-name="2_6_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.6</text><text class="data_text,link_text">销量</text>
-        </view>
-        <view class="level_line" data-name="2_7_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.7</text><text class="data_text,link_text">平台差异</text>
-        </view>
-        <view class="level_line" data-name="2_8_0_0_0" catch:tap="item_click">
-          <view style="height: 1em;width: 2em;display: inline-block;"></view>
-          <text class="number_text">2.8</text><text class="data_text,link_text">画廊</text>
+          <text class="number_text">1.3.6</text><text class="data_text,link_text">其他版本</text>
         </view>
       </view>
       <view id="trading" wx:if="{{menu_page == 1}}" class="menu">

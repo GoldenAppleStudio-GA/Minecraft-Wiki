@@ -281,7 +281,7 @@
       Invicon Potion of Strength.png：Minecraft中Potion of Strength的精灵图，链接到力量药水，描述：力量药水 力量 II（01:30） 当生效后： +6 攻击伤害
 
       力量药水
-    ffectSprite strength.png：Minecraft中strength的精灵图 1:30 力量
+      ffectSprite strength.png：Minecraft中strength的精灵图 1:30 力量
       攻击伤害属性增加3（♥♥）。[仅Java版]
       近战攻击伤害增加30%再加1（♥）。[仅基岩版]
       增强版：
@@ -378,7 +378,7 @@
       Invicon Potion of Slow Falling.png：Minecraft中Potion of Slow Falling的精灵图，链接到缓降药水，描述：缓降药水 缓降（01:30）
 
       缓降药水
-    EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 1:30
+      EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 1:30
 
       Invicon Phantom Membrane.png：Minecraft中Phantom Membrane的精灵图，链接到幻翼膜，描述：幻翼膜
 
@@ -387,7 +387,7 @@
       Invicon Potion of Slow Falling.png：Minecraft中Potion of Slow Falling的精灵图，链接到缓降药水，描述：缓降药水 缓降（04:00）
 
       缓降药水
-    EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 4:00
+      EffectSprite slow-falling.png：Minecraft中slow-falling的精灵图 4:00
       - 缓降
       减缓生物的降落速度，并在着地时不会受到摔落伤害。
       负面效果
@@ -464,7 +464,7 @@
       Invicon Potion of Slowness.png：Minecraft中Potion of Slowness的精灵图，链接到迟缓药水，描述：迟缓药水 缓慢 IV（00:20） 当生效后： -60% 速度
 
       迟缓药水
-    EffectSprite slowness.png：Minecraft中slowness的精灵图 0:20 缓慢
+      EffectSprite slowness.png：Minecraft中slowness的精灵图 0:20 缓慢
       减缓实体的移动速度至正常速度85%。
       增强版：
       缓慢 IV
@@ -679,5 +679,6 @@
       Java版1.9中的酿造界面纹理文件
       Java版1.9中的酿造界面纹理文件
     </view>
+    <view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>
   </view>
 </view>

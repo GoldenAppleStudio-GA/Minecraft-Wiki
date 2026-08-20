@@ -93,7 +93,7 @@
         <view class="project_version_line" wx:for="{{project_changelog_data}}" wx:key="*this" id="{{'version_' + index}}">
           <view class="project_version_line_first_line">
             <view style="display: flex;height: 100%;width: 70%;overflow: hidden;flex-direction: row;align-items: center;">
-              <view class="{{project_changelog_data[index].version_type + '_version_icon'}}" style="flex-grow: inherit;font-size: x-large;font-weight: 700;border-radius: 50%;height: 1.2em;width: 1.2em;display: flex;align-items: center;justify-content: center;">
+              <view class="{{project_changelog_data[index].version_type + '_version_icon'}}" style="flex-grow: inherit;font-size: 1.3rem;font-weight: 700;border-radius: 50%;height: 1.7rem;width: 1.7rem;display: flex;align-items: center;justify-content: center;">
                 {{project_changelog_type[index]}}
               </view>
               <view style="color: #ffffff;font-weight: 600;height: 1.3em;overflow: hidden;width: 70%;margin-left: 1em;line-height: 1.3em;" catch:tap="changelog_name_click">
