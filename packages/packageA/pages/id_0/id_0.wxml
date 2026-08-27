@@ -12,8 +12,7 @@
   </view>
   <view class="page_main_view">
     <scroll-view class="minecraft_page_item" scroll-x="true">
-      <towxml nodes="{{page_data}}" />
-      <view class="CCBY-NC-SA3">更新日期:2026.8.20</view>
+      <rich-text nodes="{{page_data}}" style="width: 100%;height: max-content;"></rich-text>
     </scroll-view>
   </view>
 </view>

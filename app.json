@@ -14,9 +14,7 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "resizable": false,
-  "usingComponents": {
-    "towxml": "/resource/utils/towxml/towxml"
-  },
+  "usingComponents": {},
   "window": {
     "navigationStyle": "custom"
   },

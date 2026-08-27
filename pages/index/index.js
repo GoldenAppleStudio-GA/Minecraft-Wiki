@@ -42,9 +42,26 @@ Page({
         'follows': "255",
         'icon_url': "https://cdn.modrinth.com/data/w8N6pbsN/976c04d34460dc4a9e4abcf59f7dd46bba487371_96.webp",
         'description': "OPAL Shaders is a shaderpack for Minecraft Java Edition based on BSL Shaders created by Capt Tatsu.\nIt aims to blend a fantasy atmosphere with natural colors and contrast while staying true to Minecraft's original style."
-      },
-      datapack: {}
-    }
+      }
+    },
+    wiki_id: 0,
+    wiki_data: "<h3>加载中...</h3>"
+  },
+  wiki_click(event) {
+    getApp().globalData.RealtimeLog.info("pages/index/index:百科点击\n", event);
+    if (this.data.wiki_id <= 5) {
+      wx.navigateTo({
+        url: "/packages/packageA/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
+      })
+    } else if (this.data.wiki_id > 5 && this.data.wiki_id <= 11) {
+      wx.navigateTo({
+        url: "/packages/packageB/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
+      })
+    } else if (this.data.wiki_id > 11 && this.data.wiki_id <= 16) {
+      wx.navigateTo({
+        url: "/packages/packageC/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
+      })
+    };
   },
   project_mod_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:模组推荐被点击\n", event);
@@ -90,24 +107,11 @@ Page({
             'search_resource_list.mod': this.arry_number(res.data.hits)[0]
           });
         } else {
-          wx.showToast({
-            title: "网络请求错误:" + res.statusCode,
-            icon: "none"
-          });
-          setTimeout(() => {
-            wx.hideToast()
-          }, 1000)
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求错误:\n", res)
         };
       },
       fail: (err) => {
-        wx.showToast({
-          title: "网络请求失败:" + err.errno,
-          icon: "none"
-        });
-        setTimeout(() => {
-          wx.hideToast()
-        }, 1000)
-        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err);
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -129,24 +133,11 @@ Page({
             'search_resource_list.resourcepack': this.arry_number(res.data.hits)[0]
           })
         } else {
-          wx.showToast({
-            title: "网络请求错误:" + res.statusCode,
-            icon: "none"
-          });
-          setTimeout(() => {
-            wx.hideToast()
-          }, 1000)
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求错误:\n", res)
         };
       },
       fail: (err) => {
-        wx.showToast({
-          title: "网络请求失败:" + err.errno,
-          icon: "none"
-        });
-        setTimeout(() => {
-          wx.hideToast()
-        }, 1000)
-        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err);
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -168,25 +159,11 @@ Page({
             'search_resource_list.shader': this.arry_number(res.data.hits)[0]
           })
         } else {
-          wx.showToast({
-            title: "网络请求错误:" + res.statusCode,
-            icon: "none"
-          });
-          setTimeout(() => {
-            wx.hideToast()
-          }, 1000)
-          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
-        }
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求错误:\n", res)
+        };
       },
       fail: (err) => {
-        wx.showToast({
-          title: "网络请求失败:" + err.errno,
-          icon: "none"
-        });
-        setTimeout(() => {
-          wx.hideToast()
-        }, 1000)
-        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err);
       }
     });
     search_text = "abcdefghijklmnopqrstuvwxyz" [Math.floor(Math.random() * 26)];
@@ -208,25 +185,11 @@ Page({
             'search_resource_list.modpack': this.arry_number(res.data.hits)[0]
           })
         } else {
-          wx.showToast({
-            title: "网络请求错误:" + res.statusCode,
-            icon: "none"
-          });
-          setTimeout(() => {
-            wx.hideToast()
-          }, 1000)
-          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
-        }
+          getApp().globalData.RealtimeLog.error("pages/index/index:网络请求错误:\n", res)
+        };
       },
       fail: (err) => {
-        wx.showToast({
-          title: "网络请求失败:" + err.errno,
-          icon: "none"
-        });
-        setTimeout(() => {
-          wx.hideToast()
-        }, 1000)
-        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err)
+        getApp().globalData.RealtimeLog.error("pages/index/index:网络请求失败\n", err);
       }
     });
   },
@@ -245,12 +208,78 @@ Page({
       follows: this.download_number(item.follows)
     }));
   },
+  cleanHtml(htmlText) {
+    if (!htmlText) return '';
+
+    let result = htmlText;
+
+    // 1. 提取 body 内容
+    const bodyMatch = result.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+    if (bodyMatch) {
+      result = bodyMatch[1];
+    }
+
+    // 2. 移除所有图片相关标签（增强版）
+    // 移除 img 标签（所有写法）
+    result = result.replace(/<img\s+[^>]*\/?>/gi, '');
+    result = result.replace(/<img[^>]*>/gi, '');
+
+    // 移除 picture 标签
+    result = result.replace(/<picture[^>]*>[\s\S]*?<\/picture>/gi, '');
+
+    // 移除 figure 标签
+    result = result.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, '');
+
+    // 移除带有背景图片的标签
+    result = result.replace(/<[^>]*background-image[^>]*>/gi, '');
+
+    // 移除 object 标签
+    result = result.replace(/<object[^>]*>[\s\S]*?<\/object>/gi, '');
+
+    // 移除 embed 标签
+    result = result.replace(/<embed[^>]*>/gi, '');
+
+    // 3. 移除 script 和 style
+    result = result.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+    result = result.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+    result = result.replace(/<link[^>]*>/gi, '');
+
+    // 4. 移除所有 style 属性（包括背景图片）
+    result = result.replace(/style\s*=\s*["'][^"']*["']/gi, '');
+
+    // 5. 移除所有 data-* 属性（可能包含图片路径）
+    result = result.replace(/\s+data-[a-z-]*\s*=\s*["'][^"']*["']/gi, '');
+
+    // 6. 移除 srcset 属性
+    result = result.replace(/\s+srcset\s*=\s*["'][^"']*["']/gi, '');
+
+    // 7. 移除 background 属性
+    result = result.replace(/\s+background\s*=\s*["'][^"']*["']/gi, '');
+
+    // 8. 移除 poster 属性（视频封面）
+    result = result.replace(/\s+poster\s*=\s*["'][^"']*["']/gi, '');
+
+    // 9. 移除包含图片路径的链接
+    result = result.replace(/\s+src\s*=\s*["'][^"']*\.(png|jpg|jpeg|gif|svg|webp)[^"']*["']/gi, '');
+
+    // 10. 移除空的图片相关标签残留
+    result = result.replace(/<a[^>]*><\/a>/gi, '');
+    result = result.replace(/<div[^>]*><\/div>/gi, '');
+
+    // 11. 清理多余的空行和空白
+    result = result.replace(/^\s*[\r\n]/gm, '');
+    result = result.replace(/\n{3,}/g, '\n\n');
+    result = result.trim();
+
+    return result;
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
     this.setData({
-      app: getApp()
+      app: getApp(),
+      wiki_id: "0123456789" [Math.floor(Math.random() * 10)]
     });
     this.search_request();
     getApp().globalData.RealtimeLog.info("pages/index/index:页面加载完成\n", options);
@@ -287,27 +316,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
 
   }
 })

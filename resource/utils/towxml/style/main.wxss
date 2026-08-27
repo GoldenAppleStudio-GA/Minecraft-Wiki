@@ -1,11 +1,24 @@
 /*正文样式*/
 .h2w {
-    font-family:
-        'WeChatSansSS', Consolas,
-        "PingFang SC",
-        "Microsoft YaHei",
-        -apple-system,
-        system-ui;
+font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
     font-weight: 300;
     font-size: 32rpx;
     line-height: 1.8;
@@ -176,11 +189,25 @@
 
 .h2w__pre,
 .h2w__code {
-    font-family: Consolas,
-        "PingFang SC",
-        "Microsoft YaHei",
-        -apple-system,
-        system-ui;
+font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
 }
 
 .h2w__code {

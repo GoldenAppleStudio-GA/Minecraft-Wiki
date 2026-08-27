@@ -9,12 +9,12 @@
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
   <view class="page_main_view">
     <view style="height: max-content;width: 750rpx;display: flex;flex-direction: column;align-items: center;justify-content: space-evenly;margin-top: 10vh;">
-      <view style="width: 100%;box-sizing: border-box;height: max-content;padding: 2rem; color: #ffffff;font-size: small;margin-bottom: 3rem;">
+      <view style="width: 100%;box-sizing: border-box;height: max-content;padding: 2rem; color: #ffffff;font-size: medium;margin-bottom: 3rem;">
         为了更好的提供服务，我的世界百科会根据具体功能需要，收集必要的用户信息，请您务必谨慎阅读，充分理解
-        <text style="color: #576B95;font-size: small;" catch:tap="agreePrivacy_page">
+        <text style="color: #576B95;font-size: medium;" catch:tap="agreePrivacy_page">
           《我的世界百科小程序隐私保护指引》
         </text>
-        点击「同意」按钮即代表您已同意前述协议。
+        点击「同意」按钮即代表您已同意此协议。
       </view>
       <view style="width: 750rpx;box-sizing: border-box;height: max-content;padding: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-evenly; position: fixed;top: 75vh;">
         <button type="default" size="mini" catch:tap="disagree" style="height: 100%;width: 35%;">

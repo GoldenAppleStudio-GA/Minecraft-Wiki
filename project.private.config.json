@@ -15,11 +15,32 @@
     "miniprogram": {
       "list": [
         {
-          "name": "packages/packageA/pages/id_1/id_1",
-          "pathName": "packages/packageA/pages/id_1/id_1",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null,
           "launchMode": "default"
+        },
+        {
+          "name": "packages/packageA/pages/id_1/id_1",
+          "pathName": "packages/packageA/pages/id_1/id_1",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/function_pages/project_learn/project_learn",
+          "pathName": "pages/function_pages/project_learn/project_learn",
+          "query": "project_id=nEPdBliE",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/function_pages/menu/menu",

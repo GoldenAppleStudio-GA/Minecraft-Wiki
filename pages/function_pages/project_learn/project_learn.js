@@ -210,7 +210,7 @@ Page({
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:下载按钮点击\n", event);
     var version_index = event.target.dataset.index;
     wx.showActionSheet({
-      itemList: ["复制下载链接", "收藏文件"],
+      itemList: ["复制下载链接", "收藏文件", "转发文件"],
       success: (res) => {
         getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:用户选择下载方式\n", res);
         const tap_index = res.tapIndex;
@@ -236,7 +236,6 @@ Page({
           setTimeout(() => {
             wx.hideToast();
           }, 1000)
-
           wx.downloadFile({
             url: this.data.project_changelog_data[version_index].files[0].url,
             enableHttp2: true,
@@ -259,6 +258,65 @@ Page({
                     getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:下载文件收藏失败\n", err);
                     wx.showToast({
                       title: '文件收藏失败',
+                      icon: "none"
+                    });
+                    setTimeout(() => {
+                      wx.hideToast();
+                    }, 1000)
+                  }
+                });
+              } else {
+                getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:下载文件错误\n", err);
+                wx.showToast({
+                  title: '文件下载错误:' + res.statusCode,
+                  icon: "none"
+                });
+                setTimeout(() => {
+                  wx.hideToast();
+                }, 1000)
+              };
+            },
+            fail: (err) => {
+              getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:下载文件失败\n", err);
+              wx.showToast({
+                title: '文件下载失败:' + res.errno,
+                icon: "none"
+              });
+              setTimeout(() => {
+                wx.hideToast();
+              }, 1000)
+            }
+          })
+        } else if (tap_index === 2) {
+          wx.showToast({
+            title: "下载中",
+            icon: "none"
+          });
+          setTimeout(() => {
+            wx.hideToast();
+          }, 1000)
+          wx.downloadFile({
+            url: this.data.project_changelog_data[version_index].files[0].url,
+            enableHttp2: true,
+            enableQuic: true,
+            success: (res) => {
+              if (res.statusCode === 200) {
+                wx.shareFileToGroup({
+                  filePath: res.tempFilePath,
+                  fileName: this.data.project_changelog_data[version_index].files[0].filename,
+                  success: (res) => {
+                    wx.showToast({
+                      title: '文件分享成功',
+                      icon: "success"
+                    });
+                    setTimeout(() => {
+                      wx.hideToast();
+                    }, 1000)
+                  },
+                  fail: (err) => {
+                    getApp().globalData.RealtimeLog.error("pages/function_pages/project_learn/project_learn:下载文件分享失败\n", err);
+                    wx.showToast({
+                      title: '文件分享失败',
                       icon: "none"
                     });
                     setTimeout(() => {
@@ -383,14 +441,6 @@ Page({
       }
     }
   },
-  project_image_click(event) {
-    wx.previewMedia({
-      sources: [{
-        url: this.data.project_data.icon_url
-      }],
-      showmenu: true
-    });
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -423,27 +473,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
 
   }
 })

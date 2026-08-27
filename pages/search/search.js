@@ -27,15 +27,15 @@ Page({
   search_page_back(event) {
     if (!this.data.search_resource_page <= 1) {
       this.setData({
-        'search_resource_page': --this.data.search_resource_page
-      })
+        'search_resource_page': this.data.search_resource_page - 1
+      });
     };
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
   },
   search_page_next(event) {
     if (this.data.search_resource_page < this.data.search_resource_page_number) {
       this.setData({
-        'search_resource_page': ++this.data.search_resource_page
+        'search_resource_page': this.data.search_resource_page + 1
       });
       this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
     };
@@ -55,16 +55,6 @@ Page({
       downloads: this.download_number(item.downloads),
       follows: this.download_number(item.follows)
     }));
-  },
-  add_search_resource_page(type) {
-    if (type === "+") {
-      this.data.search_resource_page = ++this.data.search_resource_page;
-    } else if (type === "-") {
-      if (this.data.search_resource_page >= 1) {
-        this.data.search_resource_page = --this.data.search_resource_page;
-      }
-    };
-    return
   },
   getModTypeValue(data) {
     const type = data;
@@ -169,7 +159,7 @@ Page({
         if (res.statusCode === 200) {
           this.setData({
             'search_resource_list': this.arry_number(res.data.hits),
-            'search_resource_page_number': Math.floor(res.data.total_hits / 20)
+            'search_resource_page_number': Math.ceil(res.data.total_hits / 20)
           })
         } else {
           wx.showToast({
@@ -275,31 +265,14 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide() {},
+  onHide() {
+
+  },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload() {},
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
+  onUnload() {
 
   }
 });

@@ -22,12 +22,92 @@
     overflow: hidden;
     text-overflow: ellipsis; */
 
-page {
-  font-family: 'WeChatSansSS',
-    "PingFang SC",
+
+:root {
+  font-family:
+    Menlo,
+    Monaco,
     Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
     "Microsoft YaHei",
-    -apple-system,
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
+}
+
+view {
+  font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
+}
+
+text {
+  font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
+}
+
+page {
+  font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
     system-ui !important;
   height: max-content;
   display: flex;
@@ -41,21 +121,47 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'WeChatSansSS',
-    "PingFang SC",
+  font-family:
+    Menlo,
+    Monaco,
     Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
     "Microsoft YaHei",
-    -apple-system,
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
     system-ui !important;
   background-color: #16181C;
 }
 
 .page_main_view {
-  font-family: 'WeChatSansSS',
-    "PingFang SC",
+  font-family:
+    Menlo,
+    Monaco,
     Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
     "Microsoft YaHei",
-    -apple-system,
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
     system-ui !important;
   width: 750rpx;
   height: max-content;
@@ -144,11 +250,24 @@ page {
 }
 
 .page_head_main_text {
-  font-family: 'WeChatSansSS',
-    "PingFang SC",
+  font-family:
+    Menlo,
+    Monaco,
     Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
     "Microsoft YaHei",
-    -apple-system,
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
     system-ui !important;
   display: flex;
   justify-content: center;
@@ -176,7 +295,25 @@ page {
 /* 返回栏-结束 */
 
 .bottom_text {
-  font-family: 'WeChatSansSS', "PingFang SC", Consolas, "Microsoft YaHei", -apple-system, system-ui !important;
+  font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
   color: #7f7f7f;
   font-size: smaller;
   margin-top: 2vh;
@@ -184,11 +321,24 @@ page {
 }
 
 .CCBY-NC-SA3 {
-  font-family: 'WeChatSansSS',
-    "PingFang SC",
+  font-family:
+    Menlo,
+    Monaco,
     Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
     "Microsoft YaHei",
-    -apple-system,
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
     system-ui !important;
   font-size: smaller;
   margin: 1vh;

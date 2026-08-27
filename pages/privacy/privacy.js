@@ -58,13 +58,11 @@ Page({
     getApp().globalData.RealtimeLog.info("pages/privacy/privacy:页面渲染");
   },
 
-  onHide() {},
+  onHide() {
 
-  onUnload() {},
+  },
 
-  onPullDownRefresh() {},
+  onUnload() {
 
-  onReachBottom() {},
-
-  onShareAppMessage() {}
+  }
 });

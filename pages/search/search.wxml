@@ -63,13 +63,13 @@
     </form>
     <view class="search_resource_page_change">
       <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
-      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
+      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0|| search_resource_list.length == 1?'hidden':'visible'}};">
         {{search_resource_page+'/'+search_resource_page_number}}
       </view>
       <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>
     </view>
     <view class="search_resource_list" wx:for="{{search_resource_list}}" wx:key="*this" data-index="{{index}}" catch:tap="search_resource_item_click">
-      <image src="{{item.icon_url}}" class="resource_image"></image>
+      <image src="{{item.icon_url}}" class="resource_image" lazy-load="true" show-menu-by-longpress="true" webp="true"></image>
       <view class="resource_data_block">
         <view class="resource_data_right_block">
           <view class="resource_data_name">
@@ -81,11 +81,11 @@
         </view>
         <view class="resource_data_left_block">
           <view class="resource_data_download_block">
-            <image src="/resource/images/download_icon.png" class="download_icon"></image>
+            <image src="/resource/images/download_icon.png" class="download_icon" lazy-load="true"></image>
             {{item.downloads}}
           </view>
           <view class="resource_data_follows_block">
-            <image src="/resource/images/follow_icon.png" class="download_icon"></image>
+            <image src="/resource/images/follow_icon.png" class="download_icon" lazy-load="true"></image>
             {{item.follows}}
           </view>
         </view>
@@ -93,7 +93,7 @@
     </view>
     <view class="search_resource_page_change">
       <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==1|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_back"></image>
-      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0?'hidden':'visible'}};">
+      <view class="search_resource_page_number" style="visibility: {{search_resource_page_number==0 || search_resource_list.length == 0 || search_resource_list.length == 1?'hidden':'visible'}};">
         {{search_resource_page_number+'/'+search_resource_page}}
       </view>
       <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{search_resource_page==search_resource_page_number ||search_resource_page_number==0|| search_resource_list.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="search_page_next"></image>

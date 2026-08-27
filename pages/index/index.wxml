@@ -17,13 +17,30 @@
   <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
 
   <view class="page_main_view">
+    <view class="mod_provite" catch:tap="wiki_click" style="background-color: #00000000;">
+      <view class="mod_provite_data_block" style="background-color: #00000000;">
+        <view class="mod_provite_data_block_first_line">
+          <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" style="height: 8vh;width: 8vh;border-radius: 8px;box-sizing: border-box;" show-menu-by-longpress="true">
+          </image>
+          <view class="mod_provite_data_block_first_line_right_block">
+            <view class="mod_provite_data_block_tittle">
+              {{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].name}}
+            </view>
+          </view>
+          <view class="item_right">
+            <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 1.5em;width: 1.5em;"></image>
+          </view>
+        </view>
+      </view>
+
+    </view>
     <view class="mod_provite" catch:tap="project_mod_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         模组推荐
       </view>
       <view class="mod_provite_data_block">
         <view class="mod_provite_data_block_first_line">
-          <image src="{{search_resource_list.mod.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          <image src="{{search_resource_list.mod.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;" show-menu-by-longpress="true">
           </image>
           <view class="mod_provite_data_block_first_line_right_block">
             <view class="mod_provite_data_block_tittle">
@@ -61,7 +78,7 @@
       </view>
       <view class="mod_provite_data_block">
         <view class="mod_provite_data_block_first_line">
-          <image src="{{search_resource_list.modpack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          <image src="{{search_resource_list.modpack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;" show-menu-by-longpress="true">
           </image>
           <view class="mod_provite_data_block_first_line_right_block">
             <view class="mod_provite_data_block_tittle">
@@ -99,7 +116,7 @@
       </view>
       <view class="mod_provite_data_block">
         <view class="mod_provite_data_block_first_line">
-          <image src="{{search_resource_list.resourcepack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          <image src="{{search_resource_list.resourcepack.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;" show-menu-by-longpress="true">
           </image>
           <view class="mod_provite_data_block_first_line_right_block">
             <view class="mod_provite_data_block_tittle">
@@ -137,7 +154,7 @@
       </view>
       <view class="mod_provite_data_block">
         <view class="mod_provite_data_block_first_line">
-          <image src="{{search_resource_list.shader.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;">
+          <image src="{{search_resource_list.shader.icon_url}}" style="height: 8vh;width: 8vh;border-radius: 8px;border: solid 1px #32343A;margin-left: 10rpx;" show-menu-by-longpress="true">
           </image>
           <view class="mod_provite_data_block_first_line_right_block">
             <view class="mod_provite_data_block_tittle">

@@ -25,23 +25,31 @@
           AppId
         </view>
         <view style="color: #ffffff;font-size: small;">
-          wx10339c15b75e6686
+          {{app.globalData.app_info.app_id}}
         </view>
       </view>
       <view class="description_author">
         <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
-          原始Id
-        </view>
-        <view style="color: #ffffff;font-size: small;">
-          gh_d117d6dbda5b
-        </view>
-      </view>
-      <view class="description_author">
-        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
-          版本号
+          工程版本
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
-          2.3.3r
+          {{app.globalData.app_info.version}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          运行版本
+        </view>
+        <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
+          {{app.globalData.app_info.online_version}}
+        </view>
+      </view>
+      <view class="description_author">
+        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
+          版本类型
+        </view>
+        <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
+          {{app.globalData.app_info.type}}
         </view>
       </view>
       <view class="description_author">
@@ -49,7 +57,7 @@
           更新日期
         </view>
         <view style="color: #ffffff;font-size: small;">
-          2026.8.20
+          2026.8.28
         </view>
       </view>
     </view>

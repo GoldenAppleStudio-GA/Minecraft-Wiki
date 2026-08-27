@@ -1,3 +1,4 @@
+<!--packages/packageA/pages/id_0/id_0.wxml-->
 <view class="page">
   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
@@ -10,71 +11,9 @@
     <image src="/resource/images/back_icon_FFFFFF_px.png" style="--length:{{app.globalData.page_head_info.height_nopx * 0.8 + 'px'}};height: var(--length);width: var(--length);" class="page_back_item_icon" catch:tap="navigate_back"></image>
   </view>
   <view class="page_main_view">
-    <view class="minecraft_page_item">
-      版本记录
-      “更新”重定向至此。关于正在进行或未来进行的版本更新，请见“计划版本”。关于方块发生变化时所产生的游戏机制，请见“方块更新”。
-      “版本号”重定向至此。关于版本的命名规则，请见“版本格式”。
-      这个页面列出了Minecraft不同平台上的不同开发阶段的版本记录。若无特殊说明，均使用UTC时间。
-      Java版
-      版本记录
-      pre-Classic（2009年5月10日－2009年5月16日）
-      Classic（2009年5月17日－2009年12月23日）
-      Indev（2009年12月23日－2010年2月27日）
-      Infdev（2010年2月27日－2010年6月30日）
-      Alpha（2010年6月30日－2010年12月20日）
-      Beta（2010年12月20日－2011年11月18日）
-      正式版或Java版（2011年11月18日至今）
-      开发版本（2010年10月29日至今）
-      基岩版
-      版本记录
-      携带版Alpha（2011年8月16日－2016年12月19日）
-      携带版（2016年12月19日－2017年9月20日）
-      基岩版（2017年9月20日至今）
-      开发版本（2013年11月22日至今）
-      基岩版编辑器（2023年3月8日至今）
-      服务端（2018年8月28日至今）
-      测试版（2022年5月25日至今）
-      原主机版
-      版本记录
-      Xbox 360版（2012年5月9日－2018年12月19日）
-      PlayStation 3版（2013年12月17日－2020年4月15日）
-      PlayStation 4版（2014年9月4日－2019年12月10日）
-      Xbox One版（2014年9月5日－2024年4月9日）
-      PlayStation Vita版（2014年10月14日－2020年4月15日）
-      Wii U版（2015年12月17日－2018年12月19日）
-      Nintendo Switch版（2017年5月11日－2018年6月21日）
-      New Nintendo 3DS版
-      版本记录（2017年9月15日－2019年1月15日）
-      教育版
-      版本记录（2016年11月1日至今）
-      开发版本（2016年6月28日至今）
-      服务端（2026年2月17日至今）
-      测试版（2025年10月1日至今）
-      中国版
-      版本记录（2017年4月10日至今）
-      手游版（2017年9月5日至今）
-      基岩互通版（2025年12月23日至今）
-      Java经典版（2017年4月8日至今）
-      开发者启动器（2018年9月20日至今）
-      树莓派版
-      版本记录（2013年2月11日）
-      Minecraft Earth
-      版本记录（2019年7月16日－2021年6月30日）
-      Minecraft Dungeons
-      版本记录（2020年3月25日－2022年11月30日）
-      封闭测试版本和预加载版本（2020年3月25日－2020年5月26日）
-      正式版（2020年5月26日－2022年11月30日）
-      Minecraft Legends
-      版本记录（2023年4月18日－2023年12月7日）
-      Minecraft: Story Mode
-      版本记录（2015年10月28日－2018年2月28日）
-      Season One（2015年10月28日－2017年11月16日）
-      Season Two（2017年7月11日－2018年4月26日）
-      Minecraft启动器
-      版本记录（2013年4月13日至今）
-      Minecraft Dungeons启动器
-      版本记录（2020年4月2日－2021年1月19日）
-    </view>
-    <view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>
+    <scroll-view class="minecraft_page_item" scroll-x="true">
+      <rich-text nodes="{{page_data}}" style="width: 100%;height: max-content;"></rich-text>
+    </scroll-view>
   </view>
 </view>
+<view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>

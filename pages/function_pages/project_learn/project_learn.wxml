@@ -14,7 +14,7 @@
     <view class="project_main_info_line" wx:if="{{has_project_data === true}}">
       <view class="project_main_info_first_line">
         <view>
-          <image class="project_image" src="{{project_data.icon_url}}" catch:tap="project_image_click">
+          <image class="project_image" src="{{project_data.icon_url}}" show-menu-by-longpress="true">
           </image>
         </view>
         <view class="project_main_info_first_line_right_block">
@@ -59,35 +59,35 @@
     </view>
     <view class="project_changelog_info" wx:if="{{project_view_type === 1 && project_changelog_article.length !=0}}">
       <view class="search_resource_page_change">
-        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number > 1 && project_changelog_data.length > 0 ?'visible':'hidden'}};" catch:tap="changelog_page_back"></image>
         <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
-          {{project_changelog_page_number+'/'+project_data.versions.length}}
+          {{project_changelog_page_number+'/'+(project_data.versions.length /10 - (project_data.versions.length %10)/10 +1)}}
         </view>
-        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number < (project_data.versions.length /10 - (project_data.versions.length %10)/10 +1) && project_changelog_data.length != 0?'visible':'hidden'}};" catch:tap="changelog_page_next"></image>
       </view>
       <view class="project_changelog_info_block,{{project_changelog_type[index]}}" data-index="{{index}}" wx:for="{{project_changelog_article}}" wx:key="*this">
         <view style="width: max-content;margin-left: 1em;" catch:tap="version_name_click" id="{{'changelog_'+index}}">
           <view style="line-height: 1.3em;width: 100%;font-weight: 600;font-size: x-large;overflow: hidden;">
-            {{project_changelog_data[index].name}}
+            {{project_changelog_data[index].version_number}}
           </view>
         </view>
         <towxml nodes="{{item}}" />
       </view>
       <view class="search_resource_page_change">
-        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number > 1 && project_changelog_data.length > 0 ?'visible':'hidden'}};" catch:tap="changelog_page_back"></image>
         <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
-          {{project_changelog_page_number+'/'+project_data.versions.length}}
+          {{project_changelog_page_number+'/'+(project_data.versions.length /10 - (project_data.versions.length %10)/10 +1)}}
         </view>
-        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number < (project_data.versions.length /10 - (project_data.versions.length %10)/10 +1) && project_changelog_data.length != 0?'visible':'hidden'}};" catch:tap="changelog_page_next"></image>
       </view>
     </view>
     <view class="projrct_version_info" wx:if="{{project_view_type === 2 && project_changelog_article.length !=0}}">
       <view class="search_resource_page_change">
-        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number > 1 && project_changelog_data.length > 0 ?'visible':'hidden'}};" catch:tap="changelog_page_back"></image>
         <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
-          {{project_changelog_page_number+'/'+project_data.versions.length}}
+          {{project_changelog_page_number+'/'+(project_data.versions.length /10 - (project_data.versions.length %10)/10 +1)}}
         </view>
-        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number < (project_data.versions.length /10 - (project_data.versions.length %10)/10 +1) && project_changelog_data.length != 0?'visible':'hidden'}};" catch:tap="changelog_page_next"></image>
       </view>
       <view class="project_version_bolck">
         <view class="project_version_line" wx:for="{{project_changelog_data}}" wx:key="*this" id="{{'version_' + index}}">
@@ -97,7 +97,7 @@
                 {{project_changelog_type[index]}}
               </view>
               <view style="color: #ffffff;font-weight: 600;height: 1.3em;overflow: hidden;width: 70%;margin-left: 1em;line-height: 1.3em;" catch:tap="changelog_name_click">
-                {{item.name}}
+                {{item.version_number}}
               </view>
             </view>
             <image src="/resource/images/download_icon_1BD96A.png" style="height: 1.3em;width: 1.3em;" catch:tap="project_download" data-index="{{index}}">
@@ -114,11 +114,11 @@
         </view>
       </view>
       <view class="search_resource_page_change">
-        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==1|| project_changelog_data.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_back"></image>
+        <image src="/resource/images/back_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number > 1 && project_changelog_data.length > 0 ?'visible':'hidden'}};" catch:tap="changelog_page_back"></image>
         <view class="search_resource_page_number" style="visibility: {{project_changelog_page_number==0 || project_changelog_data.length == 0?'hidden':'visible'}};">
-          {{project_changelog_page_number+'/'+project_data.versions.length}}
+          {{project_changelog_page_number+'/'+(project_data.versions.length /10 - (project_data.versions.length %10)/10 +1)}}
         </view>
-        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;visibility:{{project_changelog_page_number==project_changelog_data.versions.length ||project_changelog_page_number==0|| project_changelog_data.versions.length == 0?'hidden':'visible'}};border: solid 1px #32343A;" catch:tap="changelog_page_next"></image>
+        <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 3.5vh;width: 3.5vh;background-color: #27292E;border-radius: 50%;padding: 0.7vh;box-sizing: border-box;border: solid 1px #32343A; visibility: {{project_changelog_page_number < (project_data.versions.length /10 - (project_data.versions.length %10)/10 +1) && project_changelog_data.length != 0?'visible':'hidden'}};" catch:tap="changelog_page_next"></image>
       </view>
     </view>
     <view class="bottom_text" wx:if="{{data_ready === true}}">刷到基岩了~</view>
