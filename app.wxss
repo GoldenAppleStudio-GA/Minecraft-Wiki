@@ -45,6 +45,29 @@
     system-ui !important;
 }
 
+rich-text {
+  font-size: 28rpx;
+  font-family:
+    Menlo,
+    Monaco,
+    Consolas,
+    "Cascadia Mono",
+    "Ubuntu Mono",
+    "DejaVu Sans Mono",
+    "Liberation Mono",
+    "JetBrains Mono",
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Fira Code",
+    Cousine,
+    "Roboto Mono",
+    "Courier New",
+    Courier,
+    sans-serif,
+    system-ui !important;
+}
+
 view {
   font-family:
     Menlo,
@@ -181,20 +204,20 @@ page {
 }
 
 .minecraft_page_item {
-  padding: 1em;
-  border-radius: 5px;
-  border: solid 1px #32343A;
+  padding: 6%;
+  /* border-radius: 5px; */
+  /* border: solid 1px #32343A; */
   display: inline-flex;
-  margin-top: 1.5vh;
-  width: 710rpx;
+  /* margin-top: 1.5vh; */
+  width: 750rpx;
   height: max-content;
   font-size: small;
   color: #ffffff;
   justify-content: space-between;
-  background-color: #27292E;
+  background-color: #0F111B;
   box-sizing: border-box;
   margin-bottom: 1vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 

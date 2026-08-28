@@ -49,19 +49,9 @@ Page({
   },
   wiki_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:百科点击\n", event);
-    if (this.data.wiki_id <= 5) {
-      wx.navigateTo({
-        url: "/packages/packageA/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
-      })
-    } else if (this.data.wiki_id > 5 && this.data.wiki_id <= 11) {
-      wx.navigateTo({
-        url: "/packages/packageB/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
-      })
-    } else if (this.data.wiki_id > 11 && this.data.wiki_id <= 16) {
-      wx.navigateTo({
-        url: "/packages/packageC/pages/id_" + this.data.wiki_id + "/id_" + this.data.wiki_id,
-      })
-    };
+    wx.navigateTo({
+      url: "/pages/function_pages/menu/menu?page_id=" + this.data.wiki_id
+    });
   },
   project_mod_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:模组推荐被点击\n", event);

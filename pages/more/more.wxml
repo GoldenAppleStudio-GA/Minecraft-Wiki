@@ -38,7 +38,7 @@
       </view>
       <view class="description_author">
         <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
-          运行版本
+          线上版本
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
           {{app.globalData.app_info.online_version}}
@@ -46,7 +46,7 @@
       </view>
       <view class="description_author">
         <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
-          版本类型
+          类型
         </view>
         <view style="color: #ffffff;font-size: small;" catch:longpress="debug">
           {{app.globalData.app_info.type}}

@@ -18,9 +18,12 @@
 
   <view class="page_main_view">
     <view class="mod_provite" catch:tap="wiki_click" style="background-color: #00000000;">
+      <!-- <view style="color: #ffffff;font-size: medium;width: 100%;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;padding-left: 1.5rem;">
+        百科推荐
+      </view> -->
       <view class="mod_provite_data_block" style="background-color: #00000000;">
-        <view class="mod_provite_data_block_first_line">
-          <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" style="height: 8vh;width: 8vh;border-radius: 8px;box-sizing: border-box;" show-menu-by-longpress="true">
+        <view class="mod_provite_data_block_first_line" style="border: none;">
+          <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" style="height: 6vh;width: 6vh;border-radius: 5px;box-sizing: border-box;" show-menu-by-longpress="true">
           </image>
           <view class="mod_provite_data_block_first_line_right_block">
             <view class="mod_provite_data_block_tittle">
@@ -35,7 +38,7 @@
 
     </view>
     <view class="mod_provite" catch:tap="project_mod_click">
-      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1.5rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         模组推荐
       </view>
       <view class="mod_provite_data_block">
@@ -73,7 +76,7 @@
 
     </view>
     <view class="mod_provite" catch:tap="project_modpack_click">
-      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1.5rem;height: 1.5em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         整合包推荐
       </view>
       <view class="mod_provite_data_block">
@@ -111,7 +114,7 @@
     </view>
 
     <view class="mod_provite" catch:tap="project_resourcepack_click">
-      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1.5rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         资源包推荐
       </view>
       <view class="mod_provite_data_block">
@@ -149,7 +152,7 @@
     </view>
 
     <view class="mod_provite" catch:tap="project_shader_click">
-      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
+      <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1.5rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">
         光影包推荐
       </view>
       <view class="mod_provite_data_block">

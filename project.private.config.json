@@ -15,15 +15,15 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
+          "name": "packages\\packageB\\pages\\id_6\\id_6",
+          "pathName": "packages/packageF/pages/id_16/id_16",
           "query": "",
           "scene": null,
           "launchMode": "default"
         },
         {
-          "name": "packages/packageA/pages/id_1/id_1",
-          "pathName": "packages/packageA/pages/id_1/id_1",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "launchMode": "default",
           "scene": null

@@ -3,7 +3,7 @@ App({
   towxml: require('/resource/utils/towxml/index'),
   globalData: {
     app_info: {
-      version: "2.5.1r",
+      version: "2.6.2r",
       online_version: wx.getAccountInfoSync().miniProgram.version,
       type: wx.getAccountInfoSync().miniProgram.envVersion,
       app_id: wx.getAccountInfoSync().miniProgram.appId
@@ -273,6 +273,13 @@ App({
     this.globalData.RealtimeLog.info("_APP_:globalData\n", this.globalData);
     this.globalData.RealtimeLog.info("_APP_:微信APP基础信息\n", this.globalData.app_base_info);
     this.globalData.RealtimeLog.info("_APP_:RealtimeLog日志测试");
+    // wx.request({
+    //   url: "https://zh.minecraft.wiki/w/%E6%95%99%E7%A8%8B",
+    //   data: {},
+    //   success: (res) => {
+    //     console.log(res.data)
+    //   }
+    // });
   },
 
   onShow() {

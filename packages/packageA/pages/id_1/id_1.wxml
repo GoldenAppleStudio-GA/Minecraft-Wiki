@@ -12,7 +12,7 @@
   </view>
   <view class="page_main_view">
     <scroll-view class="minecraft_page_item" scroll-x="true">
-      <rich-text nodes="{{page_data}}" style="width: 100%;height: max-content;"></rich-text>
+      <mp-html content="{{page_data}}" />
     </scroll-view>
   </view>
 </view>

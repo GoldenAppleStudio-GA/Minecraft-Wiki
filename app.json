@@ -57,10 +57,7 @@
       "pages": [
         "pages/id_0/id_0",
         "pages/id_1/id_1",
-        "pages/id_2/id_2",
-        "pages/id_3/id_3",
-        "pages/id_4/id_4",
-        "pages/id_5/id_5"
+        "pages/id_2/id_2"
       ]
     },
     {
@@ -68,12 +65,9 @@
       "name": "packageB",
       "entry": "entry.js",
       "pages": [
-        "pages/id_6/id_6",
-        "pages/id_7/id_7",
-        "pages/id_8/id_8",
-        "pages/id_9/id_9",
-        "pages/id_10/id_10",
-        "pages/id_11/id_11"
+        "pages/id_3/id_3",
+        "pages/id_4/id_4",
+        "pages/id_5/id_5"
       ]
     },
     {
@@ -81,9 +75,36 @@
       "entry": "entry.js",
       "name": "packageC",
       "pages": [
+        "pages/id_6/id_6",
+        "pages/id_7/id_7",
+        "pages/id_8/id_8"
+      ]
+    },
+    {
+      "root": "packages/packageD",
+      "entry": "entry.js",
+      "name": "packageD",
+      "pages": [
+        "pages/id_9/id_9",
+        "pages/id_10/id_10",
+        "pages/id_11/id_11"
+      ]
+    },
+    {
+      "root": "packages/packageE",
+      "entry": "entry.js",
+      "name": "packageE",
+      "pages": [
         "pages/id_12/id_12",
         "pages/id_13/id_13",
-        "pages/id_14/id_14",
+        "pages/id_14/id_14"
+      ]
+    },
+    {
+      "root": "packages/packageF",
+      "entry": "entry.js",
+      "name": "packageF",
+      "pages": [
         "pages/id_15/id_15",
         "pages/id_16/id_16"
       ]
@@ -96,6 +117,14 @@
         "packageA",
         "packageB",
         "packageC"
+      ]
+    },
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "packageD",
+        "packageE",
+        "packageF"
       ]
     }
   },

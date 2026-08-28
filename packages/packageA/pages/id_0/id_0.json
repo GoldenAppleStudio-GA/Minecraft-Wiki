@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-html":"/resource/utils/mp-html/index"
+  },
   "componentFramework": "glass-easel",
   "glassEaselWebview": true
 }
