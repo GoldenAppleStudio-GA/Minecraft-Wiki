@@ -1,38 +1,38 @@
 <!-- index.wxml -->
 <!-- 页头-开始 -->
-<!-- <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
+<!--   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.35);">
     <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
-      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">Minecraft百科</view>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">MC百科站</view>
     </view>
   </view>  -->
-<!-- 页头-结束 -->
-<view id="index_page" class="page">
-  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.2);">
-    <view class=" page_head_item" style="height: var(--height); margin-top: var(--start);">
+<!--   <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.3);">
+    <view class=" page_head_item" style="height: var(--height); margin-top: calc(var(--start) * 0.75);">
       <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
-      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">我的世界百科</view>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">MC百科站</view>
     </view>
   </view>
-  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.2 + 'px'}};"></view>
-
+  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.3 + 'px'}};"></view><!-- 页头-结束 -->
+<view id="index_page" class="page">
+  <view class="page_head" style="--start:{{app.globalData.page_head_info.start}};--height:{{app.globalData.page_head_info.height}};height: calc(var(--start) + var(--height) * 1.3);">
+    <view class=" page_head_item" style="height: var(--height); margin-top: calc(var(--start) * 0.75);">
+      <image src="/resource/images/minecraft_icon_new.png" class="page_head_icon" style="height: var(--height);width:var(--height);"></image>
+      <view class="page_head_main_text" style="font-size: calc(var(--height)* 0.7);height:var(--height);margin-left: calc(var(--height) * 0.3);">MC百科站</view>
+    </view>
+  </view>
+  <view class="hidden_block" style="height: {{app.globalData.page_head_info.start_nopx + app.globalData.page_head_info.height_nopx *1.3 + 'px'}};"></view>
   <view class="page_main_view">
     <view class="mod_provite" catch:tap="wiki_click" style="background-color: #00000000;">
       <!-- <view style="color: #ffffff;font-size: medium;width: 100%;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;padding-left: 1.5rem;">
         百科推荐
       </view> -->
-      <view class="mod_provite_data_block" style="background-color: #00000000;">
-        <view class="mod_provite_data_block_first_line" style="border: none;">
-          <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" style="height: 6vh;width: 6vh;border-radius: 5px;box-sizing: border-box;" show-menu-by-longpress="true">
-          </image>
-          <view class="mod_provite_data_block_first_line_right_block">
-            <view class="mod_provite_data_block_tittle">
-              {{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].name}}
-            </view>
-          </view>
-          <view class="item_right">
-            <image src="/resource/images/next_icon_FFFFFF_px.png" style="height: 1.5em;width: 1.5em;"></image>
-          </view>
+      <view class="page_item" catch:tap="wiki_click" data-itemid="{{item.id}}" style="background-color: #00000000;height: 7.5vh;">
+        <view class="item_left">
+          <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" class="item_icon"></image>
+          <view class="item_name">{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].name}}</view>
+        </view>
+        <view class="item_right">
+          <image src="/resource/images/next_icon_FFFFFF_px.png" class="next_icon"></image>
         </view>
       </view>
 

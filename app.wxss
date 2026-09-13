@@ -214,10 +214,11 @@ page {
   font-size: small;
   color: #ffffff;
   justify-content: space-between;
-  background-color: #0F111B;
+  background-color: #16181C;
   box-sizing: border-box;
   margin-bottom: 1vh;
   overflow: scroll;
+  border-bottom: thick double #E7E7EB;
 }
 
 
@@ -268,35 +269,27 @@ page {
 }
 
 .page_head_icon {
-  border-radius: 20%;
-  border: solid 1px #32343A;
+  border-radius: 15%;
+  border: solid 1px #848484;
 }
 
 .page_head_main_text {
   font-family:
-    Menlo,
-    Monaco,
-    Consolas,
-    "Cascadia Mono",
-    "Ubuntu Mono",
-    "DejaVu Sans Mono",
-    "Liberation Mono",
-    "JetBrains Mono",
+    "mp-quote",
+    -apple-system-font,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
     "PingFang SC",
+    "Hiragino Sans GB",
     "Microsoft YaHei UI",
     "Microsoft YaHei",
-    "Fira Code",
-    Cousine,
-    "Roboto Mono",
-    "Courier New",
-    Courier,
-    sans-serif,
-    system-ui !important;
+    Arial,
+    sans-serif !important;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: 500;
   color: #ffffff;
-  font-size: 70%;
 }
 
 /* 页标头-结束 */

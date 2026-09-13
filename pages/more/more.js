@@ -10,20 +10,6 @@ Page({
   contact(event) {
     getApp().globalData.RealtimeLog.warn("pages/more/more:用户进入客服会话", event);
   },
-  debug(event) {
-    wx.setStorageSync('debug_mode', true);
-    wx.showToast({
-      title: "调试已启用",
-      icon: "none"
-    });
-    setTimeout(() => {
-      wx.hideToast();
-    }, 1000);
-    getApp().globalData.RealtimeLog.warn("pages/more/more:调试已启用");
-    wx.setEnableDebug({
-      enableDebug: true
-    });
-  },
   /**
    * 生命周期函数--监听页面加载
    */
