@@ -3,7 +3,8 @@ App({
   towxml: require('/resource/utils/towxml/index'),
   globalData: {
     app_info: {
-      version: "2.6.2r",
+      version: "2.7.0r",
+      privacy_name: "《MC百科站小程序隐私保护指引》",
       online_version: wx.getAccountInfoSync().miniProgram.version,
       type: wx.getAccountInfoSync().miniProgram.envVersion,
       app_id: wx.getAccountInfoSync().miniProgram.appId
@@ -12,16 +13,17 @@ App({
     all_data: {
       init_data: {
         minecraft_data: {
-          main: {}
+          main: []
         }
       },
       runtime_data: {}
     },
     page_head_info: {
-      start: Number,
-      height: Number,
-      start_nopx: Number,
-      height_nopx: Number
+      start: "",
+      height: "",
+      bottom: "",
+      start_nopx: 0,
+      height_nopx: 0
     },
     device_info: {},
     login_code: "",
@@ -224,6 +226,15 @@ App({
 
 
   onLaunch(res) {
+    wx.getPrivacySetting({
+      success: (res) => {
+        this.globalData.app_info.privacy_name = res.privacyContractName;
+        this.globalData.RealtimeLog.info("_APP_:隐私协议名称\n", res.privacyContractName);
+      },
+      fail: (err) => {
+        this.globalData.RealtimeLog.error("_APP_:获取隐私协议名称失败\n", err)
+      }
+    })
     this.globalData.storage_data = wx.getStorageInfoSync().keys;
     this.globalData.app_base_info = wx.getAppBaseInfo();
     wx.onMemoryWarning((res) => {
@@ -244,25 +255,22 @@ App({
     this.globalData.device_info = wx.getDeviceInfo();
     this.load_data();
     this.globalData.debug_mode = this.globalData.app_base_info.enableDebug;
-    wx.setStorageSync('debug_mode', this.globalData.debug_mode);
-    if (this.globalData.device_info.platform === "devtools" || this.globalData.debug_mode === true) {
-      wx.setEnableDebug({
-        enableDebug: true
-      });
-      this.globalData.debug_mode = true;
-      this.globalData.RealtimeLog.warn("_APP_:调试已启用");
-    } else {
-      wx.setEnableDebug({
-        enableDebug: false
-      });
-      this.globalData.RealtimeLog.warn("_APP_:调试已禁用");
-    };
     this.globalData.page_head_info = {
       start_nopx: wx.getMenuButtonBoundingClientRect().top,
       height_nopx: wx.getMenuButtonBoundingClientRect().height,
       start: wx.getMenuButtonBoundingClientRect().top + "px",
-      height: wx.getMenuButtonBoundingClientRect().height + "px"
+      height: wx.getMenuButtonBoundingClientRect().height + "px",
+      bottom: wx.getMenuButtonBoundingClientRect().bottom + "px"
     };
+    wx.onMenuButtonBoundingClientRectWeightChange((res) => {
+      this.globalData.page_head_info = {
+        start_nopx: res.top,
+        height_nopx: res.height,
+        start: res.top + "px",
+        height: res.height + "px"
+      };
+    })
+
     if (this.globalData.storage_data.includes("save_projects")) {
       this.globalData.saved_project = wx.getStorageSync("save_projects");
     } else {
