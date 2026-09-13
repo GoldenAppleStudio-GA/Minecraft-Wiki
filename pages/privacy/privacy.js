@@ -1,8 +1,7 @@
 // pages/agreePrivacy/agreePrivacy.js
 Page({
   data: {
-    app: getApp(),
-    privacyName: "《我的世界百科小程序隐私保护指引》"
+    app: getApp()
   },
 
   onLoad(options) {
