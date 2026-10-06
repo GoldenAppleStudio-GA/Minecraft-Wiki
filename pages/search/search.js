@@ -23,6 +23,7 @@ Page({
     net_request_data: String,
     search_resource_page: 1,
     search_resource_page_number: 0,
+    ad_state: true
   },
   search_page_back(event) {
     if (!this.data.search_resource_page <= 1) {
@@ -234,7 +235,8 @@ Page({
     this.setData({
       'search_resource_list': [],
       'search_resource_page': 1,
-      app: getApp()
+      'ad_location': "123456789" [Math.floor(Math.random() * 10)],
+      'app': getApp()
     })
     this.search_request(this.data.mod_search_config.mod_name, this.data.mod_types[this.data.mod_search_config.mod_type], this.data.mod_search_config.mod_game_version);
     getApp().globalData.RealtimeLog.info("pages/function_pages/project_learn/project_learn:页面加载完成\n", options);
@@ -281,5 +283,20 @@ Page({
    */
   onUnload() {
 
+  },
+  ad_close() {
+    this.setData({
+      'ad_state': false
+    });
+  },
+  ad_load() {
+    this.setData({
+      'ad_state': true
+    });
+  },
+  ad_error() {
+    this.setData({
+      'ad_state': false
+    });
   }
 });

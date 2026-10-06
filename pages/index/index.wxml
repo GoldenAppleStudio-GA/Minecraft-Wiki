@@ -26,6 +26,10 @@
       <!-- <view style="color: #ffffff;font-size: medium;width: 100%;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;padding-left: 1.5rem;">
         百科推荐
       </view> -->
+      <!-- <view style="width: 710rpx;margin-top: 1vh;border-radius: 10rpx;overflow: hidden;box-sizing: border-box;" wx:if="{{ad_state == true}}">
+        <ad-custom unit-id="adunit-18fef1a6e0ec8a3e" bindclose="ad_close" bindload="ad_load">
+        </ad-custom>
+      </view> -->
       <view class="page_item" catch:tap="wiki_click" data-itemid="{{item.id}}" style="background-color: #00000000;height: 7.5vh;">
         <view class="item_left">
           <image src="{{app.globalData.all_data.init_data.minecraft_data.main[wiki_id].icon_path}}" class="item_icon"></image>
@@ -35,7 +39,10 @@
           <image src="/resource/images/next_icon_FFFFFF_px.png" class="next_icon"></image>
         </view>
       </view>
-
+      <view style="width: 710rpx;margin-top: 1vh;border-radius: 10rpx;overflow: hidden;box-sizing: border-box;" wx:if="{{ad_state == true}}">
+        <ad-custom unit-id="adunit-18fef1a6e0ec8a3e" bindclose="ad_close" bindload="ad_load" binderror="ad_error">
+        </ad-custom>
+      </view>
     </view>
     <view class="mod_provite" catch:tap="project_mod_click">
       <view style="color: #ffffff;font-size: medium;width: 100%;padding-left: 1.5rem;height: 1em;display: inline-flex;flex-direction: row;align-items: center;justify-content: start;">

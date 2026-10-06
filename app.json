@@ -135,5 +135,6 @@
     "downloadFile": 15000
   },
   "componentFramework": "glass-easel",
-  "glassEaselWebview": true
+  "glassEaselWebview": true,
+  "defaultLanguage":"en"
 }

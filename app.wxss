@@ -361,3 +361,11 @@ page {
   padding: 0.5em;
   color: #B2B2B2;
 }
+
+.ad_page {
+  position: fixed;
+  width: max-content;
+  height: max-content;
+  right: 20rpx;
+  bottom: 2vh;
+}

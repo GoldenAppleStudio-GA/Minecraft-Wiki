@@ -1,9 +1,16 @@
 // app.js
+const APP_INFO = {
+  version: "2.8.3r",
+  privacy_name: "《MC百科站小程序隐私保护指引》",
+  online_version: wx.getAccountInfoSync().miniProgram.version,
+  type: wx.getAccountInfoSync().miniProgram.envVersion,
+  app_id: wx.getAccountInfoSync().miniProgram.appId
+};
 App({
   towxml: require('/resource/utils/towxml/index'),
   globalData: {
     app_info: {
-      version: "2.7.0r",
+      version: "2.8.3r",
       privacy_name: "《MC百科站小程序隐私保护指引》",
       online_version: wx.getAccountInfoSync().miniProgram.version,
       type: wx.getAccountInfoSync().miniProgram.envVersion,
@@ -40,7 +47,7 @@ App({
         const message = args.map(arg =>
           typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
         ).join(' ');
-        wx.getRealtimeLogManager().warn(wx.getAccountInfoSync().miniProgram.envVersion, "-", wx.getAccountInfoSync().miniProgram.version, ">>", "log-warn", {
+        wx.getRealtimeLogManager().warn(wx.getAccountInfoSync().miniProgram.envVersion ? wx.getAccountInfoSync().miniProgram.envVersion : "null", "-", APP_INFO.version, ">>", "log-warn", {
           data: message
         });
       },
@@ -50,7 +57,7 @@ App({
         const message = args.map(arg =>
           typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
         ).join(' ');
-        wx.getRealtimeLogManager().error(wx.getAccountInfoSync().miniProgram.envVersion, "-", wx.getAccountInfoSync().miniProgram.version, ">>", "log-error", {
+        wx.getRealtimeLogManager().error(wx.getAccountInfoSync().miniProgram.envVersion ? wx.getAccountInfoSync().miniProgram.envVersion : "null", "-", APP_INFO.version, ">>", "log-error", {
           data: message
         });
       }
@@ -269,18 +276,21 @@ App({
         start: res.top + "px",
         height: res.height + "px"
       };
-    })
-
+    });
     if (this.globalData.storage_data.includes("save_projects")) {
       this.globalData.saved_project = wx.getStorageSync("save_projects");
     } else {
       wx.setStorageSync("save_projects", []);
       this.globalData.saved_project = []
     };
+    // wx.preloadAd([{
+    //   unitId: 'adunit-18fef1a6e0ec8a3e', // 原生模板广告广告单元
+    //   type: 'custom' // 原生模板广告
+    // }]);
     this.globalData.RealtimeLog.info("_APP_:APP初始化完成\n", res);
     this.globalData.RealtimeLog.info("_APP_:globalData\n", this.globalData);
     this.globalData.RealtimeLog.info("_APP_:微信APP基础信息\n", this.globalData.app_base_info);
-    this.globalData.RealtimeLog.info("_APP_:RealtimeLog日志测试");
+    console.warn("_APP_:RealtimeLog日志输出测试\n", wx.getAccountInfoSync().miniProgram.envVersion ? wx.getAccountInfoSync().miniProgram.envVersion : "null", "-", APP_INFO.version, ">>", "log-info");
     // wx.request({
     //   url: "https://zh.minecraft.wiki/w/%E6%95%99%E7%A8%8B",
     //   data: {},

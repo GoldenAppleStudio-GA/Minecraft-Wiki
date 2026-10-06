@@ -6,7 +6,8 @@ Page({
    */
   data: {
     menu_page: 0,
-    app: getApp()
+    app: getApp(),
+    ad_state: true
   },
 
   navigate_back(event) {
@@ -86,5 +87,20 @@ Page({
    */
   onUnload() {
 
+  },
+  ad_close() {
+    this.setData({
+      'ad_state': false
+    });
+  },
+  ad_load() {
+    this.setData({
+      'ad_state': true
+    });
+  },
+  ad_error() {
+    this.setData({
+      'ad_state': false
+    });
   }
 })
