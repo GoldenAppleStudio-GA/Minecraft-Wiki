@@ -17,7 +17,8 @@ Page({
     project_view_type: 0,
     project_changelog_article: [],
     project_changelog_type: [],
-    project_changelog_page_number: 1
+    project_changelog_page_number: 1,
+    ad_state: true
   },
   changelog_page_back() {
     if (this.data.project_changelog_page_number > 1) {
@@ -474,5 +475,20 @@ Page({
    */
   onUnload() {
 
+  },
+  ad_close() {
+    this.setData({
+      'ad_state': false
+    });
+  },
+  ad_load() {
+    this.setData({
+      'ad_state': true
+    });
+  },
+  ad_error() {
+    this.setData({
+      'ad_state': false
+    });
   }
 })

@@ -9,6 +9,7 @@
 
 .menu {
   margin-top: 1vh;
+  margin-bottom: 1vh;
   z-index: 2;
   padding: 1vh;
   padding-left: 20rpx;
