@@ -58,7 +58,7 @@
           更新日期
         </view>
         <view style="color: #ffffff;font-size: small;">
-          2026.9.13
+          2026.10.6
         </view>
       </view>
     </view>
@@ -133,34 +133,6 @@
         </view>
         <view style="color: #ffffff;font-size: smaller;">
           {{app.globalData.debug_mode == true ? '已启用':'未启用'}}
-        </view>
-      </view>
-    </view>
-    <view class="description_block">
-      <view class="description_tittle">
-        开源信息
-      </view>
-      <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
-        <view style="color: #ffffff; font-size: smaller; border-bottom: solid 1px #34363C; padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;margin-bottom: 16px;width: 100%;">
-          此小程序使用 CC BY-NC-SA 3.0 协议开源,使用时请注意相关限制.
-        </view>
-      </view>
-      <view class="description_author">
-        <view style="color: #96A2B0; margin-right: 24px;font-size: small;">
-          GitHub
-        </view>
-        <view style="color: #ffffff;font-size: smaller;box-sizing: border-box;width: 80%;height: max-content;word-wrap: break-word;">
-          https://github.com/GoldenAppleStudio-GA/Minecraft-Wiki
-        </view>
-      </view>
-    </view>
-    <view class="description_block">
-      <view class="description_tittle">
-        其他信息
-      </view>
-      <view style="display: flex;justify-content: center;align-items: center;width: 97%;height: auto;">
-        <view style="color: #ffffff; font-size: smaller;padding-bottom: 16px;box-sizing: border-box;padding-left: 16px;padding-right: 16px;width: 100%;">
-          此小程序使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.
         </view>
       </view>
     </view>

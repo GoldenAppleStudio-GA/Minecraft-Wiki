@@ -45,7 +45,7 @@ Page({
       }
     },
     wiki_id: 0,
-    wiki_data: "<h3>加载中...</h3>"
+    ad_state: true
   },
   wiki_click(event) {
     getApp().globalData.RealtimeLog.info("pages/index/index:百科点击\n", event);
@@ -242,5 +242,20 @@ Page({
    */
   onUnload() {
 
+  },
+  ad_close() {
+    this.setData({
+      'ad_state': false
+    });
+  },
+  ad_load() {
+    this.setData({
+      'ad_state': true
+    });
+  },
+  ad_error() {
+    this.setData({
+      'ad_state': false
+    });
   }
 })

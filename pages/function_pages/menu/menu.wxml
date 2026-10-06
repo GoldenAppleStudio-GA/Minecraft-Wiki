@@ -1533,4 +1533,7 @@
     </view>
   </view>
 </view>
-<view class="CCBY-NC-SA3">此文使用了来自中文Minecraft Wiki中的内容,以CC BY-NC-SA 3.0协议授权.</view>
+<view style="width: 710rpx;margin-top: 1vh;border-radius: 10rpx;overflow: hidden;box-sizing: border-box;margin-bottom: 1.5vh;" wx:if="{{ad_state == true}}">
+  <ad-custom unit-id="adunit-f1959d95cfda3c63" bindclose="ad_close" bindload="ad_load" binderror="ad_error">
+  </ad-custom>
+</view>
